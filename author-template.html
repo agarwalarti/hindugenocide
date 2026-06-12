@@ -3,15 +3,17 @@
 <head>
   <!--
     AUTHOR PAGE TEMPLATE
-    Assumes this page lives at the SITE ROOT, e.g. /author.html or
-    /about.html — same level as index.html.
+    Meant to live at authors/<author-slug>/index.html — two folders
+    below the site root, same depth as an article — giving each
+    author a clean URL like hindugenocide.com/authors/arti-agarwal/.
+    The base tag below is already set correctly for that depth; keep
+    it as-is when you copy this file.
 
-    If you put it inside a folder instead (for a clean URL like
-    /author/), add this one line right here:
-      <base href="../">
-    (one "../" per extra folder level deep, same as the article
-    template.)
+    If you'd rather place it differently:
+      - one folder deep (e.g. /author/index.html) → use <base href="../">
+      - at the site root (e.g. /author.html)      → remove the <base> line
   -->
+  <base href="../../">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>[Author Name] — Hindu Genocide</title>
