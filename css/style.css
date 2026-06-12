@@ -12,7 +12,7 @@
   --ink-soft:   #000000;
   --paper:      #F4F4F4;  /* light beige — main background */
   --paper-deep: #F6D1C1;  /* cards, ledger figures panel, fact boxes */
-  --paper-line: #D8D0C2;  /* hairlines */
+  --paper-line: #FFDEC5;  /* hairlines */
   --oxblood:    #770000;  /* primary dark-red highlight — links, figures, accents */
   --oxblood-soft:#620404; /* secondary dark red */
   --brass:      #620404;  /* category labels / tags — dark red */
