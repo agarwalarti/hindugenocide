@@ -1,0 +1,127 @@
+[
+  {
+    "id": 1,
+    "year": "1561–1774",
+    "sortYear": 1561,
+    "category": "British Crimes",
+    "title": "Sample entry — colonial-era inquisition",
+    "summary": "Placeholder description of a colonial-period incident. Replace with the real entry text and add a link to the full article if one exists.",
+    "figure": "16,202",
+    "figureLabel": "documented cases",
+    "chartValue": 16.2
+  },
+  {
+    "id": 2,
+    "year": "1769–72",
+    "sortYear": 1769,
+    "category": "British Crimes",
+    "title": "Sample entry — famine under colonial administration",
+    "summary": "Placeholder description for a famine-related entry. Swap in the real figures and sourcing.",
+    "figure": "10M",
+    "figureLabel": "estimated deaths",
+    "chartValue": 10000
+  },
+  {
+    "id": 3,
+    "year": "1921",
+    "sortYear": 1921,
+    "category": "Islamic Jihad",
+    "title": "Sample entry — early 20th century communal violence",
+    "summary": "Placeholder description. Use this row as the template for entries in the Islamic Jihad category.",
+    "figure": "2,500",
+    "figureLabel": "killed",
+    "chartValue": 2.5
+  },
+  {
+    "id": 4,
+    "year": "1946",
+    "sortYear": 1946,
+    "category": "Islamic Jihad",
+    "title": "Sample entry — pre-partition riots",
+    "summary": "Placeholder description for a pre-partition incident, with a 'Read more' link to a full article page.",
+    "figure": "5,000+",
+    "figureLabel": "killed",
+    "chartValue": 5,
+    "link": "article-template.html"
+  },
+  {
+    "id": 5,
+    "year": "1947",
+    "sortYear": 1947,
+    "category": "Political Crimes",
+    "title": "Sample entry — partition-era displacement",
+    "summary": "Placeholder description. This is a good slot for a long-form article with maps and figures.",
+    "figure": "7M+",
+    "figureLabel": "displaced",
+    "chartValue": 7000,
+    "link": "article-template.html"
+  },
+  {
+    "id": 6,
+    "year": "1948",
+    "sortYear": 1948,
+    "category": "Congress",
+    "title": "Sample entry — post-independence political violence",
+    "summary": "Placeholder description for a Congress-era entry.",
+    "figure": "8,000",
+    "figureLabel": "killed",
+    "chartValue": 8
+  },
+  {
+    "id": 7,
+    "year": "1966",
+    "sortYear": 1966,
+    "category": "Congress",
+    "title": "Sample entry — government action against a religious gathering",
+    "summary": "Placeholder description for the Congress category.",
+    "figure": "5,000",
+    "figureLabel": "killed",
+    "chartValue": 5
+  },
+  {
+    "id": 8,
+    "year": "1979",
+    "sortYear": 1979,
+    "category": "Communist",
+    "title": "Sample entry — state action against refugees",
+    "summary": "Placeholder description for a Communist-category entry.",
+    "figure": "10,000+",
+    "figureLabel": "affected",
+    "chartValue": 10
+  },
+  {
+    "id": 9,
+    "year": "1990",
+    "sortYear": 1990,
+    "category": "Cultural Genocide",
+    "title": "Sample entry — forced displacement of a community",
+    "summary": "Placeholder description, good candidate for a photo gallery in the article body.",
+    "figure": "300K–800K",
+    "figureLabel": "displaced",
+    "chartValue": 550,
+    "link": "article-template.html"
+  },
+  {
+    "id": 10,
+    "year": "2002",
+    "sortYear": 2002,
+    "category": "Islamic Jihad",
+    "title": "Sample entry — early 2000s communal riots",
+    "summary": "Placeholder description for a 2000s-era entry with references to news reports.",
+    "figure": "300+",
+    "figureLabel": "killed",
+    "chartValue": 0.3,
+    "link": "article-template.html"
+  },
+  {
+    "id": 11,
+    "year": "2021",
+    "sortYear": 2021,
+    "category": "Communist",
+    "title": "Sample entry — recent post-election violence",
+    "summary": "Placeholder description for the most recent documented entry.",
+    "figure": "25",
+    "figureLabel": "killed",
+    "chartValue": 0.025
+  }
+]
