@@ -185,11 +185,11 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 }
 
 .site-nav a.btn--accent{
-  padding: 1rem 2.5rem;
+  padding: 1rem 1.5rem;
 }
 
 .site-nav a:hover, .site-nav a[aria-current="page"]{
-  color: var(--oxblood);
+  color: var(--salmon);
   text-decoration: none;
 }
 
