@@ -12,7 +12,7 @@
   --ink-soft:   #000000;
   --paper:      #F4F4F4;  /* light beige — main background */
   --paper-deep: #F6D1C1;  /* cards, ledger figures panel, fact boxes */
-  --paper-line: #FFDEC5;  /* hairlines */
+  --paper-line: #F7E7CE;  /* hairlines */
   --oxblood:    #770000;  /* primary dark-red highlight — links, figures, accents */
   --oxblood-soft:#620404; /* secondary dark red */
   --brass:      #620404;  /* category labels / tags — dark red */
@@ -317,7 +317,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1px;
-  background: var(--paper-line);
+  background: #FFDEC5;
   border: 1px solid var(--paper-line);
 }
 
