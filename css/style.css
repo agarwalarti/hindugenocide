@@ -10,7 +10,7 @@
      salmon buttons, dark maroon footer (matches existing site colours) */
   --ink:        #000000;  /* pure black — body text & headings */
   --ink-soft:   #000000;
-  --paper:      #F4F4F4;  /* light beige — main background */
+  --paper:      #FCF8F2;  /* light beige — main background */
   --paper-deep: #F6D1C1;  /* cards, ledger figures panel, fact boxes */
   --paper-line: #F7E7CE;  /* hairlines */
   --oxblood:    #770000;  /* primary dark-red highlight — links, figures, accents */
@@ -24,7 +24,7 @@
   /* Optional background image — set on <body style="--bg-image:url('/images/your-image.jpg')">
      Defaults to "none", so plain beige shows if unset. */
   --bg-image: none;
-  --bg-overlay: rgba(244, 244, 244, 0.9);
+  --bg-overlay: #fcf8f2;
 
   /* Type */
   --f-display: "Outfit", "Helvetica Neue", Arial, sans-serif;   /* big bold headings */
