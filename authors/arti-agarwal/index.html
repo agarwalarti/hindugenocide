@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    AUTHOR PAGE TEMPLATE
+    Meant to live at authors/<author-slug>/index.html — two folders
+    below the site root, same depth as an article — giving each
+    author a clean URL like hindugenocide.com/authors/arti-agarwal/.
+    The base tag below is already set correctly for that depth; keep
+    it as-is when you copy this file.
+
+    If you'd rather place it differently:
+      - one folder deep (e.g. /author/index.html) → use <base href="../">
+      - at the site root (e.g. /author.html)      → remove the <base> line
+  -->
+  <base href="../../">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>[Author Name] — Hindu Genocide</title>
+  <meta name="description" content="[One-sentence description of the author for search results and social sharing.]" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Cabin:wght@500;600;700&family=Lora:ital,wght@0,500;1,500&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+  <script src="js/partials.js" defer></script>
+
+  <!-- Small page-only styles for the two-column layout. Uses the same
+       colour/spacing variables as the rest of the site, defined in
+       css/style.css, so it stays on-palette automatically. -->
+  <style>
+    .author-grid{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+    @media (max-width: 760px){
+      .author-grid{ grid-template-columns: 1fr; }
+    }
+    .author-grid img{
+      width: 100%;
+      border: 1px solid var(--paper-line);
+    }
+    .author-grid h1{
+      margin-bottom: 0.3rem;
+    }
+    .author-grid__role{
+      font-family: var(--f-heading);
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--brass);
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+    }
+  </style>
+</head>
+<body data-page="author">
+
+  <div id="site-header"></div>
+
+  <section class="section" style="padding-top: 3rem;">
+    <div class="container">
+      <div class="author-grid">
+
+        <!-- ===== Photo ===== -->
+        <figure style="margin:0;">
+          <img src="images/author-photo.jpg" alt="Photo of [Author Name]" />
+        </figure>
+
+        <!-- ===== Bio text ===== -->
+        <div>
+          <h1>[Author Name]</h1>
+          <p class="author-grid__role">[Role / title]</p>
+
+          <div class="article__body" style="margin:0; padding:0; max-width:60ch;">
+            <p>
+              [First paragraph — introduce who the author is and why
+              they're writing this site.]
+            </p>
+            <p>
+              [Second paragraph — background, areas of focus, or anything
+              else relevant.]
+            </p>
+            <p>
+              [Optional — links, e.g. <a href="https://example.com">Twitter / X</a>,
+              <a href="mailto:hindugenocide@proton.me">hindugenocide@proton.me</a>.]
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+</body>
+</html>
