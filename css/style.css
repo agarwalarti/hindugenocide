@@ -184,6 +184,10 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   padding: 0.3rem 0.1rem;
 }
 
+.site-nav a.btn--accent{
+  padding: 1rem 2.5rem;
+}
+
 .site-nav a:hover, .site-nav a[aria-current="page"]{
   color: var(--oxblood);
   text-decoration: none;
