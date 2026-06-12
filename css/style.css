@@ -265,6 +265,15 @@ a:focus-visible, button:focus-visible, input:focus-visible{
     border-bottom: 1px solid var(--paper-line);
     padding: 0.5rem 1.5rem 1rem;
   }
+
+   @media (max-width: 860px){
+  .site-nav a.btn--accent{
+    width: auto;
+    display: inline-block;
+    margin-top: 0.75rem;
+  }
+} 
+   
   .site-nav.is-open{ display: flex; }
   .site-nav a{ padding: 0.6rem 0; width: 100%; }
   .site-nav .submenu{ position: static; border: none; padding-left: 1rem; margin-top: 0; }
@@ -788,6 +797,17 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 
 @media (max-width: 760px){
   .footer__grid{ grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px){
+  .hero .btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .hero .btn--accent{
+    margin: 0.6rem 0 0 !important;
+  }
 }
 
 /* =========================================================
