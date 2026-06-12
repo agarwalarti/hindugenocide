@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    BLANK PAGE TEMPLATE
+    Use this for any new standalone page (e.g. an "About" page,
+    "2020 Database", a donation-thanks page, etc).
+
+    This template assumes the new page lives at the SITE ROOT,
+    e.g. /2020-database.html — same level as index.html.
+
+    If instead you put it inside a folder (so it gets a clean URL
+    like /2020-database/), add ONE line right here:
+      <base href="../">
+    and use that same rule for every extra folder level deep.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>[Page Title] — Hindu Genocide</title>
+  <meta name="description" content="[One-sentence description for search results and social sharing.]" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Cabin:wght@500;600;700&family=Lora:ital,wght@0,500;1,500&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+  <script src="js/partials.js" defer></script>
+</head>
+<!-- Set data-page to a short id for this page (used for nav highlighting
+     if it ever matches a menu item — harmless if it doesn't). -->
+<body data-page="custom-page">
+
+  <div id="site-header"></div>
+
+  <!-- ===== Page header ===== -->
+  <section class="hero" style="padding-bottom: 2rem;">
+    <div class="container">
+      <p class="hero__eyebrow">hindugenocide.com</p>
+      <h1>[Page Title]</h1>
+      <p class="hero__lede">
+        [One- or two-sentence introduction to this page.]
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Page content =====
+       Use as many .section blocks as you need. Standard text,
+       headings, images, lists, etc. all pick up the site's styles
+       automatically. -->
+  <section class="section">
+    <div class="container">
+      <div class="article__body" style="margin:0; padding:0; max-width:68ch;">
+
+        <h2>[A heading]</h2>
+        <p>
+          [Body text goes here. Standard HTML tags — &lt;p&gt;, &lt;h2&gt;,
+          &lt;h3&gt;, &lt;ul&gt;, &lt;blockquote&gt;, &lt;a&gt; — all use the
+          site's existing styles, so you don't need to add any CSS.]
+        </p>
+
+        <!-- Example: a pull-quote / stat callout, same as on article pages -->
+        <div class="pull-stat">
+          <span class="pull-stat__value">[Figure]</span>
+          <span class="pull-stat__label">[What this figure represents]</span>
+        </div>
+
+        <p>
+          [More body text.]
+        </p>
+
+        <!-- Example: a simple image. Remove if not needed. -->
+        <figure>
+          <img src="images/placeholder-inline.jpg" alt="[Descriptive alt text]" />
+          <figcaption>[Image caption and source credit.]</figcaption>
+        </figure>
+
+        <!-- Example: a button/link, e.g. to another page -->
+        <p><a href="posts.html" class="btn">Browse all posts</a></p>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+</body>
+</html>

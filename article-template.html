@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- This page is meant to live at <category>/<slug>/index.html, two
+       folders below the site root — the base tag below makes every
+       relative path (css/js/images/links) resolve correctly from
+       that depth. Keep it as-is when you copy this file. -->
+  <base href="../../">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>[Entry Title] — Hindu Genocide</title>
+  <meta name="description" content="[One-sentence summary for search results and social sharing.]" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Cabin:wght@500;600;700&family=Lora:ital,wght@0,500;1,500&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+  <script src="js/partials.js" defer></script>
+</head>
+<!-- Set data-page to whichever section this post belongs under,
+     e.g. "islamic-jihad", "political-crimes", "analysis", "news", "posts" -->
+<body data-page="islamic-jihad">
+
+  <div id="site-header"></div>
+
+  <article class="article">
+
+    <!-- ===== Post header ===== -->
+    <div class="article__hero">
+      <div class="container">
+        <div class="article__meta">
+          <span>[Category]</span>
+          <span>·</span>
+          <span>[Month Year]</span>
+        </div>
+
+        <h1>[Entry Title]</h1>
+        <p class="article__lede">
+          [One- or two-sentence lede / dek that summarises the post — this
+          can reuse the same text shown in the timeline ledger row.]
+        </p>
+
+        <!-- Structured facts — keep in sync with the entry in
+             data/timeline-data.json if this post also appears on the
+             timeline. -->
+        <div class="fact-grid">
+          <div class="fact">
+            <div class="fact__label">Year</div>
+            <div class="fact__value">[Year]</div>
+          </div>
+          <div class="fact">
+            <div class="fact__label">Number affected</div>
+            <div class="fact__value">[Figure]</div>
+          </div>
+          <div class="fact">
+            <div class="fact__label">Type</div>
+            <div class="fact__value">[Type, Type]</div>
+          </div>
+          <div class="fact">
+            <div class="fact__label">Location</div>
+            <div class="fact__value">[State, Country]</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Featured image (full width) =====
+         Remove this block entirely if the post has no featured image. -->
+    <figure class="article__featured-image figure--wide">
+      <img src="images/placeholder-featured.jpg" alt="[Descriptive alt text]" />
+      <figcaption>[Image caption and source credit.]</figcaption>
+    </figure>
+
+    <!-- ===== Post body ===== -->
+    <div class="article__body">
+
+      <p>
+        [Opening paragraph of the full account. Replace this and the
+        following paragraphs with the existing article text.]
+      </p>
+
+      <p>
+        [Further detail paragraph. Standard images sit inside this
+        column at its width:]
+      </p>
+
+      <figure>
+        <img src="images/placeholder-inline.jpg" alt="[Descriptive alt text]" />
+        <figcaption>[Image caption and source credit.]</figcaption>
+      </figure>
+
+      <!-- Pull-quote style stat callout -->
+      <div class="pull-stat">
+        <span class="pull-stat__value">[Figure]</span>
+        <span class="pull-stat__label">[What this figure represents]</span>
+      </div>
+
+      <p>
+        [More body text. Use the wide-image option below for photos,
+        maps, or charts that benefit from extra width — it breaks out
+        of this text column up to 1100px.]
+      </p>
+    </div>
+
+    <!-- ===== Wide image — breaks out of the text column =====
+         Place this between body sections, outside .article__body,
+         or directly after it as shown here. -->
+    <figure class="figure--wide">
+      <img src="images/placeholder-wide.jpg" alt="[Descriptive alt text]" />
+      <figcaption>[Image caption and source credit.]</figcaption>
+    </figure>
+
+    <div class="article__body">
+      <p>
+        [Concluding paragraph, including context on aftermath or
+        ongoing relevance if applicable.]
+      </p>
+
+      <!-- ===== Tags ===== -->
+      <div class="article__tags">
+        <h2>Type</h2>
+        <div class="tag-list">
+          <a href="posts.html?tag=Murder" class="tag-pill">Murder</a>
+          <a href="posts.html?tag=Slavery" class="tag-pill">Slavery</a>
+        </div>
+      </div>
+
+      <div class="article__tags">
+        <h2>Tagged under</h2>
+        <div class="tag-list">
+          <a href="posts.html?tag=History" class="tag-pill">History</a>
+          <a href="posts.html?tag=Rajasthan" class="tag-pill">Rajasthan</a>
+        </div>
+      </div>
+
+      <!-- ===== References ===== -->
+      <div class="refs">
+        <h2>References</h2>
+        <ol>
+          <li><a href="#">[Source title] — [Publication], [Year]</a></li>
+          <li><a href="#">[Source title] — [Publication], [Year]</a></li>
+          <li><a href="#">[Source title] — [Publication], [Year]</a></li>
+        </ol>
+      </div>
+    </div>
+
+  </article>
+
+  <div id="site-footer"></div>
+
+</body>
+</html>

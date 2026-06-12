@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Timeline of Hindu Persecution — Hindu Genocide</title>
+  <meta name="description" content="The timeline of Hindu persecution. Many genocides, massacres, riots, pogroms where Hindus were casualties have gone ignored." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Cabin:wght@500;600;700&family=Lora:ital,wght@0,500;1,500&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/partials.js" defer></script>
+  <script src="js/common.js" defer></script>
+  <script src="js/timeline.js" defer></script>
+</head>
+<body data-page="timeline">
+
+  <div id="site-header"></div>
+
+  <!-- ========================= HERO ========================= -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__grid">
+        <div>
+          <p class="hero__eyebrow">hindugenocide.com</p>
+          <h1>Timeline of Hindu Persecution</h1>
+          <p class="hero__lede">
+            The timeline of Hindu persecution. Many genocides, massacres, riots,
+            pogroms where Hindus were casualties have gone ignored.
+          </p>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat">
+            <div class="stat__value" data-counter="incidents">0</div>
+            <div class="stat__label">documented entries in this archive</div>
+          </div>
+          <div class="stat">
+            <div class="stat__value" data-counter="people">0</div>
+            <div class="stat__label">people affected across all entries</div>
+          </div>
+          <div class="stat">
+            <div class="stat__value" data-counter="eras">0</div>
+            <div class="stat__label">categories tracked across periods</div>
+          </div>
+          <div class="stat">
+            <div class="stat__value" data-counter="earliest">—</div>
+            <div class="stat__label">earliest year on record</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= NOTES SECTION ========================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Points to Note</h2>
+      </div>
+      <div class="article__body" style="margin:0; padding:0; max-width:68ch;">
+        <p>
+          This documentation is exhaustive but not yet complete, and is
+          indicative of the long drawn struggle faced by Hindus. All
+          references are given at the bottom of the page, and where linked
+          to an article, within the article. You can read the articles with
+          more details by clicking on "Read More". There are several other
+          terrorist attacks and incidents where Hindus have been murdered,
+          but since it is not yet officially established that Hindus were
+          <em>selectively targeted</em>, we have not included those in this
+          list.
+        </p>
+        <p>
+          Apart from the items in the list, there are a zillion other
+          incidents where the casualties and rapes are in fewer numbers.
+          Though these have been omitted in the timeline view, they will be
+          expanded upon in the yearly analysis of compiled data (for eg, the
+          <a href="2020-database.html">2020 database</a>), and are added in
+          the final figure shown on the homepage.
+        </p>
+        <p>
+          If some important massacre or incident is missing from the
+          timeline, please send us information at:
+          <a href="mailto:hello@hindugenocide.com">hello@hindugenocide.com</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= TIMELINE / LEDGER ========================= -->
+  <section class="section" id="ledger">
+    <div class="container">
+      <div class="section__head">
+        <h2>The timeline</h2>
+        <span class="index">Filter by category and type</span>
+      </div>
+
+      <p style="font-family: var(--f-heading); font-size: 0.85rem; color: var(--oxblood-soft); margin-bottom: 0.5rem;">Category</p>
+      <div class="filters filters--category" aria-label="Filter timeline by category"></div>
+
+      <p style="font-family: var(--f-heading); font-size: 0.85rem; color: var(--oxblood-soft); margin-bottom: 0.5rem;">Type of persecution</p>
+      <div class="filters filters--type" aria-label="Filter timeline by type"></div>
+
+      <div class="ledger" aria-live="polite">
+        <!-- Rows are rendered by js/timeline.js from data/timeline-data.json -->
+        <p>Loading timeline…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= VISUALISATION ========================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>People affected, by category</h2>
+        <span class="index">Figure 1</span>
+      </div>
+
+      <div class="viz-card">
+        <canvas id="category-chart" height="260" role="img"
+          aria-label="Bar chart comparing people affected across categories"></canvas>
+        <p class="viz-card__caption">
+          Sum of the <code>number</code> field for every entry, grouped by
+          category. Each entry belongs to exactly one category, so these
+          totals don't double-count.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>People affected, by type of persecution</h2>
+        <span class="index">Figure 2</span>
+      </div>
+
+      <div class="viz-card">
+        <canvas id="type-chart" height="260" role="img"
+          aria-label="Bar chart comparing people affected across persecution types"></canvas>
+        <p class="viz-card__caption">
+          Sum of the <code>number</code> field grouped by each entry's
+          <code>type</code> tags (murder, slavery, rape, etc). An entry with
+          multiple types is counted once per type, so this total can exceed
+          the category chart above.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+</body>
+</html>
