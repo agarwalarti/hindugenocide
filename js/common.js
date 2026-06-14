@@ -27,6 +27,48 @@ async function fetchTimelineData() {
   return res.json();
 }
 
+// Renders a single ledger row for the temples timeline (temples.html).
+// Mirrors ledgerRowHTML, but reads the temple-specific fields —
+// templeType, templesAffected, templeFigure, templeFigureLabel —
+// instead of the people-affected fields. An entry can carry both sets
+// of fields at once; this renderer only looks at the temple ones.
+function templeLedgerRowHTML(entry, index) {
+  const linkOpen = entry.link ? `<a href="${entry.link}">` : "";
+  const linkClose = entry.link ? `</a>` : "";
+
+  const geo = entry.geography || {};
+  const geoLabel = [geo.state, geo.country].filter(Boolean).join(", ");
+
+  const templeTypePills = (entry.templeType || [])
+    .map((t) => `<a href="posts.html?tag=${encodeURIComponent(t)}" class="tag-pill">${t}</a>`)
+    .join("");
+  const tagPills = (entry.tags || [])
+    .filter((t) => !(entry.templeType || []).includes(t)) // avoid duplicates with templeType
+    .map((t) => `<a href="posts.html?tag=${encodeURIComponent(t)}" class="tag-pill">${t}</a>`)
+    .join("");
+
+  const figureValue = entry.templeFigure || formatNumber(entry.templesAffected || 0);
+  const figureLabel = entry.templeFigureLabel || "temples affected";
+
+  return `
+    <div class="ledger-entry__no">No. ${String(index + 1).padStart(4, "0")}</div>
+    <div class="ledger-entry__year">
+      ${entry.year}
+      ${geoLabel ? `<span class="ledger-entry__geo">${geoLabel}</span>` : ""}
+    </div>
+    <div class="ledger-entry__body">
+      <span class="ledger-entry__tag">${entry.category}</span>
+      <h3>${linkOpen}${entry.title}${linkClose}</h3>
+      <p>${entry.summary}</p>
+      ${templeTypePills || tagPills ? `<div class="tag-list">${templeTypePills}${tagPills}</div>` : ""}
+    </div>
+    <div class="ledger-entry__figure">
+      ${figureValue}
+      <small>${figureLabel}</small>
+    </div>
+  `;
+}
+
 // Renders a single ledger row. Shared by the homepage preview and
 // the full timeline page so the markup stays identical.
 function ledgerRowHTML(entry, index) {
