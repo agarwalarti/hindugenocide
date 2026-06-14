@@ -13,7 +13,10 @@
     "geography": { "country": "India", "state": null },
     "tags": ["History", "Islamic Invaders", "Murder", "Slavery"],
     "chartValue": 2000,
-    "link": "islamic-jihad/mahmud-of-ghazni-raided-17-times-enslaved-or-killed-2-million-hindus/"
+    "link": "islamic-jihad/mahmud-of-ghazni-raided-17-times-enslaved-or-killed-2-million-hindus/",
+    "templeType": ["Looted", "Desecrated"],
+    "templeFigure": "Somnath, and others",
+    "templeFigureLabel": "temples looted across 17 raids"
   },
   {
     "id": 2,
