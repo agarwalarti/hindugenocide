@@ -31,6 +31,10 @@ function wireCounters(entries) {
   const totalEras = document.querySelector("[data-counter='eras']");
   const earliest = document.querySelector("[data-counter='earliest']");
   const totalPeople = document.querySelector("[data-counter='people']");
+  const totalTemples = document.querySelector("[data-counter='temples']");
+  const totalConverted = document.querySelector("[data-counter='converted']");
+  const totalOngoing = document.querySelector("[data-counter='ongoing']");
+  const totalCountries = document.querySelector("[data-counter='countries']");
 
   if (totalIncidents) animateCounter(totalIncidents, entries.length);
   if (totalEras) animateCounter(totalEras, new Set(entries.map((e) => e.category)).size);
@@ -41,6 +45,31 @@ function wireCounters(entries) {
   if (totalPeople) {
     const sum = entries.reduce((acc, e) => acc + (e.number || 0), 0);
     animateCounter(totalPeople, sum);
+  }
+  if (totalTemples) {
+    // Total temples affected across all entries, regardless of
+    // templeType — same total as the stat on /temples.html.
+    const sum = entries.reduce((acc, e) => acc + (e.templesAffected || 0), 0);
+    animateCounter(totalTemples, sum);
+  }
+  if (totalConverted) {
+    // peopleConverted is a separate, optional field — distinct from
+    // "number" — for incidents where forced/deceitful conversion is a
+    // separately-countable figure.
+    const sum = entries.reduce((acc, e) => acc + (e.peopleConverted || 0), 0);
+    animateCounter(totalConverted, sum);
+  }
+  if (totalOngoing) {
+    // Entries tagged "Ongoing" represent continuing situations rather
+    // than discrete past incidents.
+    const count = entries.filter((e) => (e.tags || []).includes("Ongoing")).length;
+    animateCounter(totalOngoing, count);
+  }
+  if (totalCountries) {
+    const countries = new Set(
+      entries.map((e) => e.geography && e.geography.country).filter(Boolean)
+    );
+    animateCounter(totalCountries, countries.size);
   }
 }
 
