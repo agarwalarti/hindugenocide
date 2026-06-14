@@ -69,13 +69,37 @@ still exist and work, they're just not in the main menu anymore.
 - `--salmon: #FCA99C` — Donate button fill (now larger/bolder)
 - `--footer-bg: #520D1B` — dark maroon footer
 
-**Open question:** you asked for the footer colour to change but the
-message cut off before the value — footer is currently still the dark
-maroon `#520D1B`. Let me know what you'd like it to be and I'll update it
-(it's a one-line change in `css/style.css`).
-
 Optional background image: set `style="--bg-image:url('images/your-image.jpg')"`
 on any `<body>` tag.
+
+## How entry data fits together
+
+Before editing anything, it helps to know there are exactly **two** places
+data for an incident can live — and most entries only need one of them.
+
+1. **`data/timeline-data.json`** — a single file containing a list of
+   entry objects. This one file powers *both* `/timeline.html` (people
+   affected) and `/temples.html` (temples affected). A single entry object
+   can carry people-fields (`type`, `number`, `figure`, `figureLabel`),
+   temple-fields (`templeType`, `templesAffected`, `templeFigure`,
+   `templeFigureLabel`), or both at once — whichever fields are present
+   determine which page(s) it shows up on. There is no second file for
+   temples — same file, same object, just more fields.
+
+2. **The article page itself** (only if this incident has one) — its
+   fact-grid (Year / Number affected / Type / Location, and optionally
+   Temples affected / Temple impact) is hand-written HTML, separate from
+   the JSON. Nothing connects the two automatically.
+
+So in practice:
+
+- **Entry with no article** → update one thing: its object in
+  `data/timeline-data.json`, with whichever field set(s) apply.
+- **Entry with an article** → update two things: that same JSON object,
+  *and* the matching figures in the article's fact-grid — both need the
+  same numbers entered separately.
+- **Never two JSON files** — `/timeline.html` and `/temples.html` both
+  read `data/timeline-data.json`.
 
 ## Adding/updating an article page
 
@@ -101,9 +125,11 @@ on any `<body>` tag.
    - the "Type" and "Tagged under" pill lists — each pill is
      `<a href="posts.html?tag=TagName" class="tag-pill">TagName</a>`
    - the References list
-3. If this entry should also appear on `/timeline.html`, add a matching
-   object to `data/timeline-data.json` (see the 4 existing entries for the
-   shape) — `link` should be `<category>/<new-post-slug>/`.
+3. If this entry should also appear on `/timeline.html` and/or
+   `/temples.html`, add a matching object to `data/timeline-data.json`
+   (see "How entry data fits together" above for the people/temple field
+   sets, and the 4 existing entries for the shape) — `link` should be
+   `<category>/<new-post-slug>/`.
 4. Add a card for it on the relevant `<category>/index.html` page (copy
    one of the existing real cards and edit the text/link/tags).
 
@@ -119,13 +145,12 @@ change needed if you put the page inside a folder instead of at the root.
 A second timeline, alongside `/timeline.html`, that tracks **temples**
 rather than people — temples destroyed, vandalized, desecrated, or
 converted to other uses. It reads the same `data/timeline-data.json` file
-and uses the same ledger/filter/chart layout, plus a hero image slot for a
-temple photo (`images/placeholder-temples-hero.jpg` — replace with a real
-image).
+(see "How entry data fits together" above) and uses the same
+ledger/filter/chart layout, plus a hero image slot for a temple photo
+(`images/placeholder-temples-hero.jpg` — replace with a real image).
 
-It adds four new, fully optional fields to the existing entry shape. They
-sit alongside the people-focused fields (`type`, `number`, `figure`,
-`figureLabel`) — an entry can have either set, or both:
+The temple-specific fields, added to the same entry object as the
+people-fields:
 
 ```json
 {
@@ -151,8 +176,7 @@ sit alongside the people-focused fields (`type`, `number`, `figure`,
 
 **An entry with no temple fields simply doesn't appear on
 `/temples.html`** — `js/temples.js` filters `timeline-data.json` down to
-only entries that have `templeType` and/or `templesAffected` set, so
-nothing needs to change on existing entries or on `/timeline.html`.
+only entries that have `templeType` and/or `templesAffected` set.
 
 For an incident that affected both people and temples — e.g. Noakhali,
 1946 — you'd add both sets of fields to the same entry:
@@ -175,18 +199,67 @@ It would then show up on `/timeline.html` with the people figures, and on
 `/temples.html` with the temple figures — same entry, same `category`,
 same `geography`, two views.
 
-## What's still pending
+## Homepage stats (8 counters)
 
-- Body content for the 5 wired-up articles (placeholders currently).
-- The remaining ~50 posts from the export, each as
-  `<category>/<slug>/index.html`.
-- Real images (all `<img src="images/placeholder-*.jpg">` need real files).
-- `/news/`, `/analysis/`, `/talks/` category pages have no real articles
-  wired up yet.
-- Footer colour (see above).
-- Decisions on Cultural Genocide / British Crimes / Communist
-  categorization (unchanged from before — still tag-based via
-  `posts.html?tag=...`).
+The homepage stat row reads `data/timeline-data.json` directly (via
+`js/home.js`) and computes all 8 numbers live — nothing is hardcoded, and
+nothing needs to be kept in sync manually. The first four were there from
+the start; the second four use fields already introduced for
+`/temples.html`, plus two new ones:
+
+- **documented entries** — `entries.length`
+- **people affected** — sum of `number`
+- **categories tracked** — distinct `category` values
+- **earliest year** — minimum `sortYear`
+- **temples affected** — sum of `templesAffected` (same total as on
+  `/temples.html`, across all `templeType` values)
+- **people converted** — sum of `peopleConverted` (new field, see below)
+- **ongoing situations** — count of entries whose `tags` array includes
+  `"Ongoing"` (new tag convention, see below)
+- **countries documented** — distinct `geography.country` values
+
+### `peopleConverted` — a separate figure from `number`
+
+For incidents where forced or deceitful religious conversion is itself a
+countable figure — distinct from deaths, displacement, etc. captured in
+`number` — add an optional `peopleConverted` field to the entry:
+
+```json
+{
+  "...": "...existing fields...",
+  "type": ["Conversion"],
+  "number": 50000,
+  "figure": "50,000",
+  "figureLabel": "displaced",
+
+  "peopleConverted": 12000
+}
+```
+
+`number` and `peopleConverted` are independent — an entry can have either,
+both, or neither, depending on what's actually documented for it. The
+article page's fact-grid has a matching optional "People converted" box
+(see `article-template.html`) — if an entry has `peopleConverted` in the
+JSON and also has its own article, enter the same figure in both places
+(per "How entry data fits together" above).
+
+### The `"Ongoing"` tag — no new field needed
+
+To mark an entry as an ongoing situation rather than a discrete past
+incident (for the "ongoing situations documented" homepage stat), just add
+`"Ongoing"` to that entry's `tags` array:
+
+```json
+{
+  "...": "...existing fields...",
+  "tags": ["Ongoing", "Christian Missionaries"]
+}
+```
+
+That's the whole convention — no new field, no change to how `type` or
+`category` work. An "Ongoing" entry can still have `number`,
+`templesAffected`, `peopleConverted`, etc. as normal; the tag just also
+makes it count toward this one extra stat.
 
 ## Previewing locally
 
