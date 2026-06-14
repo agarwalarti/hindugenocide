@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Temples Destroyed &amp; Desecrated — Hindu Genocide</title>
+  <meta name="description" content="A timeline of Hindu temples destroyed, vandalized, desecrated, or converted — tracked alongside the human toll documented on the main timeline." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Cabin:wght@500;600;700&family=Lora:ital,wght@0,500;1,500&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/partials.js" defer></script>
+  <script src="js/common.js" defer></script>
+  <script src="js/temples.js" defer></script>
+</head>
+<body data-page="temples">
+
+  <div id="site-header"></div>
+
+  <!-- ========================= HERO ========================= -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__grid">
+        <div>
+          <p class="hero__eyebrow">hindugenocide.com</p>
+          <h1>Temples Destroyed &amp; Desecrated</h1>
+          <p class="hero__lede">
+            A timeline of Hindu temples destroyed, vandalized, desecrated, or
+            converted to other uses — tracked alongside the human toll
+            documented on the main timeline.
+          </p>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat">
+            <div class="stat__value" data-counter="incidents">0</div>
+            <div class="stat__label">documented entries with temple data</div>
+          </div>
+          <div class="stat">
+            <div class="stat__value" data-counter="temples">0</div>
+            <div class="stat__label">temples affected across these entries</div>
+          </div>
+          <div class="stat">
+            <div class="stat__value" data-counter="eras">0</div>
+            <div class="stat__label">categories tracked across periods</div>
+          </div>
+          <div class="stat">
+            <div class="stat__value" data-counter="earliest">—</div>
+            <div class="stat__label">earliest year on record</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= HERO IMAGE =========================
+       Replace images/placeholder-temples-hero.jpg with a real photo
+       of a temple — destroyed, desecrated, or otherwise relevant.
+       Same component used for featured images on article pages. -->
+  <figure class="article__featured-image figure--wide">
+    <img src="images/placeholder-temples-hero.jpg" alt="[Descriptive alt text — e.g. name and location of the temple pictured]" />
+    <figcaption>[Image caption and source credit.]</figcaption>
+  </figure>
+
+  <!-- ========================= NOTES SECTION ========================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>About this page</h2>
+      </div>
+      <div class="article__body" style="margin:0; padding:0; max-width:68ch;">
+        <p>
+          This page tracks attacks on Hindu temples specifically — separate
+          from, but related to, the human toll documented on the main
+          <a href="timeline.html">timeline</a>. An entry can appear on both
+          pages: where an incident involved both casualties and temple
+          destruction, it carries both sets of fields, and shows up on each
+          timeline with the figures relevant to that page.
+        </p>
+        <p>
+          If you know of a temple that was destroyed, vandalized, desecrated,
+          or converted and isn't yet reflected here, please send us
+          information at:
+          <a href="mailto:hindugenocide@proton.me">hindugenocide@proton.me</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= TIMELINE / LEDGER ========================= -->
+  <section class="section" id="ledger">
+    <div class="container">
+      <div class="section__head">
+        <h2>The timeline</h2>
+        <span class="index">Filter by category and type</span>
+      </div>
+
+      <p style="font-family: var(--f-heading); font-size: 0.85rem; color: var(--oxblood-soft); margin-bottom: 0.5rem;">Category</p>
+      <div class="filters filters--category" aria-label="Filter timeline by category"></div>
+
+      <p style="font-family: var(--f-heading); font-size: 0.85rem; color: var(--oxblood-soft); margin-bottom: 0.5rem;">Type</p>
+      <div class="filters filters--type" aria-label="Filter timeline by temple type"></div>
+
+      <div class="ledger" aria-live="polite">
+        <!-- Rows are rendered by js/temples.js from data/timeline-data.json -->
+        <p>Loading timeline…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= VISUALISATION ========================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Temples affected, by category</h2>
+        <span class="index">Figure 1</span>
+      </div>
+
+      <div class="viz-card">
+        <canvas id="category-chart" height="260" role="img"
+          aria-label="Bar chart comparing temples affected across categories"></canvas>
+        <p class="viz-card__caption">
+          Sum of the <code>templesAffected</code> field for every entry that
+          has temple data, grouped by category. Each entry belongs to exactly
+          one category, so these totals don't double-count.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Temples affected, by type</h2>
+        <span class="index">Figure 2</span>
+      </div>
+
+      <div class="viz-card">
+        <canvas id="type-chart" height="260" role="img"
+          aria-label="Bar chart comparing temples affected across temple-attack types"></canvas>
+        <p class="viz-card__caption">
+          Sum of the <code>templesAffected</code> field grouped by each
+          entry's <code>templeType</code> tags (Destroyed, Vandalized,
+          Desecrated, Converted, etc). An entry with multiple types is
+          counted once per type, so this total can exceed the category chart
+          above.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+</body>
+</html>
