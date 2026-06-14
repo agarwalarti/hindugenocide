@@ -91,7 +91,11 @@ on any `<body>` tag.
    - `<h1>` and the lede paragraph
    - the **fact-grid** (Year / Number affected / Type / Location) — these
      are the structured fields that also feed the timeline charts if this
-     entry is added to `data/timeline-data.json`
+     entry is added to `data/timeline-data.json`. The template also
+     includes an *optional* two-fact block (Temples affected / Temple
+     impact) for incidents that also involved temples — delete it for
+     posts about people only, or fill it in and keep it; the grid reflows
+     automatically either way.
    - the body paragraphs and any images (replace
      `images/placeholder-*.jpg`)
    - the "Type" and "Tagged under" pill lists — each pill is
@@ -109,6 +113,67 @@ Use `page-template.html` — a minimal page with header, footer, a hero, and
 a content section using the same components (headings, pull-stats,
 images, buttons) as article pages. Comments inside explain the one-line
 change needed if you put the page inside a folder instead of at the root.
+
+## Temples timeline (`/temples.html`)
+
+A second timeline, alongside `/timeline.html`, that tracks **temples**
+rather than people — temples destroyed, vandalized, desecrated, or
+converted to other uses. It reads the same `data/timeline-data.json` file
+and uses the same ledger/filter/chart layout, plus a hero image slot for a
+temple photo (`images/placeholder-temples-hero.jpg` — replace with a real
+image).
+
+It adds four new, fully optional fields to the existing entry shape. They
+sit alongside the people-focused fields (`type`, `number`, `figure`,
+`figureLabel`) — an entry can have either set, or both:
+
+```json
+{
+  "...": "...existing fields (year, category, title, summary, etc.)...",
+
+  "templeType": ["Destroyed", "Desecrated"],
+  "templesAffected": 12,
+  "templeFigure": "12",
+  "templeFigureLabel": "temples destroyed or desecrated"
+}
+```
+
+- `templeType` — array of temple-attack types (Destroyed, Vandalized,
+  Desecrated, Converted to Mosque, etc.) — your own vocabulary, not tied to
+  the people-side `type` values. Renders as pills, drives the type filter
+  and the "by type" chart on `/temples.html`.
+- `templesAffected` — the count of temples/structures, used for the stat
+  counter and both charts.
+- `templeFigure` / `templeFigureLabel` — optional display overrides for the
+  ledger row (e.g. `"templeFigure": "1"`, `"templeFigureLabel": "temple
+  converted to a mosque"`). If omitted, the figure falls back to
+  `templesAffected` with the label "temples affected".
+
+**An entry with no temple fields simply doesn't appear on
+`/temples.html`** — `js/temples.js` filters `timeline-data.json` down to
+only entries that have `templeType` and/or `templesAffected` set, so
+nothing needs to change on existing entries or on `/timeline.html`.
+
+For an incident that affected both people and temples — e.g. Noakhali,
+1946 — you'd add both sets of fields to the same entry:
+
+```json
+{
+  "type": ["Murder", "Rape", "Arson"],
+  "number": 250,
+  "figure": "250+",
+  "figureLabel": "killed (no accurate count made)",
+
+  "templeType": ["Destroyed", "Desecrated", "Converted to Mosque"],
+  "templesAffected": 6,
+  "templeFigure": "6+",
+  "templeFigureLabel": "temples destroyed, desecrated, or converted"
+}
+```
+
+It would then show up on `/timeline.html` with the people figures, and on
+`/temples.html` with the temple figures — same entry, same `category`,
+same `geography`, two views.
 
 ## What's still pending
 
