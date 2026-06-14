@@ -136,7 +136,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   position: sticky;
   top: 0;
   z-index: 50;
-  border-bottom: 1px solid var(--paper-line);
+  border-bottom: 1px solid var(--paper);
 }
 
 .site-header__bar{
