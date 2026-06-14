@@ -24,7 +24,7 @@
   /* Optional background image — set on <body style="--bg-image:url('/images/your-image.jpg')">
      Defaults to "none", so plain beige shows if unset. */
   --bg-image: none;
-  --bg-overlay: #FCF8F2;
+  --bg-overlay: rgba(252, 248, 242, 0.9);
 
   /* Type */
   --f-display: "Outfit", "Helvetica Neue", Arial, sans-serif;   /* big bold headings */
