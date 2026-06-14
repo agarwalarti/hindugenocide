@@ -24,7 +24,7 @@
   /* Optional background image — set on <body style="--bg-image:url('/images/your-image.jpg')">
      Defaults to "none", so plain beige shows if unset. */
   --bg-image: none;
-  --bg-overlay: rgba(244, 244, 244, 0.9);
+  --bg-overlay: #FCF8F2;
 
   /* Type */
   --f-display: "Outfit", "Helvetica Neue", Arial, sans-serif;   /* big bold headings */
@@ -92,7 +92,7 @@ p{ margin: 0 0 1.1em; }
 blockquote{
   font-family: var(--f-quote);
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--ink);
   border-left: 3px solid var(--oxblood);
   padding: 0.3rem 0 0.3rem 1.4rem;
