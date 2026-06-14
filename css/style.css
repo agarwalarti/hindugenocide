@@ -10,9 +10,9 @@
      salmon buttons, dark maroon footer (matches existing site colours) */
   --ink:        #000000;  /* pure black — body text & headings */
   --ink-soft:   #000000;
-  --paper:      #FCF8F2;  /* light beige — main background */
+  --paper:      #F4F4F4;  /* light beige — main background */
   --paper-deep: #F6D1C1;  /* cards, ledger figures panel, fact boxes */
-  --paper-line: #F7E7CE;  /* hairlines */
+  --paper-line: #D8D0C2;  /* hairlines */
   --oxblood:    #770000;  /* primary dark-red highlight — links, figures, accents */
   --oxblood-soft:#620404; /* secondary dark red */
   --brass:      #620404;  /* category labels / tags — dark red */
@@ -24,7 +24,7 @@
   /* Optional background image — set on <body style="--bg-image:url('/images/your-image.jpg')">
      Defaults to "none", so plain beige shows if unset. */
   --bg-image: none;
-  --bg-overlay: #fcf8f2;
+  --bg-overlay: rgba(244, 244, 244, 0.9);
 
   /* Type */
   --f-display: "Outfit", "Helvetica Neue", Arial, sans-serif;   /* big bold headings */
@@ -185,11 +185,15 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 }
 
 .site-nav a.btn--accent{
-  padding: 1rem 1.5rem;
+  padding: 1rem 2.5rem;
+}
+
+.site-nav a.btn--accent:hover{
+  color: var(--salmon);
 }
 
 .site-nav a:hover, .site-nav a[aria-current="page"]{
-  color: var(--salmon);
+  color: var(--oxblood);
   text-decoration: none;
 }
 
@@ -265,15 +269,6 @@ a:focus-visible, button:focus-visible, input:focus-visible{
     border-bottom: 1px solid var(--paper-line);
     padding: 0.5rem 1.5rem 1rem;
   }
-
-   @media (max-width: 860px){
-  .site-nav a.btn--accent{
-    width: auto;
-    display: inline-block;
-    margin-top: 0.75rem;
-  }
-} 
-   
   .site-nav.is-open{ display: flex; }
   .site-nav a{ padding: 0.6rem 0; width: 100%; }
   .site-nav .submenu{ position: static; border: none; padding-left: 1rem; margin-top: 0; }
@@ -752,6 +747,32 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 .refs li{ margin-bottom: 0.6em; }
 
 /* =========================================================
+   CITATION BOX — "how to cite this page", on article pages
+   ========================================================= */
+.citation-box{
+  margin: 2.5rem 0 1.5rem;
+  padding: 1.2rem 1.4rem;
+  background: var(--paper-deep);
+  border: 1px solid var(--paper-line);
+}
+.citation-box h2{
+  font-family: var(--f-heading);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--oxblood-soft);
+  margin-bottom: 0.6rem;
+}
+.citation-box p{
+  margin: 0;
+  font-family: var(--f-mono);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  word-break: break-word;
+}
+
+/* =========================================================
    FOOTER  (dark maroon, matching the existing site)
    ========================================================= */
 .site-footer{
@@ -797,17 +818,6 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 
 @media (max-width: 760px){
   .footer__grid{ grid-template-columns: 1fr; }
-}
-
-@media (max-width: 600px){
-  .hero .btn{
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-  .hero .btn--accent{
-    margin: 0.6rem 0 0 !important;
-  }
 }
 
 /* =========================================================
