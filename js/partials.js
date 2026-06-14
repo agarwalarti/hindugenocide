@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     loadPartial("#site-footer", "partials/footer.html"),
   ]);
   initNav();
+  initCitation();
   // Let other scripts (e.g. timeline.js) know the chrome is ready.
   document.dispatchEvent(new CustomEvent("partials:loaded"));
 });
