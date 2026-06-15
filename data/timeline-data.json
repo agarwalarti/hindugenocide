@@ -65,5 +65,21 @@
     "tags": ["1948", "Arson", "Congress", "Maharashtra", "Murder", "Rape"],
     "chartValue": 8,
     "link": "political-crimes/1948-maharashtrian-brahmin-genocide-8000-killed/"
+  },
+  {
+    "id": 5,
+    "year": "2017",
+    "sortYear": 2017,
+    "category": "Islamic Jihad",
+    "title": "Massacre of Myanmar Hindus",
+    "summary": "Atleast a hundred Hindus brutally murdered, and thousands became forced refugees due to persecution by ARSA in Myanmar.",
+    "figure": "41,820",
+    "figureLabel": "Killed or forced refugees",
+    "number": 8000,
+    "type": ["Murder", "Rape", "Arson", "Forced Refugees"],
+    "geography": { "country": "Myanmar", "state": "Rakhine" },
+    "tags": ["2017", "Arson", "Murder", "Rape"],
+    "chartValue": 8,
+    "link": "islamic-jihad/massacre-of-myanmar-hindus/"
   }
 ]
