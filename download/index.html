@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!--
+    DOWNLOAD PAGE TEMPLATE
+    Lives at download/index.html — one folder below site root.
+    The <base> tag below is already correct for this depth.
+    To use this as a template for a different resource, duplicate
+    this folder, rename it, and update:
+      - <title>, meta description
+      - the <h1>, lede paragraph, and description text
+      - the EmailOctopus embed script (replace with the new form's code)
+      - the direct download link href at the bottom
+  -->
+        <base href="../" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+            Download: Persecution of Hindus in Bangladesh — Hindu Genocide
+        </title>
+        <meta
+            name="description"
+            content="Download our report on the persecution of Hindus in Bangladesh — a documented account of violence, forced conversions, and displacement."
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Cabin:wght@500;600;700&family=Lora:ital,wght@0,500;1,500&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/main.js" defer></script>
+        <script src="js/partials.js" defer></script>
+
+        <style>
+            /* Two-column layout on desktop: description left, form right */
+            .download-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 3rem;
+                align-items: start;
+            }
+            @media (max-width: 760px) {
+                .download-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            /* Boxed form column — salmon-tinted, matching the fact-grid */
+            .download-form-box {
+                padding: 2rem 1.8rem;
+                background: var(--paper-deep);
+                border: 1px solid var(--paper-line);
+            }
+            .download-form-box h2 {
+                font-family: var(--f-heading);
+                font-size: 0.8rem;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: var(--oxblood-soft);
+                margin-bottom: 1rem;
+            }
+            .download-form-box p {
+                font-size: 0.95rem;
+                margin-bottom: 1.2rem;
+            }
+
+            /* Fallback direct-download link, shown below the form */
+            .download-direct {
+                margin-top: 1.2rem;
+                font-family: var(--f-heading);
+                font-size: 0.8rem;
+                color: var(--oxblood-soft);
+            }
+            .download-direct a {
+                color: var(--oxblood);
+            }
+        </style>
+    </head>
+    <body data-page="download">
+        <div id="site-header"></div>
+
+        <!-- ===== Page header ===== -->
+        <section class="hero" style="padding-bottom: 2rem">
+            <div class="container">
+                <p class="hero__eyebrow">Free Download</p>
+                <h1>Persecution of Hindus in Bangladesh</h1>
+                <p class="hero__lede">
+                    A documented report on violence, forced conversions, and
+                    displacement of Hindus in Bangladesh — with sources.
+                </p>
+            </div>
+        </section>
+
+        <!-- ===== Main content ===== -->
+        <section class="section">
+            <div class="container">
+                <div class="download-grid">
+                    <!-- ===== Left: about the report ===== -->
+                    <div class="article__body" style="margin: 0; padding: 0">
+                        <h2>About this report</h2>
+                        <p>
+                            [A short paragraph describing what the report covers
+                            — key findings, time period, methodology, and why it
+                            matters. Replace this placeholder with the real
+                            description once the report is finalised.]
+                        </p>
+                        <p>
+                            [Optional second paragraph — e.g. who compiled it,
+                            what sources it draws on, or any important caveats
+                            about the data.]
+                        </p>
+
+                        <!-- Optional: a pull-stat callout with a key figure from the report -->
+                        <div class="pull-stat">
+                            <span class="pull-stat__value">[Figure]</span>
+                            <span class="pull-stat__label"
+                                >[What this figure represents from the
+                                report]</span
+                            >
+                        </div>
+
+                        <p
+                            style="
+                                font-size: 0.9rem;
+                                color: var(--oxblood-soft);
+                            "
+                        >
+                            PDF &nbsp;·&nbsp; [X] pages &nbsp;·&nbsp; Free
+                        </p>
+                    </div>
+
+                    <!-- ===== Right: signup form ===== -->
+                    <div class="download-form-box">
+                        <h2>Get the report</h2>
+                        <p>
+                            Enter your name and email below. We'll add you to
+                            our newsletter and send you straight to the
+                            download.
+                        </p>
+
+                        <!--
+            Google Sheets form via Apps Script.
+            Replace PASTE_YOUR_SCRIPT_URL_HERE with the deployment URL
+            from Extensions → Apps Script → Deploy → New deployment.
+            Replace PASTE_YOUR_FILE_URL_HERE with the direct PDF URL,
+            e.g. https://hindugenocide.com/files/persecution-hindus-bangladesh.pdf
+
+            When someone submits, the form data is POSTed to Apps Script
+            (which appends a row to your Sheet), then the page redirects
+            to the PDF. No third party involved beyond Google.
+          -->
+                        <form
+                            id="download-form"
+                            style="
+                                display: flex;
+                                flex-direction: column;
+                                gap: 0.8rem;
+                            "
+                            novalidate
+                        >
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Your name"
+                                required
+                                style="
+                                    padding: 0.7rem 1rem;
+                                    font-family: var(--f-body);
+                                    font-size: 1rem;
+                                    border: 1px solid var(--paper-line);
+                                    background: var(--paper);
+                                "
+                            />
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Your email"
+                                required
+                                style="
+                                    padding: 0.7rem 1rem;
+                                    font-family: var(--f-body);
+                                    font-size: 1rem;
+                                    border: 1px solid var(--paper-line);
+                                    background: var(--paper);
+                                "
+                            />
+                            <button
+                                type="submit"
+                                id="download-btn"
+                                class="btn btn--accent"
+                                style="width: 100%; text-align: center"
+                            >
+                                Get the report &rarr;
+                            </button>
+                            <p
+                                id="download-msg"
+                                style="
+                                    display: none;
+                                    font-size: 0.9rem;
+                                    color: var(--oxblood-soft);
+                                    margin: 0;
+                                "
+                            >
+                                Sending you to the report&hellip;
+                            </p>
+                        </form>
+
+                        <script>
+                            (function () {
+                                var SCRIPT_URL =
+                                    "https://script.google.com/macros/s/AKfycbzNC6EhFd8JS5SBW50iX-FHFPm2KonrbP9gn601SivEhoYnk00HsAhumpBTBoQPWFDduA/exec";
+                                var FILE_URL = "PASTE_YOUR_FILE_URL_HERE";
+
+                                document
+                                    .getElementById("download-form")
+                                    .addEventListener("submit", function (e) {
+                                        e.preventDefault();
+                                        var btn =
+                                            document.getElementById(
+                                                "download-btn",
+                                            );
+                                        var msg =
+                                            document.getElementById(
+                                                "download-msg",
+                                            );
+
+                                        // Basic client-side validation
+                                        var name = this.name.value.trim();
+                                        var email = this.email.value.trim();
+                                        if (
+                                            !name ||
+                                            !email ||
+                                            !email.includes("@")
+                                        )
+                                            return;
+
+                                        // Disable button while submitting
+                                        btn.disabled = true;
+                                        btn.textContent = "Just a moment\u2026";
+                                        msg.style.display = "block";
+
+                                        // POST to Apps Script — no-cors means we can't read the
+                                        // response, but the data reaches the Sheet reliably.
+                                        fetch(SCRIPT_URL, {
+                                            method: "POST",
+                                            mode: "no-cors",
+                                            body: new FormData(this),
+                                        });
+
+                                        // Short delay so the request fires, then redirect to file.
+                                        setTimeout(function () {
+                                            window.location.href = FILE_URL;
+                                        }, 800);
+                                    });
+                            })();
+                        </script>
+
+                        <p class="download-direct">
+                            Already subscribed?
+                            <a
+                                href="files/persecution-hindus-bangladesh.pdf"
+                                download
+                            >
+                                Download directly &rarr;
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="site-footer"></div>
+    </body>
+</html>
