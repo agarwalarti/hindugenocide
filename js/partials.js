@@ -15,6 +15,18 @@ async function loadPartial(selector, url) {
   try {
     const res = await fetch(url);
     target.innerHTML = await res.text();
+
+    // innerHTML does not execute <script> tags — re-create each one
+    // as a live DOM element so third-party embeds (e.g. EmailOctopus)
+    // actually run.
+    target.querySelectorAll("script").forEach((oldScript) => {
+      const newScript = document.createElement("script");
+      [...oldScript.attributes].forEach((attr) =>
+        newScript.setAttribute(attr.name, attr.value)
+      );
+      newScript.textContent = oldScript.textContent;
+      oldScript.replaceWith(newScript);
+    });
   } catch (err) {
     console.error(`Could not load ${url}:`, err);
     target.innerHTML = `<p style="padding:1rem;font-family:monospace;">
