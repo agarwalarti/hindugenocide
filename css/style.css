@@ -747,6 +747,40 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 .refs li{ margin-bottom: 0.6em; }
 
 /* =========================================================
+   TABLES — inside .article__body
+   ========================================================= */
+.article__body table{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  margin: 1.8em 0;
+}
+.article__body th{
+  font-family: var(--f-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: var(--oxblood);
+  padding: 0.65rem 1rem;
+  text-align: left;
+}
+.article__body td{
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--paper-line);
+  vertical-align: top;
+}
+.article__body tr:nth-child(even) td{
+  background: var(--paper-deep);
+}
+@media (max-width: 600px){
+  .article__body table{ font-size: 0.85rem; }
+  .article__body th,
+  .article__body td{ padding: 0.5rem 0.6rem; }
+}
+
+/* =========================================================
    CITATION BOX — "how to cite this page", on article pages
    ========================================================= */
 .citation-box{
