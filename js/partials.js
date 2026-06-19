@@ -27,6 +27,16 @@ async function loadPartial(selector, url) {
       newScript.textContent = oldScript.textContent;
       oldScript.replaceWith(newScript);
     });
+
+    // Favicon and manifest <link> tags must live in <head> to work —
+    // browsers ignore them when they appear inside <body>. Move any
+    // rel="icon", rel="apple-touch-icon", or rel="manifest" links
+    // found in the injected partial up into document.head.
+    target.querySelectorAll(
+      'link[rel="icon"], link[rel="apple-touch-icon"], link[rel="manifest"]'
+    ).forEach((link) => {
+      document.head.appendChild(link);
+    });
   } catch (err) {
     console.error(`Could not load ${url}:`, err);
     target.innerHTML = `<p style="padding:1rem;font-family:monospace;">
