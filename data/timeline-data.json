@@ -193,22 +193,5 @@
     "geography": { "country": "India", "state": "Chhattisgarh" },
     "tags": [],
     "link": ""
-  },
-  {
-    "id": 13,
-    "year": "2025",
-    "sortYear": 2025,
-    "historicalDate": "28-07",
-    "category": "Christian Conversion",
-    "title": "Random text",
-    "summary": "Random summary",
-    "figure": "47",
-    "figureLabel": "converted",
-    "number": 47,
-    "peopleConverted": 47,
-    "type": ["Conversion"],
-    "geography": { "country": "India", "state": "Chhattisgarh" },
-    "tags": [],
-    "link": ""
   }
 ]
