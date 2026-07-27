@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Map of Hindu Persecution — Hindu Genocide</title>
+  <meta name="description" content="An interactive choropleth map of documented Hindu persecution, by country and Indian state, over time." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Cabin:wght@500;600;700&family=Lora:ital,wght@0,500;1,500&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Leaflet.js — free, open-source, no API key required -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+  <script src="js/partials.js" defer></script>
+  <script src="js/map.js" defer></script>
+
+  <style>
+    /* =========================================================
+       MAP PAGE — scoped styles
+       ========================================================= */
+
+    /* Controls bar — toggles and year slider */
+    .map-controls{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem 2rem;
+      padding: 1rem 0 1.5rem;
+      border-bottom: 1px solid var(--paper-line);
+      margin-bottom: 1.5rem;
+    }
+    .map-toggle-group{
+      display: flex;
+      gap: 0;
+      border: 1px solid var(--paper-line);
+    }
+    .map-toggle-group button{
+      font-family: var(--f-heading);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.55rem 1.2rem;
+      background: var(--paper);
+      border: none;
+      cursor: pointer;
+      color: var(--ink);
+      border-right: 1px solid var(--paper-line);
+      transition: background 0.15s, color 0.15s;
+    }
+    .map-toggle-group button:last-child{ border-right: none; }
+    .map-toggle-group button.is-active{
+      background: var(--oxblood);
+      color: var(--paper);
+    }
+    .map-slider-group{
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      flex: 1;
+      min-width: 200px;
+    }
+    .map-slider-group label{
+      font-family: var(--f-heading);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      color: var(--oxblood-soft);
+    }
+    .map-slider-group input[type="range"]{
+      flex: 1;
+      accent-color: var(--oxblood);
+    }
+    #map-year-display{
+      font-family: var(--f-mono);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--oxblood);
+      min-width: 4ch;
+    }
+
+    /* Map container */
+    #map-container{
+      width: 100%;
+      height: 520px;
+      border: 1px solid var(--paper-line);
+      background: var(--paper);
+    }
+    @media (max-width: 760px){
+      #map-container{ height: 360px; }
+    }
+
+    /* Legend */
+    .map-legend{
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-top: 0.8rem;
+      font-family: var(--f-heading);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--oxblood-soft);
+    }
+    .map-legend__bar{
+      flex: 1;
+      max-width: 240px;
+      height: 12px;
+      border: 1px solid var(--paper-line);
+      background: linear-gradient(to right, #FCA99C, #770000, #520D1B);
+    }
+    .map-legend__no-data{
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-left: 1rem;
+    }
+    .map-legend__swatch{
+      width: 14px;
+      height: 14px;
+      background: #F7E7CE;
+      border: 1px solid var(--paper-line);
+    }
+
+    /* Hover info panel */
+    .map-info{
+      margin-top: 1rem;
+      padding: 0.9rem 1.2rem;
+      background: var(--paper-deep);
+      border: 1px solid var(--paper-line);
+      font-family: var(--f-heading);
+      font-size: 0.9rem;
+      min-height: 3.5rem;
+    }
+    .map-info strong{
+      font-family: var(--f-mono);
+      font-size: 1.1rem;
+      color: var(--oxblood);
+    }
+    .map-info em{
+      font-style: normal;
+      color: var(--oxblood-soft);
+    }
+
+    /* Stat row below map */
+    .map-stats{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: #FFDEC5;
+      border: 1px solid var(--paper-line);
+      margin-top: 1.5rem;
+    }
+    @media (max-width: 760px){
+      .map-stats{ grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body data-page="map">
+
+  <div id="site-header"></div>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" style="padding-bottom: 2rem;">
+    <div class="container">
+      <p class="hero__eyebrow">hindugenocide.com</p>
+      <h1>Map of Persecution</h1>
+      <p class="hero__lede">
+        People affected by documented incidents of Hindu persecution, shown
+        by country and Indian state. Darker regions indicate higher documented
+        figures. Drag the year slider to move through time.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Map section ===== -->
+  <section class="section" style="padding-top: 1.5rem;">
+    <div class="container">
+
+      <!-- Controls -->
+      <div class="map-controls">
+
+        <!-- Mode: Cumulative / Snapshot -->
+        <div>
+          <div class="map-toggle-group" role="group" aria-label="Map mode">
+            <button id="btn-cumulative" class="is-active" data-mode="cumulative">Cumulative</button>
+            <button id="btn-snapshot" data-mode="snapshot">Snapshot</button>
+          </div>
+        </div>
+
+        <!-- View: World / India -->
+        <div>
+          <div class="map-toggle-group" role="group" aria-label="Map view">
+            <button id="btn-world" class="is-active" data-view="world">World</button>
+            <button id="btn-india" data-view="india">India</button>
+          </div>
+        </div>
+
+        <!-- Year slider -->
+        <div class="map-slider-group">
+          <label for="map-year-slider">Year</label>
+          <input
+            type="range"
+            id="map-year-slider"
+            min="900"
+            max="2030"
+            step="1"
+            value="2030"
+            aria-label="Select year"
+          >
+          <span id="map-year-display">All</span>
+        </div>
+
+      </div>
+
+      <!-- Map canvas -->
+      <div id="map-container" role="img" aria-label="Choropleth map of Hindu persecution"></div>
+
+      <!-- Legend -->
+      <div class="map-legend">
+        <span>Low</span>
+        <div class="map-legend__bar"></div>
+        <span>High</span>
+        <div class="map-legend__no-data">
+          <div class="map-legend__swatch"></div>
+          <span>No data</span>
+        </div>
+      </div>
+
+      <!-- Hover info -->
+      <div class="map-info" id="map-info">
+        <em>Hover over a region to see details.</em>
+      </div>
+
+      <!-- Stat row -->
+      <div class="map-stats">
+        <div class="stat">
+          <div class="stat__value" id="map-stat-incidents">—</div>
+          <div class="stat__label">entries shown</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value" id="map-stat-people">—</div>
+          <div class="stat__label">people affected</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value" id="map-stat-countries">—</div>
+          <div class="stat__label">countries</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value" id="map-stat-states">—</div>
+          <div class="stat__label">Indian states</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+</body>
+</html>
