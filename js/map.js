@@ -88,19 +88,14 @@ const COUNTRY_NAME_MAP = {
 };
 
 const STATE_NAME_MAP = {
-  // timeline-data.json value → GeoJSON ST_NM (or NAME_1) property value
-  "Delhi":        "NCT of Delhi",
-  "Maharashtra":  "Maharashtra",
-  "Rajasthan":    "Rajasthan",
-  "Gujarat":      "Gujarat",
-  "West Bengal":  "West Bengal",
-  "Punjab":       "Punjab",
-  "Kashmir":      "Jammu & Kashmir",
-  "Uttarakhand":  "Uttarakhand",
-  "Haryana":      "Haryana",
-  "Kerala":       "Kerala",
-  "Meghalaya":    "Meghalaya",
-  "Mizoram":      "Mizoram",
+  "Delhi":                                          "NCT of Delhi",
+  "Delhi (National Capital Territory of Delhi)":    "NCT of Delhi",
+  "Kashmir":                                        "Jammu & Kashmir",
+  "Jammu and Kashmir":                              "Jammu & Kashmir",
+  "Uttarakhand":                                    "Uttarakhand",
+  "Puducherry":                                     "Puducherry",
+  "Andaman and Nicobar Islands":                    "Andaman and Nicobar",
+  "Dadra and Nagar Haveli and Daman and Diu":       "Dadra and Nagar Haveli",
 };
 
 // Returns the GeoJSON property name string for a country name from our data.
