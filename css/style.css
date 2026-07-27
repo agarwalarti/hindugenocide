@@ -318,6 +318,72 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 }
 
 /* =========================================================
+   THIS DAY IN HISTORY — homepage widget
+   ========================================================= */
+#tdih-section{
+  background: var(--paper-deep);
+  border-bottom: 1px solid var(--paper-line);
+  padding: 1.8rem 0;
+}
+.tdih{
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.tdih__header{
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 130px;
+  padding-right: 1.5rem;
+  border-right: 2px solid var(--oxblood);
+}
+.tdih__eyebrow{
+  font-family: var(--f-heading);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--oxblood-soft);
+}
+.tdih__date{
+  font-family: var(--f-mono);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--oxblood);
+}
+.tdih__entry{ flex: 1; min-width: 260px; }
+.tdih__tag{
+  font-family: var(--f-heading);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+.tdih__title{ font-size: 1.05rem; margin: 0.3rem 0 0.4rem; line-height: 1.3; }
+.tdih__title a{ color: var(--ink); }
+.tdih__title a:hover{ color: var(--oxblood); }
+.tdih__summary{ font-size: 0.9rem; margin: 0 0 0.5rem; max-width: 56ch; }
+.tdih__meta{
+  font-family: var(--f-mono);
+  font-size: 0.8rem;
+  color: var(--oxblood-soft);
+  display: flex;
+  gap: 1rem;
+}
+@media (max-width: 600px){
+  .tdih__header{
+    border-right: none;
+    border-bottom: 2px solid var(--oxblood);
+    padding-right: 0;
+    padding-bottom: 0.8rem;
+    min-width: 100%;
+  }
+}
+
+/* =========================================================
    STAT COUNTERS
    ========================================================= */
 .stat-row{
