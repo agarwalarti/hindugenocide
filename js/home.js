@@ -1,39 +1,20 @@
 /* =========================================================
    Homepage (index.html):
-   - loads /data/timeline-data.json
-   - renders a short preview of the timeline (most recent entries)
-   - animates the stat counters
+   - loads data/timeline-data.json
+   - renders the stat counters
+   - renders the preview ledger (first 3 entries)
+   - wires the "This Day in History" widget
    Relies on helpers from js/common.js — load that first.
    ========================================================= */
 
-const PREVIEW_COUNT = 4;
-
-function renderPreview(entries) {
-  const preview = document.querySelector(".ledger--preview");
-  if (!preview) return;
-
-  preview.innerHTML = "";
-
-  entries
-    .slice()
-    .sort((a, b) => b.sortYear - a.sortYear) // most recent first
-    .slice(0, PREVIEW_COUNT)
-    .forEach((entry) => {
-      const row = document.createElement("article");
-      row.className = "ledger-entry";
-      row.innerHTML = ledgerRowHTML(entry, entry.id - 1);
-      preview.appendChild(row);
-    });
-}
-
 function wireCounters(entries) {
   const totalIncidents = document.querySelector("[data-counter='incidents']");
-  const totalEras = document.querySelector("[data-counter='eras']");
-  const earliest = document.querySelector("[data-counter='earliest']");
-  const totalPeople = document.querySelector("[data-counter='people']");
-  const totalTemples = document.querySelector("[data-counter='temples']");
+  const totalEras      = document.querySelector("[data-counter='eras']");
+  const earliest       = document.querySelector("[data-counter='earliest']");
+  const totalPeople    = document.querySelector("[data-counter='people']");
+  const totalTemples   = document.querySelector("[data-counter='temples']");
   const totalConverted = document.querySelector("[data-counter='converted']");
-  const totalOngoing = document.querySelector("[data-counter='ongoing']");
+  const totalOngoing   = document.querySelector("[data-counter='ongoing']");
   const totalCountries = document.querySelector("[data-counter='countries']");
 
   if (totalIncidents) animateCounter(totalIncidents, entries.length);
@@ -47,21 +28,14 @@ function wireCounters(entries) {
     animateCounter(totalPeople, sum);
   }
   if (totalTemples) {
-    // Total temples affected across all entries, regardless of
-    // templeType — same total as the stat on /temples.html.
     const sum = entries.reduce((acc, e) => acc + (e.templesAffected || 0), 0);
     animateCounter(totalTemples, sum);
   }
   if (totalConverted) {
-    // peopleConverted is a separate, optional field — distinct from
-    // "number" — for incidents where forced/deceitful conversion is a
-    // separately-countable figure.
     const sum = entries.reduce((acc, e) => acc + (e.peopleConverted || 0), 0);
     animateCounter(totalConverted, sum);
   }
   if (totalOngoing) {
-    // Entries tagged "Ongoing" represent continuing situations rather
-    // than discrete past incidents.
     const count = entries.filter((e) => (e.tags || []).includes("Ongoing")).length;
     animateCounter(totalOngoing, count);
   }
@@ -73,17 +47,88 @@ function wireCounters(entries) {
   }
 }
 
+function renderPreview(entries) {
+  const ledger = document.querySelector(".ledger--preview");
+  if (!ledger) return;
+  ledger.innerHTML = "";
+  entries
+    .slice()
+    .sort((a, b) => a.sortYear - b.sortYear)
+    .slice(0, 3)
+    .forEach((entry, i) => {
+      const row = document.createElement("article");
+      row.className = "ledger-entry";
+      row.innerHTML = ledgerRowHTML(entry, i);
+      ledger.appendChild(row);
+    });
+}
+
+/* ---------------------------------------------------------
+   This Day in History
+   Looks for entries where historicalDate (format "DD-MM",
+   matching the Indian date convention used in the sheet)
+   matches today's date. Shows a plate between the hero and
+   the Explore section. Hidden entirely if no entry matches.
+   --------------------------------------------------------- */
+function wireThisDayInHistory(entries) {
+  const section = document.getElementById("tdih-section");
+  const box     = document.getElementById("tdih-box");
+  if (!section || !box) return;
+
+  const today   = new Date();
+  const dd      = String(today.getDate()).padStart(2, "0");
+  const mm      = String(today.getMonth() + 1).padStart(2, "0");
+  const todayDM = `${dd}-${mm}`;
+
+  const matches = entries.filter((e) => e.historicalDate === todayDM);
+  if (!matches.length) return; // nothing to show — section stays hidden
+
+  const dateLabel = today.toLocaleDateString("en-US", {
+    month: "long",
+    day:   "numeric",
+  });
+
+  const cards = matches
+    .map((entry) => {
+      const link = entry.link;
+      const titleHTML = link
+        ? `<a href="${link}">${entry.title}</a>`
+        : entry.title;
+      const figureHTML =
+        entry.figure
+          ? `<span>${entry.figure} ${entry.figureLabel || ""}</span>`
+          : "";
+      return `
+        <div class="tdih__entry">
+          <span class="tdih__tag">${entry.category}</span>
+          <h3 class="tdih__title">${titleHTML}</h3>
+          <p class="tdih__summary">${entry.summary}</p>
+          <div class="tdih__meta">
+            <span>${entry.year}</span>
+            ${figureHTML}
+          </div>
+        </div>`;
+    })
+    .join("");
+
+  box.innerHTML = `
+    <div class="tdih__header">
+      <span class="tdih__eyebrow">This day in history</span>
+      <span class="tdih__date">${dateLabel}</span>
+    </div>
+    ${cards}
+  `;
+
+  section.style.display = "block";
+}
+
 document.addEventListener("DOMContentLoaded", async () => {
   try {
     const entries = await fetchTimelineData();
-    renderPreview(entries);
     wireCounters(entries);
+    renderPreview(entries);
+    wireThisDayInHistory(entries);
   } catch (err) {
     console.error("Could not load timeline data:", err);
-    const preview = document.querySelector(".ledger--preview");
-    if (preview) {
-      preview.innerHTML =
-        "<p>Timeline data could not be loaded. If you're viewing this file directly from disk, run it through a local server (e.g. <code>python -m http.server</code>) — browsers block JSON loading from <code>file://</code> URLs.</p>";
-    }
   }
 });
