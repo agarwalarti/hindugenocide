@@ -3,15 +3,17 @@
   SITE NAVIGATION — safe to edit on its own.
 
   - The brand link ("Hindu Genocide") always points home.
-  - Each <a> below is one menu item: change the text between
-    the tags, or the href, or remove/reorder a whole <a> line.
-  - Paths are written without a leading slash (e.g. "islamic-jihad/")
-    so they work whether the site is at a custom domain root or a
-    GitHub Pages subfolder — don't add a leading "/".
-  - Everything not listed here (News, Talks, Cultural Genocide,
-    Congress, etc.) is reachable via posts.html?tag=<TagName>.
+  - Each <a> below is one menu item.
+  - "Posts" has a submenu with all categories — the .has-children
+    pattern and submenu CSS are already in style.css.
+  - Paths without a leading "/" work at any folder depth via
+    the <base> tag system — don't add a leading "/".
   ============================================================
 -->
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
 <header class="site-header">
   <div class="site-header__bar">
     <a href="index.html" class="site-header__brand">
@@ -22,19 +24,24 @@
       <span></span>
     </button>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
-
     <nav class="site-nav">
       <a href="timeline.html" data-page="timeline">Timeline</a>
       <a href="temples.html" data-page="temples">Temples</a>
-      <a href="islamic-jihad/" data-page="islamic-jihad">Islamic Jihad</a>
-      <a href="christian-conversion/" data-page="christian-conversion">Christian Conversion</a>
-      <a href="political-crimes/" data-page="political-crimes">Political Crimes</a>
-      <a href="analysis/" data-page="analysis">Analysis</a>
-      <a href="posts.html" data-page="posts">Posts</a>
+
+      <span class="has-children">
+        <a href="posts.html" data-page="posts">Posts</a>
+        <span class="submenu">
+          <a href="islamic-jihad/" data-page="islamic-jihad">Islamic Jihad</a>
+          <a href="christian-conversion/" data-page="christian-conversion">Christian Conversion</a>
+          <a href="political-crimes/" data-page="political-crimes">Political Crimes</a>
+          <a href="analysis/" data-page="analysis">Analysis</a>
+          <a href="news/" data-page="news">News</a>
+          <a href="talks/" data-page="talks">Talks</a>
+        </span>
+      </span>
+
+      <a href="map.html" data-page="map">Map</a>
+      <a href="search.html" data-page="search">Search</a>
       <a href="https://rzp.io/l/HinduGenocide" class="btn btn--accent" style="margin-left:0.5rem;">Donate</a>
     </nav>
   </div>
