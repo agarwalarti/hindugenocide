@@ -191,6 +191,20 @@ function styleFeature(feature, aggregated, maxValue, view) {
   };
 }
 
+function getEntriesForRegion(name, view) {
+  let filtered = allEntries;
+  if (selectedYear !== null) {
+    filtered = currentMode === "cumulative"
+      ? allEntries.filter((e) => e.sortYear <= selectedYear)
+      : allEntries.filter((e) => e.sortYear === selectedYear);
+  }
+  return filtered.filter((e) => {
+    if (!e.geography) return false;
+    if (view === "world") return resolveCountry(e.geography.country) === name;
+    return e.geography.country === "India" && resolveState(e.geography.state) === name;
+  });
+}
+
 function onFeatureHover(e, aggregated, view) {
   const layer = e.target;
   const name = getFeatureName(layer.feature, view);
@@ -208,10 +222,24 @@ function onFeatureHover(e, aggregated, view) {
   }
 
   if (data && data.total > 0) {
+    const regionEntries = getEntriesForRegion(name, view);
+    const entryLinks = regionEntries
+      .map((e) =>
+        e.link
+          ? `<a href="${e.link}" style="color:var(--oxblood);display:block;margin-top:0.35rem;font-family:var(--f-body);font-size:0.9rem;">
+               &rarr; ${e.title} <span style="color:var(--oxblood-soft);font-size:0.8rem;">(${e.year})</span>
+             </a>`
+          : `<span style="display:block;margin-top:0.35rem;font-family:var(--f-body);font-size:0.9rem;">
+               ${e.title} <span style="color:var(--oxblood-soft);font-size:0.8rem;">(${e.year})</span>
+             </span>`
+      )
+      .join("");
+
     infoEl.innerHTML =
       `<strong>${name}</strong> &nbsp;—&nbsp; ` +
       `${formatNumber(data.total)} people affected across ` +
-      `${data.count} documented ${data.count === 1 ? "entry" : "entries"}`;
+      `${data.count} documented ${data.count === 1 ? "entry" : "entries"}` +
+      entryLinks;
   } else {
     infoEl.innerHTML =
       `<strong>${name}</strong> &nbsp;—&nbsp; ` +
