@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resources — Hindu Genocide</title>
+  <meta name="description" content="Reports, ebooks, and documents on the persecution of Hindus — produced by hindugenocide.com or shared for reference." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Cabin:wght@500;600;700&family=Lora:ital,wght@0,500;1,500&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+  <script src="js/partials.js" defer></script>
+
+  <style>
+    /* =========================================================
+       RESOURCES PAGE — scoped styles
+       ========================================================= */
+
+    /* Individual resource entry */
+    .resource-entry{
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 0 1.4rem;
+      align-items: start;
+      padding: 1.2rem 0;
+      border-bottom: 1px solid var(--paper-line);
+    }
+    .resource-entry:first-child{
+      border-top: 1px solid var(--paper-line);
+    }
+
+    /* Format label — PDF, eBook, Report, etc. */
+    .resource-entry__format{
+      font-family: var(--f-mono);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--paper);
+      background: var(--oxblood);
+      padding: 0.25rem 0.55rem;
+      white-space: nowrap;
+      margin-top: 0.15rem;
+    }
+
+    .resource-entry__body{
+      min-width: 0;
+    }
+    .resource-entry__title{
+      font-family: var(--f-heading);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 0.25rem;
+      line-height: 1.3;
+    }
+    .resource-entry__title a{
+      color: var(--ink);
+    }
+    .resource-entry__title a:hover{
+      color: var(--oxblood);
+      text-decoration: underline;
+    }
+    .resource-entry__desc{
+      font-size: 0.9rem;
+      color: var(--ink);
+      margin: 0 0 0.35rem;
+    }
+    .resource-entry__meta{
+      font-family: var(--f-mono);
+      font-size: 0.75rem;
+      color: var(--oxblood-soft);
+    }
+
+    /* Download / View link on the right */
+    .resource-entry__action{
+      white-space: nowrap;
+    }
+    .resource-entry__action a{
+      font-family: var(--f-heading);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--oxblood);
+      border: 1px solid var(--oxblood);
+      padding: 0.4rem 0.9rem;
+      display: inline-block;
+      transition: background 0.15s, color 0.15s;
+    }
+    .resource-entry__action a:hover{
+      background: var(--oxblood);
+      color: var(--paper);
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px){
+      .resource-entry{
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto;
+      }
+      .resource-entry__action{
+        grid-column: 1 / -1;
+        margin-top: 0.6rem;
+      }
+    }
+
+    /* Section label above a group of entries */
+    .resource-section__label{
+      font-family: var(--f-heading);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--oxblood-soft);
+      margin-bottom: 0.2rem;
+    }
+  </style>
+</head>
+<body data-page="resources">
+
+  <div id="site-header"></div>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" style="padding-bottom: 2rem;">
+    <div class="container">
+      <p class="hero__eyebrow">hindugenocide.com</p>
+      <h1>Resources</h1>
+      <p class="hero__lede">
+        Reports, ebooks, and documents on the persecution of Hindus —
+        produced by this archive or shared here for reference.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== HOW TO ADD A NEW RESOURCE =================================
+       Copy any .resource-entry block below and edit the fields:
+
+       FORMAT OPTIONS (change the label text and you're done):
+         PDF · eBook · Report · Article · Data · Video · External
+
+       LINK:
+         - For a file hosted in your site's files/ folder:
+             href="files/your-filename.pdf"
+           and add download to trigger a save: <a href="..." download>
+         - For an external URL: just paste the URL as href.
+           Remove the download attribute for external links.
+
+       LINK TEXT:
+         Use "Download" for files you host; "View" or "Read" for
+         external links that open in the browser.
+
+       META LINE:
+         Year · page count · file size (all optional, add what you know)
+
+       SECTION HEADINGS:
+         Group entries under <h2> headings as needed. The existing
+         sections are a starting point — rename or add freely.
+  ===================================================================== -->
+
+  <section class="section" style="padding-top: 1.5rem;">
+    <div class="container">
+      <div style="max-width: 780px;">
+
+
+        <!-- ===== SECTION: Our reports ============================= -->
+        <h2>Our reports</h2>
+
+        <!-- Resource entry — DUPLICATE AND EDIT FOR EACH NEW ITEM -->
+        <div class="resource-entry">
+          <span class="resource-entry__format">PDF</span>
+          <div class="resource-entry__body">
+            <p class="resource-entry__title">
+              <a href="files/persecution-hindus-bangladesh.pdf" download>
+                Persecution of Hindus in Bangladesh
+              </a>
+            </p>
+            <p class="resource-entry__desc">
+              A documented report on violence, forced conversions, and
+              displacement of Hindus in Bangladesh, with sources.
+            </p>
+            <p class="resource-entry__meta">[Year] &nbsp;·&nbsp; [X] pages</p>
+          </div>
+          <div class="resource-entry__action">
+            <a href="files/persecution-hindus-bangladesh.pdf" download>Download</a>
+          </div>
+        </div>
+        <!-- End resource entry -->
+
+
+        <!-- ===== SECTION: Books & ebooks ========================== -->
+        <h2 style="margin-top: 2.5rem;">Books &amp; ebooks</h2>
+
+        <!-- Resource entry -->
+        <div class="resource-entry">
+          <span class="resource-entry__format">eBook</span>
+          <div class="resource-entry__body">
+            <p class="resource-entry__title">
+              <a href="[URL or files/filename]">[Title of Book or eBook]</a>
+            </p>
+            <p class="resource-entry__desc">
+              [Short description of what this book covers and why it is
+              relevant to the archive's subject matter.]
+            </p>
+            <p class="resource-entry__meta">[Author] &nbsp;·&nbsp; [Year]</p>
+          </div>
+          <div class="resource-entry__action">
+            <a href="[URL or files/filename]">View</a>
+          </div>
+        </div>
+        <!-- End resource entry -->
+
+
+        <!-- ===== SECTION: External references ===================== -->
+        <h2 style="margin-top: 2.5rem;">External references</h2>
+
+        <!-- Resource entry -->
+        <div class="resource-entry">
+          <span class="resource-entry__format">External</span>
+          <div class="resource-entry__body">
+            <p class="resource-entry__title">
+              <a href="[External URL]" target="_blank" rel="noopener">
+                [Title of external resource]
+              </a>
+            </p>
+            <p class="resource-entry__desc">
+              [Short description of the resource and its relevance.]
+            </p>
+            <p class="resource-entry__meta">[Source name] &nbsp;·&nbsp; [Year]</p>
+          </div>
+          <div class="resource-entry__action">
+            <a href="[External URL]" target="_blank" rel="noopener">Read</a>
+          </div>
+        </div>
+        <!-- End resource entry -->
+
+
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+</body>
+</html>
