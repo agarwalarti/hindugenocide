@@ -226,6 +226,9 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   margin-top: 0.6rem;
   box-shadow: 0 6px 18px rgba(43,36,32,0.08);
 }
+.site-nav .has-children.is-open .submenu{
+  display: block;
+}
 .site-nav .has-children:hover .submenu,
 .site-nav .has-children:focus-within .submenu{
   display: block;
