@@ -250,8 +250,6 @@ function onFeatureHover(e, aggregated, view) {
 
 function onFeatureOut(layer, aggregated, maxValue, view) {
   layer.setStyle(styleFeature(layer.feature, aggregated, maxValue, view));
-  document.getElementById("map-info").innerHTML =
-    "<em>Hover over a region to see details.</em>";
 }
 
 function buildLayer(geoJSON, aggregated, maxValue, view) {
