@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Search — Hindu Genocide</title>
+  <meta name="description" content="Search the Hindu Genocide archive by keyword, year, location, or type of incident." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Cabin:wght@500;600;700&family=Lora:ital,wght@0,500;1,500&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+  <script src="js/partials.js" defer></script>
+  <script src="js/common.js" defer></script>
+
+  <style>
+    /* =========================================================
+       SEARCH PAGE — scoped styles
+       ========================================================= */
+    .search-bar{
+      display: flex;
+      gap: 0.6rem;
+      align-items: stretch;
+      margin-bottom: 0.5rem;
+    }
+    .search-bar input[type="search"]{
+      flex: 1;
+      font-family: var(--f-body);
+      font-size: 1.05rem;
+      padding: 0.85rem 1.2rem;
+      border: 2px solid var(--paper-line);
+      background: var(--paper);
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .search-bar input[type="search"]:focus{
+      border-color: var(--oxblood);
+    }
+    .search-bar button{
+      font-family: var(--f-heading);
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 0 1.6rem;
+      background: var(--oxblood);
+      color: var(--paper);
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .search-bar button:hover{
+      background: var(--footer-bg);
+    }
+    .search-meta{
+      font-family: var(--f-heading);
+      font-size: 0.8rem;
+      color: var(--oxblood-soft);
+      letter-spacing: 0.05em;
+      min-height: 1.4em;
+      margin-bottom: 1.2rem;
+    }
+    /* Results use the existing .ledger / .ledger-entry styles */
+    .search-results .ledger-entry{
+      cursor: default;
+    }
+    .search-empty{
+      padding: 2rem 0;
+      font-family: var(--f-heading);
+      font-size: 0.9rem;
+      color: var(--oxblood-soft);
+    }
+    /* Highlight matched text */
+    mark{
+      background: #FCA99C;
+      color: var(--ink);
+      padding: 0 2px;
+    }
+  </style>
+</head>
+<body data-page="search">
+
+  <div id="site-header"></div>
+
+  <section class="hero" style="padding-bottom: 2rem;">
+    <div class="container">
+      <p class="hero__eyebrow">hindugenocide.com</p>
+      <h1>Search the archive</h1>
+      <p class="hero__lede">
+        Search by keyword, year, location, perpetrator, or type of incident.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 1.5rem;">
+    <div class="container">
+
+      <div class="search-bar">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="e.g. Bangladesh, 1946, Murder, Akbar…"
+          aria-label="Search the archive"
+          autocomplete="off"
+        >
+        <button id="search-btn" aria-label="Search">Search</button>
+      </div>
+
+      <p class="search-meta" id="search-meta" aria-live="polite"></p>
+
+      <div class="ledger search-results" id="search-results" aria-live="polite">
+        <!-- Results rendered by search.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script>
+  /* =========================================================
+     Client-side search — runs entirely in the browser,
+     no server needed. Searches data/timeline-data.json.
+     ========================================================= */
+
+  (function () {
+    let allEntries = [];
+    let debounceTimer = null;
+
+    // --- Utilities ---
+    function esc(str) {
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+    }
+
+    // Highlight query terms inside a string
+    function highlight(text, terms) {
+      if (!text || !terms.length) return esc(text || "");
+      let result = esc(text);
+      terms.forEach((term) => {
+        const rx = new RegExp(`(${term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`, "gi");
+        result = result.replace(rx, "<mark>$1</mark>");
+      });
+      return result;
+    }
+
+    function formatNumber(n) {
+      if (typeof n !== "number") return "—";
+      if (n >= 1000000) return (n / 1000000).toFixed(1).replace(/\.0$/, "") + "M";
+      return n.toLocaleString("en-IN");
+    }
+
+    // --- Scoring ---
+    // Returns a relevance score for an entry given a set of query terms.
+    // Higher = more relevant. 0 = no match.
+    function score(entry, terms) {
+      if (!terms.length) return 0;
+      let total = 0;
+
+      const fields = [
+        { value: entry.title,             weight: 5 },
+        { value: entry.summary,           weight: 3 },
+        { value: entry.category,          weight: 3 },
+        { value: entry.year,              weight: 2 },
+        { value: (entry.type || []).join(" "), weight: 3 },
+        { value: (entry.tags || []).join(" "), weight: 2 },
+        { value: entry.geography && entry.geography.country, weight: 2 },
+        { value: entry.geography && entry.geography.state,   weight: 2 },
+        { value: String(entry.sortYear || ""),               weight: 2 },
+        { value: entry.figure,            weight: 1 },
+      ];
+
+      terms.forEach((term) => {
+        const rx = new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i");
+        fields.forEach(({ value, weight }) => {
+          if (value && rx.test(String(value))) total += weight;
+        });
+      });
+
+      return total;
+    }
+
+    // --- Render ---
+    function renderResults(results, terms) {
+      const container = document.getElementById("search-results");
+      const meta = document.getElementById("search-meta");
+
+      if (!results.length) {
+        meta.textContent = "No entries matched that search.";
+        container.innerHTML = `<p class="search-empty">
+          Try a different keyword, a year, a country or state name, or
+          a persecution type (e.g. Murder, Slavery, Conversion).
+        </p>`;
+        return;
+      }
+
+      meta.textContent = `${results.length} ${results.length === 1 ? "entry" : "entries"} found`;
+
+      container.innerHTML = results
+        .map((entry, i) => {
+          const geo = entry.geography || {};
+          const geoLabel = [geo.state, geo.country].filter(Boolean).join(", ");
+          const typePills = (entry.type || [])
+            .map((t) => `<a href="posts.html?tag=${encodeURIComponent(t)}" class="tag-pill">${highlight(t, terms)}</a>`)
+            .join("");
+          const tagPills = (entry.tags || [])
+            .filter((t) => !(entry.type || []).includes(t))
+            .map((t) => `<a href="posts.html?tag=${encodeURIComponent(t)}" class="tag-pill">${highlight(t, terms)}</a>`)
+            .join("");
+
+          const linkOpen = entry.link ? `<a href="${entry.link}">` : "";
+          const linkClose = entry.link ? `</a>` : "";
+
+          return `<article class="ledger-entry">
+            <div class="ledger-entry__no">No. ${String(i + 1).padStart(4, "0")}</div>
+            <div class="ledger-entry__year">
+              ${highlight(entry.year, terms)}
+              ${geoLabel ? `<span class="ledger-entry__geo">${highlight(geoLabel, terms)}</span>` : ""}
+            </div>
+            <div class="ledger-entry__body">
+              <span class="ledger-entry__tag">${highlight(entry.category, terms)}</span>
+              <h3>${linkOpen}${highlight(entry.title, terms)}${linkClose}</h3>
+              <p>${highlight(entry.summary, terms)}</p>
+              ${typePills || tagPills ? `<div class="tag-list">${typePills}${tagPills}</div>` : ""}
+            </div>
+            <div class="ledger-entry__figure">
+              ${esc(entry.figure || "—")}
+              <small>${esc(entry.figureLabel || "")}</small>
+            </div>
+          </article>`;
+        })
+        .join("");
+    }
+
+    // --- Search ---
+    function runSearch() {
+      const raw = document.getElementById("search-input").value.trim();
+      const meta = document.getElementById("search-meta");
+      const container = document.getElementById("search-results");
+
+      if (!raw) {
+        meta.textContent = "";
+        container.innerHTML = "";
+        return;
+      }
+
+      // Split into individual terms (2+ chars each)
+      const terms = raw
+        .split(/\s+/)
+        .map((t) => t.trim())
+        .filter((t) => t.length >= 2);
+
+      if (!terms.length) {
+        meta.textContent = "";
+        container.innerHTML = "";
+        return;
+      }
+
+      const scored = allEntries
+        .map((e) => ({ entry: e, score: score(e, terms) }))
+        .filter((r) => r.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .map((r) => r.entry);
+
+      renderResults(scored, terms);
+    }
+
+    // --- Init ---
+    async function init() {
+      try {
+        const res = await fetch("data/timeline-data.json");
+        allEntries = await res.json();
+      } catch (err) {
+        document.getElementById("search-meta").textContent =
+          "Could not load archive data. Run a local server to preview.";
+        return;
+      }
+
+      // Check for ?q= URL parameter (e.g. from a future "search this tag" link)
+      const params = new URLSearchParams(window.location.search);
+      const q = params.get("q");
+      if (q) {
+        document.getElementById("search-input").value = q;
+        runSearch();
+      }
+
+      // Live search as you type (debounced 200ms)
+      document.getElementById("search-input").addEventListener("input", () => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(runSearch, 200);
+      });
+
+      // Also trigger on button click and Enter key
+      document.getElementById("search-btn").addEventListener("click", runSearch);
+      document.getElementById("search-input").addEventListener("keydown", (e) => {
+        if (e.key === "Enter") runSearch();
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", init);
+  })();
+  </script>
+
+</body>
+</html>
