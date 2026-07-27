@@ -550,7 +550,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
    VISUALIZATION / CHART CARD
    ========================================================= */
 .viz-card{
-  background-color: var(--paper-deep);
+  background-color: #ffe2d9;
   border: 1px solid var(--paper-line);
   padding: 1.8rem;
   border-radius: var(--radius);
