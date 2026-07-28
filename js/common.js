@@ -27,6 +27,14 @@ async function fetchTimelineData() {
   return res.json();
 }
 
+// Resolves geography.state to a display string — handles both a plain
+// string ("Maharashtra") and an array (["Andhra Pradesh", "Tamil Nadu"]).
+function stateDisplay(state) {
+  if (!state) return null;
+  if (Array.isArray(state)) return state.join(" & ");
+  return state;
+}
+
 // Renders a single ledger row for the temples timeline (temples.html).
 // Mirrors ledgerRowHTML, but reads the temple-specific fields —
 // templeType, templesAffected, templeFigure, templeFigureLabel —
@@ -37,7 +45,7 @@ function templeLedgerRowHTML(entry, index) {
   const linkClose = entry.link ? `</a>` : "";
 
   const geo = entry.geography || {};
-  const geoLabel = [geo.state, geo.country].filter(Boolean).join(", ");
+  const geoLabel = [stateDisplay(geo.state), geo.country].filter(Boolean).join(", ");
 
   const templeTypePills = (entry.templeType || [])
     .map((t) => `<a href="posts.html?tag=${encodeURIComponent(t)}" class="tag-pill">${t}</a>`)
@@ -76,8 +84,9 @@ function ledgerRowHTML(entry, index) {
   const linkClose = entry.link ? `</a>` : "";
 
   // Geography: "Country" or "State, Country" if state is set.
+  // state can be a string or an array of strings.
   const geo = entry.geography || {};
-  const geoLabel = [geo.state, geo.country].filter(Boolean).join(", ");
+  const geoLabel = [stateDisplay(geo.state), geo.country].filter(Boolean).join(", ");
 
   // Type pills (persecution types) and general tags share the same
   // pill style and both link to the posts archive.
