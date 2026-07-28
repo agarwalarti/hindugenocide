@@ -4,7 +4,7 @@
   <base href="../">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Christian Conversion — Hindu Genocide</title>
+  <title>Christian Proselytization — Hindu Genocide</title>
   <meta name="description" content="Coverage of missionary activity, conversion campaigns, and their impact on Hindu communities, particularly in tribal and rural areas." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/main.js" defer></script>
   <script src="js/partials.js" defer></script>
+  <script src="js/category.js" defer></script>
 </head>
 <body data-page="christian-proselytization">
 
@@ -33,46 +34,17 @@
     <div class="container">
       <div class="section__head">
         <h2>Entries</h2>
-        <span class="index">Six Posts</span>
+        <span class="index" id="category-count"></span>
       </div>
 
-      <div class="card-grid">
-        <article class="card">
-          <div class="card__media">
-            <img src="images/placeholder-1.jpg" alt="The Joshua Project — To Convert All Humanity to Christianity" />
-          </div>
-          <div class="card__body">
-            <span class="card__tag">Ongoing</span>
-            <h3>The Joshua Project — To Convert All Humanity to Christianity</h3>
-            <p>An overview of the Joshua Project, a worldwide effort by Christian evangelists to map and target unconverted communities for conversion.</p>
-            <div class="tag-list">
-              <a href="posts.html?tag=Conversion" class="tag-pill">Conversion</a>
-            </div>
-          </div>
-          <a href="Christian-Proselytization/the-joshua-project-to-convert-all-humanity-to-christianity/" class="card__link" aria-label="Read more about The Joshua Project — To Convert All Humanity to Christianity"></a>
-        </article>
-        <article class="card">
-          <div class="card__media">
-            <img src="images/placeholder-2.jpg" alt="[Descriptive alt text]" />
-          </div>
-          <div class="card__body">
-            <span class="card__tag">[Year or era]</span>
-            <h3>[Entry title]</h3>
-            <p>[Placeholder — more entries from this category will go here.]</p>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card__media">
-            <img src="images/placeholder-3.jpg" alt="[Descriptive alt text]" />
-          </div>
-          <div class="card__body">
-            <span class="card__tag">[Year or era]</span>
-            <h3>[Entry title]</h3>
-            <p>[Placeholder — more entries from this category will go here.]</p>
-          </div>
-        </article>
-
+      <!-- Cards are rendered automatically by js/category.js from
+           data/timeline-data.json. To show a featured image on a card,
+           add "image": "images/your-photo.jpg" to that entry in the JSON.
+           To add an article link, add "link": "christian-conversion/your-slug/" to the entry. -->
+      <div class="card-grid" id="category-cards" data-category="Christian Proselytization">
+        <p>Loading entries&hellip;</p>
       </div>
+
     </div>
   </section>
 
