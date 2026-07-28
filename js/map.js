@@ -88,14 +88,19 @@ const COUNTRY_NAME_MAP = {
 };
 
 const STATE_NAME_MAP = {
-  "Delhi":                                          "NCT of Delhi",
-  "Delhi (National Capital Territory of Delhi)":    "NCT of Delhi",
-  "Kashmir":                                        "Jammu & Kashmir",
-  "Jammu and Kashmir":                              "Jammu & Kashmir",
-  "Uttarakhand":                                    "Uttarakhand",
-  "Puducherry":                                     "Puducherry",
-  "Andaman and Nicobar Islands":                    "Andaman and Nicobar",
-  "Dadra and Nagar Haveli and Daman and Diu":       "Dadra and Nagar Haveli",
+  // timeline-data.json value → GeoJSON ST_NM (or NAME_1) property value
+  "Delhi":        "NCT of Delhi",
+  "Maharashtra":  "Maharashtra",
+  "Rajasthan":    "Rajasthan",
+  "Gujarat":      "Gujarat",
+  "West Bengal":  "West Bengal",
+  "Punjab":       "Punjab",
+  "Kashmir":      "Jammu & Kashmir",
+  "Uttarakhand":  "Uttarakhand",
+  "Haryana":      "Haryana",
+  "Kerala":       "Kerala",
+  "Meghalaya":    "Meghalaya",
+  "Mizoram":      "Mizoram",
 };
 
 // Returns the GeoJSON property name string for a country name from our data.
@@ -149,11 +154,17 @@ function aggregateEntries(view) {
       result[key].count += 1;
     }
 
-    if (view === "india" && country === "India" && state) {
-      const key = resolveState(state);
-      if (!result[key]) result[key] = { total: 0, count: 0 };
-      result[key].total += num;
-      result[key].count += 1;
+    if (view === "india" && country === "India") {
+      // state can be a string or an array (when an incident spans multiple states)
+      const states = Array.isArray(state)
+        ? state
+        : state ? [state] : [];
+      states.forEach((s) => {
+        const key = resolveState(s);
+        if (!result[key]) result[key] = { total: 0, count: 0 };
+        result[key].total += num;
+        result[key].count += 1;
+      });
     }
 
     // For the india view, also count entries that only have country=India
@@ -196,7 +207,10 @@ function getEntriesForRegion(name, view) {
   return filtered.filter((e) => {
     if (!e.geography) return false;
     if (view === "world") return resolveCountry(e.geography.country) === name;
-    return e.geography.country === "India" && resolveState(e.geography.state) === name;
+    const states = Array.isArray(e.geography.state)
+      ? e.geography.state
+      : e.geography.state ? [e.geography.state] : [];
+    return e.geography.country === "India" && states.some((s) => resolveState(s) === name);
   });
 }
 
