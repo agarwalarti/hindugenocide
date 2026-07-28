@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hindus of the Genocide — Hindu Genocide</title>
+  <meta name="description" content="Personal accounts and stories of survivors and victims of Hindu persecution — the human faces behind the documented incidents." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Cabin:wght@500;600;700&family=Lora:ital,wght@0,500;1,500&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+  <script src="js/partials.js" defer></script>
+  <script src="js/people.js" defer></script>
+
+  <style>
+    /* =========================================================
+       PLACARD LAYOUT — image left, text right
+       ========================================================= */
+    .placard{
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 2rem;
+      align-items: start;
+      padding: 2rem 0;
+      border-bottom: 1px solid var(--paper-line);
+    }
+    .placard:first-child{
+      border-top: 1px solid var(--paper-line);
+    }
+    @media (max-width: 600px){
+      .placard{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+    }
+
+    .placard__image{
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      overflow: hidden;
+      background: var(--paper-deep);
+    }
+    .placard__image img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .placard__meta{
+      font-family: var(--f-mono);
+      font-size: 0.78rem;
+      color: var(--oxblood-soft);
+      margin: 0 0 0.4rem;
+    }
+    .placard__name{
+      font-family: var(--f-display);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 0 0 0.6rem;
+      line-height: 1.2;
+    }
+    .placard__desc{
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--ink);
+      margin: 0 0 1.2rem;
+      max-width: 56ch;
+    }
+    .placard__link{
+      font-family: var(--f-heading);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--oxblood);
+      border-bottom: 1px solid var(--oxblood);
+      padding-bottom: 0.1rem;
+      text-decoration: none;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .placard__link:hover{
+      color: var(--footer-bg);
+      border-color: var(--footer-bg);
+    }
+  </style>
+</head>
+<body data-page="hindus-of-the-genocide">
+
+  <div id="site-header"></div>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" style="padding-bottom: 2rem;">
+    <div class="container">
+      <p class="hero__eyebrow">hindugenocide.com</p>
+      <h1>Hindus of the Genocide</h1>
+      <p class="hero__lede">
+        Behind every number in this archive is a person. This page gathers
+        the personal accounts of survivors and victims — their stories, in
+        their own words where possible, told with the care they deserve.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Entries ===== -->
+  <section class="section" style="padding-top: 1.5rem;">
+    <div class="container">
+
+      <div class="section__head">
+        <h2>Stories</h2>
+        <span class="index" id="people-count"></span>
+      </div>
+
+      <!-- Rendered by js/people.js from data/people-data.json -->
+      <div id="people-list" style="max-width: 820px;">
+        <p>Loading&hellip;</p>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+</body>
+</html>

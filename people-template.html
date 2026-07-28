@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    PEOPLE TEMPLATE — for individual story pages under
+    hindus-of-the-genocide/
+
+    Save each story as hindus-of-the-genocide/their-name.html
+    (e.g. hindus-of-the-genocide/formila.html)
+    The <base> tag below is already correct for this depth.
+
+    No fact-grid, no type tags, no figures — just the person,
+    their account, a photo if available, and references.
+  -->
+  <base href="../">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>[Full Name] — Hindu Genocide</title>
+  <meta name="description" content="[One sentence about this person and their story.]" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Cabin:wght@500;600;700&family=Lora:ital,wght@0,500;1,500&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+  <script src="js/partials.js" defer></script>
+</head>
+<body data-page="hindus-of-the-genocide">
+
+  <div id="site-header"></div>
+
+  <article class="article">
+
+    <!-- ===== Story header ===== -->
+    <div class="article__hero">
+      <div class="container">
+        <div class="article__meta">
+          <span>Hindus of the Genocide</span>
+          <span>·</span>
+          <span>[Year] · [Location]</span>
+        </div>
+
+        <h1>[Full Name]</h1>
+        <p class="article__lede">
+          [One or two sentences introducing this person — who they are,
+          what incident they survived or were a victim of.]
+        </p>
+      </div>
+    </div>
+
+    <!-- ===== Portrait image =====
+         Remove this block if there is no photo.
+         Use a portrait (taller than wide) where possible — it fits
+         better in the card on the main page. -->
+    <figure class="article__featured-image" style="max-width: 360px; margin: 2rem auto 0;">
+      <img
+        src="images/people/[their-name].jpg"
+        alt="[Name] — [brief description of photo]"
+      />
+      <figcaption>[Photo credit or source, if applicable.]</figcaption>
+    </figure>
+
+    <!-- ===== Story body ===== -->
+    <div class="article__body">
+
+      <p>
+        [Opening paragraph — introduce the context: which incident,
+        which community, what period.]
+      </p>
+
+      <p>
+        [The personal account. Use their own words in blockquotes
+        wherever possible, with attribution below each one.]
+      </p>
+
+      <!-- Example quote block — copy as needed -->
+      <blockquote>
+        &ldquo;[Their words, verbatim.]&rdquo;
+      </blockquote>
+      <p style="font-size: 0.9rem; color: var(--oxblood-soft); margin-top: -1em;">
+        — [Name], [source, e.g. interview with Amnesty International, 2018]
+      </p>
+
+      <p>
+        [Continue the account. Alternate between your own prose and
+        direct quotation. End with what happened to them — aftermath,
+        displacement, current situation if known.]
+      </p>
+
+      <!-- ===== Back link ===== -->
+      <p style="margin-top: 2rem;">
+        <a href="hindus-of-the-genocide.html" class="btn">
+          &larr; Back to Hindus of the Genocide
+        </a>
+      </p>
+
+      <!-- ===== References ===== -->
+      <div class="refs">
+        <h2>References</h2>
+        <ol>
+          <li><a href="#">[Source — publication, year, URL]</a></li>
+        </ol>
+      </div>
+
+      <!-- ===== Citation box ===== -->
+      <div class="citation-box">
+        <h2>How to cite this page</h2>
+        <p>
+          <a href="authors/arti-agarwal/">Arti Agarwal</a>.
+          &ldquo;<span class="citation-box__title"></span>.&rdquo;
+          <em>Hindu Genocide</em>. Originally published [Month Year].
+          <a class="citation-box__url"></a>
+          (accessed <span class="citation-box__accessed"></span>).
+        </p>
+      </div>
+
+    </div>
+
+  </article>
+
+  <div id="site-footer"></div>
+
+</body>
+</html>
