@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/main.js" defer></script>
   <script src="js/partials.js" defer></script>
+  <script src="js/category.js" defer></script>
 </head>
 <body data-page="khalistani-terror">
 
@@ -24,8 +25,7 @@
       <p class="hero__eyebrow">Category</p>
       <h1>Khalistani Terror</h1>
       <p class="hero__lede">
-        Documented incidents of violence, murder, and persecution of Hindus
-        carried out by Khalistani terrorist groups in India and abroad.
+        Documented incidents of violence, murder, and persecution of Hindus carried out by Khalistani terrorist groups in India and abroad.
       </p>
     </div>
   </section>
@@ -34,63 +34,17 @@
     <div class="container">
       <div class="section__head">
         <h2>Entries</h2>
+        <span class="index" id="category-count"></span>
       </div>
 
-      <div class="card-grid">
-
-        <!-- Add real article cards here as they are built.
-             Copy the block below for each new entry:
-
-        <article class="card">
-          <div class="card__media">
-            <img src="images/your-image.jpg" alt="[Descriptive alt text]" loading="lazy" />
-          </div>
-          <div class="card__body">
-            <span class="card__tag">[Year]</span>
-            <h3>[Entry title]</h3>
-            <p>[Short summary]</p>
-            <div class="tag-list">
-              <a href="posts.html?tag=Murder" class="tag-pill">Murder</a>
-            </div>
-          </div>
-          <a href="khalistani-terror/[slug]/" class="card__link" aria-label="Read more about [title]"></a>
-        </article>
-        -->
-
-        <article class="card">
-          <div class="card__media">
-            <img src="images/placeholder-1.jpg" alt="[Descriptive alt text]" loading="lazy" />
-          </div>
-          <div class="card__body">
-            <span class="card__tag">[Year or era]</span>
-            <h3>[Entry title]</h3>
-            <p>[Placeholder — entries for this category will go here.]</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card__media">
-            <img src="images/placeholder-2.jpg" alt="[Descriptive alt text]" loading="lazy" />
-          </div>
-          <div class="card__body">
-            <span class="card__tag">[Year or era]</span>
-            <h3>[Entry title]</h3>
-            <p>[Placeholder — entries for this category will go here.]</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card__media">
-            <img src="images/placeholder-3.jpg" alt="[Descriptive alt text]" loading="lazy" />
-          </div>
-          <div class="card__body">
-            <span class="card__tag">[Year or era]</span>
-            <h3>[Entry title]</h3>
-            <p>[Placeholder — entries for this category will go here.]</p>
-          </div>
-        </article>
-
+      <!-- Cards are rendered automatically by js/category.js from
+           data/timeline-data.json. To show a featured image on a card,
+           add "image": "images/your-photo.jpg" to that entry in the JSON.
+           To add an article link, add "link": "khalistani-terror/your-slug/" to the entry. -->
+      <div class="card-grid" id="category-cards" data-category="Khalistani Terror">
+        <p>Loading entries&hellip;</p>
       </div>
+
     </div>
   </section>
 
