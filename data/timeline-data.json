@@ -5,13 +5,16 @@
     "sortYear": 997,
     "category": "Islamic Jihad",
     "title": "Mahmud of Ghazni Raided 17 Times, Enslaved or Killed 2 Million Hindus",
-    "summary": "Mahmud of Ghazni raided India 17 times, looting Hindu temples including Somnath, and slaughtering or enslaving an estimated 2 million Hindus.",
+    "summary": "Mahmud of Ghazni raided India 17 times, looting Hindu temples including Somnath, and slaughtering or enslaving an estimated 2 million Hindus",
     "figure": "2 Million",
-    "figureLabel": "killed or enslaved",
+    "figureLabel": "Murdered, enslaved or forcibly converted",
     "number": 2000000,
     "type": [
       "Murder",
-      "Slavery"
+      "Conversion",
+      "Slavery",
+      "Sexual Assault",
+      "Seizure of assets"
     ],
     "geography": {
       "country": "India",
@@ -21,24 +24,24 @@
       "History",
       "Islamic Invaders"
     ],
+    "link": "islamic-jihad/mahmud-of-ghazni-raided-17-times-enslaved-or-killed-2-million-hindus/",
+    "peopleConverted": 500000,
     "templeType": [
       "Looted",
       "Desecrated"
     ],
     "templeFigure": "Somnath, and others",
-    "templeFigureLabel": "temples looted across 17 raids",
-    "link": "islamic-jihad/mahmud-of-ghazni-raided-17-times-enslaved-or-killed-2-million-hindus/"
+    "templeFigureLabel": "temples looted across 17 raids"
   },
   {
     "id": 2,
     "year": "1398–99",
     "sortYear": 1398,
-    "historicalDate": "17-12",
     "category": "Islamic Jihad",
     "title": "Timur Slaughtered, Enslaved 7.5 Lakh Hindus in One Day",
     "summary": "In a single day during Timur's attack on Delhi, an estimated 1.1 million Hindus were slaughtered or enslaved, with tens of thousands taken to Samarkand.",
     "figure": "1.1 Million",
-    "figureLabel": "killed or enslaved",
+    "figureLabel": "Murdered or enslaved",
     "number": 1100000,
     "type": [
       "Murder",
@@ -46,24 +49,70 @@
     ],
     "geography": {
       "country": "India",
-      "state": "Delhi"
+      "state": "Delhi (National Capital Territory of Delhi)"
     },
     "tags": [
       "History",
       "Islamic Invaders"
     ],
-    "link": "islamic-jihad/timur-slaughtered-enslaved-7-5-lakh-hindus-in-one-day/"
+    "link": "islamic-jihad/timur-slaughtered-enslaved-7-5-lakh-hindus-in-one-day/",
+    "historicalDate": "17-12"
+  },
+  {
+    "id": 16,
+    "year": "1561-1774",
+    "sortYear": 1561,
+    "category": "Christian Proselytization",
+    "title": "Atleast 16202 Hindus were tried under the Portuguese inquistion, charged with offences associated with practicing their own religion (Hinduism).",
+    "summary": "The setting up of the Goa Inquisition was requested by Jesuit missionary Francis Xavier from his headquarters Malacca in a letter dated 16 May 1546 to King John III of Portugal. Between the Inquisition's beginning in 1561 and its temporary abolition in 1774, at least 16,202 persons were brought to trial by the Inquisition.",
+    "figure": "16,202",
+    "figureLabel": "Tried under Portuguese Inquisition",
+    "number": 16202,
+    "type": [
+      "Conversion",
+      "Assault"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Goa"
+    },
+    "tags": [
+      "History"
+    ],
+    "link": "",
+    "historicalDate": "16-05"
+  },
+  {
+    "id": 17,
+    "year": "1561-1774",
+    "sortYear": 1561,
+    "category": "Christian Proselytization",
+    "title": "Atleast 121 Hindus were brutally killed under the Portuguese Inquisition",
+    "summary": null,
+    "figure": "121",
+    "figureLabel": "Murdered",
+    "number": 121,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Goa"
+    },
+    "tags": [
+      "History"
+    ],
+    "link": ""
   },
   {
     "id": 3,
     "year": "1568",
     "sortYear": 1568,
-    "historicalDate": "23-02",
     "category": "Islamic Jihad",
     "title": "Akbar Killed 30,000 Hindus on Victory",
     "summary": "After the siege of Chittorgarh, Akbar had the surviving defenders and 30,000 non-combatants massacred, their heads displayed on towers across the region.",
     "figure": "30,000",
-    "figureLabel": "killed",
+    "figureLabel": "Murdered",
     "number": 30000,
     "type": [
       "Murder"
@@ -76,241 +125,18 @@
       "History",
       "Islamic Invaders"
     ],
-    "link": "islamic-jihad/akbar-killed-30000-hindus-on-victory/"
-  },
-  {
-    "id": 4,
-    "year": "1948",
-    "sortYear": 1948,
-    "historicalDate": "30-01",
-    "category": "Political Crimes",
-    "title": "Maharashtrian Brahmin Genocide — 8,000 Killed",
-    "summary": "Following Gandhi's assassination by Maharashtrian Brahmins, Brahmin localities in Pune and Satara saw killings, rape and arson orchestrated by Congress and allied groups.",
-    "figure": "8,000",
-    "figureLabel": "killed",
-    "number": 8000,
-    "type": [
-      "Murder",
-      "Rape",
-      "Arson"
-    ],
-    "geography": {
-      "country": "India",
-      "state": "Maharashtra"
-    },
-    "tags": [
-      "Congress"
-    ],
-    "link": "political-crimes/1948-maharashtrian-brahmin-genocide-8000-killed/"
-  },
-  {
-    "id": 5,
-    "year": "2002–2017",
-    "sortYear": 2017,
-    "category": "Islamic Jihad",
-    "title": "Hindus forcibly converted in Pakistan",
-    "summary": "Maulvi Yaqoob estimates that around 9,000 conversions have taken place at the madressah during the last 15 years.",
-    "figure": "9,000",
-    "figureLabel": "converted",
-    "number": 9000,
-    "peopleConverted": 9000,
-    "type": [
-      "Conversion"
-    ],
-    "geography": {
-      "country": "Pakistan",
-      "state": null
-    },
-    "tags": [],
-    "link": ""
-  },
-  {
-    "id": 6,
-    "year": "1964",
-    "sortYear": 1964,
-    "category": "Political Crimes",
-    "title": "Hindus beaten and forced to leave their homes in Guyana",
-    "summary": "In 1964, 3000 East Indians were beaten and driven from their homes by Africans in the Mackenzie mining district in Gyuana",
-    "figure": "3,000",
-    "figureLabel": "forced refugees",
-    "number": 3000,
-    "type": [
-      "Forced Refugees",
-      "Assault"
-    ],
-    "geography": {
-      "country": "Guyana",
-      "state": null
-    },
-    "tags": [],
-    "link": ""
-  },
-  {
-    "id": 7,
-    "year": "1998",
-    "sortYear": 1998,
-    "historicalDate": "12-01",
-    "category": "Political Crimes",
-    "title": "Indian-Guyanese Hindus were beaten and assaulted without any legal recourse.",
-    "summary": "On January 12th 1998, 200 Indian-Guyanese were beaten and assaulted in the streets of Georgetown in full view of the police; yet no arrests were made. These riots were triggered by the victory of the Indian-based People's Progressive Party (PPP) in the elections of December 1997",
-    "figure": "200",
-    "figureLabel": "assaulted and forced to be refugees",
-    "number": 200,
-    "type": [
-      "Assault",
-      "Forced Refugees"
-    ],
-    "geography": {
-      "country": "Guyana",
-      "state": null
-    },
-    "tags": [],
-    "link": ""
-  },
-  {
-    "id": 8,
-    "year": "2021",
-    "sortYear": 2021,
-    "category": "Islamic Jihad",
-    "title": "Hindus and Sikhs murdered, forced to flee or converted in Afghanistan on the withdrawal of US troops from Afghanistan",
-    "summary": "The withdrawal of US troops from Afghanistan, left the remaining Hindus and Sikhs at the mercy of the Taliban. Of the 220,000 Hindus and Sikhs, only 300 remained as of July, 2021.",
-    "figure": "220,000",
-    "figureLabel": "forced refugees",
-    "number": 220000,
-    "type": [
-      "Conversion",
-      "Forced Refugees",
-      "Murder"
-    ],
-    "geography": {
-      "country": "Afghanistan",
-      "state": null
-    },
-    "tags": [],
-    "link": ""
-  },
-  {
-    "id": 9,
-    "year": "2020",
-    "sortYear": 2020,
-    "category": "Christian Proselytization",
-    "title": "300 Hindus deceptively converted into Christianity in one village in one day",
-    "summary": "300 Hindus were deceptively converted into Christianity in a single village in a single day in Odisha.",
-    "figure": "300",
-    "figureLabel": "converted",
-    "number": 300,
-    "peopleConverted": 300,
-    "type": [
-      "Conversion"
-    ],
-    "geography": {
-      "country": "India",
-      "state": "Odisha"
-    },
-    "tags": [],
-    "link": ""
-  },
-  {
-    "id": 10,
-    "year": "2018–2026",
-    "sortYear": 2026,
-    "category": "Christian Proselytization",
-    "title": "Over 3000 Hindus converted by deception",
-    "summary": "A Christian group deceives Hindus from weak economic backgrounds and converts them to Christianity",
-    "figure": "3,000",
-    "figureLabel": "converted",
-    "number": 3000,
-    "peopleConverted": 3000,
-    "type": [
-      "Conversion"
-    ],
-    "geography": {
-      "country": "India",
-      "state": null
-    },
-    "tags": [
-      "Ongoing"
-    ],
-    "link": ""
-  },
-  {
-    "id": 11,
-    "year": "2020",
-    "sortYear": 2020,
-    "category": "Islamic Jihad",
-    "title": "Muslim clerics admit to converting over 855 Hindus in a few years",
-    "summary": "Hindus in Pakistan forced into sexual slavery, forced labour, and forced conversion for sustenance in Pakistan",
-    "figure": "855",
-    "figureLabel": "conversion, sexual assault on women and children",
-    "number": 855,
-    "peopleConverted": 855,
-    "type": [
-      "Conversion",
-      "Rape",
-      "Child Molestation",
-      "Sexual Assault"
-    ],
-    "geography": {
-      "country": "Pakistan",
-      "state": null
-    },
-    "tags": [],
-    "link": ""
-  },
-  {
-    "id": 12,
-    "year": "2020",
-    "sortYear": 2020,
-    "category": "Christian Proselytization",
-    "title": "Around 47 Hindus converted to Christianity in one day",
-    "summary": "Around 47 Hindus were converted to Christianity in one day in Chhattisgarh.",
-    "figure": "47",
-    "figureLabel": "converted",
-    "number": 47,
-    "peopleConverted": 47,
-    "type": [
-      "Conversion"
-    ],
-    "geography": {
-      "country": "India",
-      "state": "Chhattisgarh"
-    },
-    "tags": [],
-    "link": ""
-  },
-  {
-    "id": 13,
-    "year": "1972",
-    "sortYear": 1972,
-    "historicalDate": "04-08",
-    "category": "Political Crimes",
-    "title": "Hindus forcibly asked to leave Uganda by dictator Idi Amin, with their homes seized",
-    "summary": "Hindus formed a majority in the Indian descent people in Uganda, who were forcibly expulsed from Uganda, being targeted for socio-economic-political turmoil.",
-    "figure": "65,000",
-    "figureLabel": "forced refugees",
-    "number": 65000,
-    "type": [
-      "Forced Refugees",
-      "Seizure of assets"
-    ],
-    "geography": {
-      "country": "Uganda",
-      "state": null
-    },
-    "tags": [
-      "History"
-    ],
-    "link": ""
+    "link": "islamic-jihad/akbar-killed-30000-hindus-on-victory/",
+    "historicalDate": "23-02"
   },
   {
     "id": 14,
-    "year": "1879–1919",
+    "year": "1879-1919",
     "sortYear": 1879,
     "category": "Political Crimes",
     "title": "Hindus brought to Fiji for indentured labour by East India Company",
     "summary": "Hindus were brought to Fiji as indentured labourers or slaves by the East India Company from 1879-1919, and exploited for labour.",
     "figure": "50,000",
-    "figureLabel": "indentured labour",
+    "figureLabel": "Indentured Labour",
     "number": 50000,
     "type": [
       "Indentured Labour",
@@ -326,14 +152,82 @@
     "link": ""
   },
   {
+    "id": 4,
+    "year": "1948",
+    "sortYear": 1948,
+    "category": "Political Crimes",
+    "title": "Maharashtrian Brahmin Genocide — 8,000 Killed",
+    "summary": "Following Gandhi's assassination by Maharashtrian Brahmins, Brahmin localities in Pune and Satara saw killings, rape and arson orchestrated by Congress and allied groups.",
+    "figure": "8,000",
+    "figureLabel": "Murdered",
+    "number": 8000,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Maharashtra"
+    },
+    "tags": [
+      "Congress"
+    ],
+    "link": "political-crimes/1948-maharashtrian-brahmin-genocide-8000-killed/",
+    "historicalDate": "30-01"
+  },
+  {
+    "id": 6,
+    "year": "1964",
+    "sortYear": 1964,
+    "category": "Political Crimes",
+    "title": "Hindus beaten and forced to leave their homes in Guyana",
+    "summary": "In 1964, 3000 East Indians were beaten and driven from their homes by Africans in the Mackenzie mining district in Gyuana",
+    "figure": "3,000",
+    "figureLabel": "Forced Refugees",
+    "number": 3000,
+    "type": [
+      "Forced Refugees",
+      "Assault"
+    ],
+    "geography": {
+      "country": "Guyana",
+      "state": null
+    },
+    "tags": [],
+    "link": ""
+  },
+  {
+    "id": 13,
+    "year": "1972",
+    "sortYear": 1972,
+    "category": "Political Crimes",
+    "title": "Hindus forcibly asked to leave Uganada by dictator Idi Amin, with their homes seized",
+    "summary": "Hindus formed a majority in the Indian descent people in Uganda, who were forcibly expulsed from Uganda, being targeted for socio-economic-political turmoil.",
+    "figure": "65,000",
+    "figureLabel": "Forced Refugees",
+    "number": 65000,
+    "type": [
+      "Forced Refugees",
+      "Seizure of assets"
+    ],
+    "geography": {
+      "country": "Uganda",
+      "state": null
+    },
+    "tags": [
+      "History"
+    ],
+    "link": "",
+    "historicalDate": "04-08"
+  },
+  {
     "id": 15,
-    "year": "1987–2004",
+    "year": "1987-2004",
     "sortYear": 1987,
     "category": "Political Crimes",
     "title": "Hindus forced to flee from Fiji due to relentless persecution",
-    "summary": "Hindus were forced to flee from Fiji due to relentless persecution, arson, and violence.",
+    "summary": null,
     "figure": "50,000",
-    "figureLabel": "forced refugees",
+    "figureLabel": "Forced Refugees",
     "number": 50000,
     "type": [
       "Arson",
@@ -347,65 +241,19 @@
     "link": ""
   },
   {
-    "id": 16,
-    "year": "1561–1774",
-    "sortYear": 1561,
-    "historicalDate": "16-05",
-    "category": "Christian Proselytization",
-    "title": "Atleast 16202 Hindus were tried under the Portuguese inquistion, charged with offences associated with practicing their own religion (Hinduism).",
-    "summary": "The setting up of the Goa Inquisition was requested by Jesuit missionary Francis Xavier from his headquarters Malacca in a letter dated 16 May 1546 to King John III of Portugal. Between the Inquisition's beginning in 1561 and its temporary abolition in 1774, at least 16,202 persons were brought to trial by the Inquisition.",
-    "figure": "16,202",
-    "figureLabel": "tried under Portuguese Inquisition",
-    "number": 16202,
-    "type": [
-      "Conversion",
-      "Assault"
-    ],
-    "geography": {
-      "country": "India",
-      "state": "Goa"
-    },
-    "tags": [
-      "History"
-    ],
-    "link": ""
-  },
-  {
-    "id": 17,
-    "year": "1561–1774",
-    "sortYear": 1561,
-    "category": "Christian Proselytization",
-    "title": "Atleast 121 Hindus were brutally killed under the Portuguese Inquisition",
-    "summary": "At least 121 Hindus were killed under the Portuguese Inquisition in Goa.",
-    "figure": "121",
-    "figureLabel": "murdered",
-    "number": 121,
-    "type": [
-      "Murder"
-    ],
-    "geography": {
-      "country": "India",
-      "state": "Goa"
-    },
-    "tags": [
-      "History"
-    ],
-    "link": ""
-  },
-  {
     "id": 18,
     "year": "1997",
     "sortYear": 1997,
     "category": "Christian Proselytization",
     "title": "Hindu Bru community targeted and assaulted by Mizo Christians",
-    "summary": "The Hindu Bru community in Mizoram was targeted and assaulted by Mizo Christians, forcing 32,000 to flee their homes.",
+    "summary": null,
     "figure": "32,000",
-    "figureLabel": "forced to flee their homes",
+    "figureLabel": "Forced to flee their homes",
     "number": 32000,
     "type": [
       "Forced Refugees",
-      "Conversion",
-      "Seizure of assets"
+      "Seizure of assets",
+      "Assault"
     ],
     "geography": {
       "country": "India",
@@ -416,15 +264,14 @@
   },
   {
     "id": 19,
-    "year": "1997–2020",
+    "year": "1997-2020",
     "sortYear": 1997,
     "category": "Christian Proselytization",
     "title": "Christian Evangelical Fellowship Mission Kanyakumari converts atleast 2400 Hindus in Andhra Pradseh and Tamil Nadu",
     "summary": "CEFM India reached 3 lakh and baptized 2400 in evangelizing mission in Tamil Nadu and Andhra Pradesh",
     "figure": "2,400",
-    "figureLabel": "converted",
+    "figureLabel": "Converted",
     "number": 2400,
-    "peopleConverted": 2400,
     "type": [
       "Conversion"
     ],
@@ -436,7 +283,145 @@
       ]
     },
     "tags": [],
-    "link": ""
+    "link": "",
+    "peopleConverted": 2400
+  },
+  {
+    "id": 7,
+    "year": "1998",
+    "sortYear": 1998,
+    "category": "Political Crimes",
+    "title": "Indian-Guyanese Hindus were beaten and assaulted without any legal recourse.",
+    "summary": "On January 12th 1998, 200 Indian-Guyanese were beaten and assaulted in the streets of Georgetown in full view of the police; yet no arrests were made. These riots were triggered by the victory of the Indian-based People’s Progressive Party (PPP) in the elections of December 1997",
+    "figure": "200",
+    "figureLabel": "Assaulted and forced to be refugees",
+    "number": 200,
+    "type": [
+      "Assault",
+      "Forced Refugees"
+    ],
+    "geography": {
+      "country": "Guyana",
+      "state": null
+    },
+    "tags": [],
+    "link": "",
+    "historicalDate": "12-01"
+  },
+  {
+    "id": 5,
+    "year": "2002-2017",
+    "sortYear": 2017,
+    "category": "Islamic Jihad",
+    "title": "Hindus forcibly converted in Pakistan",
+    "summary": "Maulvi Yaqoob estimates that around 9,000 conversions have taken place at the madressah during the last 15 years.",
+    "figure": "9,000",
+    "figureLabel": "Converted",
+    "number": 9000,
+    "type": [
+      "Conversion"
+    ],
+    "geography": {
+      "country": "Pakistan",
+      "state": null
+    },
+    "tags": [],
+    "link": "",
+    "peopleConverted": 9000
+  },
+  {
+    "id": 21,
+    "year": "2017",
+    "sortYear": 2017,
+    "category": "Islamic Jihad",
+    "title": "Massacre of Myanmar Hindus",
+    "summary": "Atleast a hundred Hindus brutally murdered, and thousands became forced refugees due to persecution by ARSA in Myanmar",
+    "figure": "41,820",
+    "figureLabel": "Murdered and forced to flee",
+    "number": 41820,
+    "type": [
+      "Murder",
+      "Arson",
+      "Rape",
+      "Forced Refugees",
+      "Sexual Assault",
+      "Seizure of assets",
+      "Conversion"
+    ],
+    "geography": {
+      "country": "Myanmar",
+      "state": null
+    },
+    "tags": [
+      "ARSA"
+    ],
+    "link": "islamic-jihad/massacre-of-myanmar-hindus/"
+  },
+  {
+    "id": 9,
+    "year": "2020",
+    "sortYear": 2020,
+    "category": "Christian Proselytization",
+    "title": "300 Hindus deceptively converted into Christianity in one village in one day",
+    "summary": null,
+    "figure": "300",
+    "figureLabel": "Converted",
+    "number": 300,
+    "type": [
+      "Conversion"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Odisha"
+    },
+    "tags": [],
+    "link": "",
+    "peopleConverted": 300
+  },
+  {
+    "id": 11,
+    "year": "2020",
+    "sortYear": 2020,
+    "category": "Islamic Jihad",
+    "title": "Muslim clerics admit to converting over 855 Hindus in a few years",
+    "summary": "Hindus in Pakistan forced into sexual slavery, forced labour, and forced conversion for sustenance in Pakistan",
+    "figure": "855",
+    "figureLabel": "Conversion, sexual assault on women and children",
+    "number": 855,
+    "type": [
+      "Conversion",
+      "Rape",
+      "Child Molestation",
+      "Sexual Assault"
+    ],
+    "geography": {
+      "country": "Pakistan",
+      "state": null
+    },
+    "tags": [],
+    "link": "",
+    "peopleConverted": 855
+  },
+  {
+    "id": 12,
+    "year": "2020",
+    "sortYear": 2020,
+    "category": "Christian Proselytization",
+    "title": "Around 47 Hindus converted to Christianity in one day",
+    "summary": null,
+    "figure": "47",
+    "figureLabel": "Converted",
+    "number": 47,
+    "type": [
+      "Conversion"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Chhattisgarh"
+    },
+    "tags": [],
+    "link": "",
+    "peopleConverted": 47
   },
   {
     "id": 20,
@@ -444,9 +429,9 @@
     "sortYear": 2020,
     "category": "Christian Proselytization",
     "title": "Over 400 tribal Hindus were forced to leave their homes in Meghalaya",
-    "summary": "Over 400 tribal Hindus were forced to leave their homes in Meghalaya.",
+    "summary": null,
     "figure": "400",
-    "figureLabel": "forced refugees",
+    "figureLabel": "Forced Refugees",
     "number": 400,
     "type": [
       "Forced Refugees"
@@ -457,5 +442,50 @@
     },
     "tags": [],
     "link": ""
+  },
+  {
+    "id": 8,
+    "year": "2021",
+    "sortYear": 2021,
+    "category": "Islamic Jihad",
+    "title": "Hindus and Sikhs murdered, forced to flee or converted in Afghanistan on the withdrawal of US troops from Afghanistan",
+    "summary": "The withdrawal of US troops from Afghanistan, left the remaining Hindus and Sikhs at the mercy of the Taliban. Of the 220,000 Hindus and Sikhs, only 300 remained as of July, 2021.",
+    "figure": "2.2 Lakh",
+    "figureLabel": "Forced Refugees",
+    "number": 220000,
+    "type": [
+      "Conversion",
+      "Forced Refugees",
+      "Murder"
+    ],
+    "geography": {
+      "country": "Afghanistan",
+      "state": null
+    },
+    "tags": [],
+    "link": ""
+  },
+  {
+    "id": 10,
+    "year": "2018-2026",
+    "sortYear": 2026,
+    "category": "Christian Proselytization",
+    "title": "Over 3000 Hindus converted by deception",
+    "summary": "A Christian group deceives Hindus from weak economic backgrounds and converts them to Christianity",
+    "figure": "3,000",
+    "figureLabel": "Converted",
+    "number": 3000,
+    "type": [
+      "Conversion"
+    ],
+    "geography": {
+      "country": "India",
+      "state": null
+    },
+    "tags": [
+      "Ongoing"
+    ],
+    "link": "",
+    "peopleConverted": 3000
   }
 ]
