@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/main.js" defer></script>
   <script src="js/partials.js" defer></script>
+  <script src="js/category.js" defer></script>
 </head>
 <body data-page="talks">
 
@@ -33,32 +34,17 @@
     <div class="container">
       <div class="section__head">
         <h2>Entries</h2>
-        <span class="index">0 of 3 posts wired up yet — includes video-format posts</span>
+        <span class="index" id="category-count"></span>
       </div>
 
-      <div class="card-grid">
-        <article class="card">
-          <div class="card__media">
-            <img src="images/placeholder-1.jpg" alt="[Descriptive alt text]" />
-          </div>
-          <div class="card__body">
-            <span class="card__tag">[Year or era]</span>
-            <h3>[Entry title]</h3>
-            <p>[Placeholder — more entries from this category will go here.]</p>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card__media">
-            <img src="images/placeholder-2.jpg" alt="[Descriptive alt text]" />
-          </div>
-          <div class="card__body">
-            <span class="card__tag">[Year or era]</span>
-            <h3>[Entry title]</h3>
-            <p>[Placeholder — more entries from this category will go here.]</p>
-          </div>
-        </article>
-
+      <!-- Cards are rendered automatically by js/category.js from
+           data/timeline-data.json. To show a featured image on a card,
+           add "image": "images/your-photo.jpg" to that entry in the JSON.
+           To add an article link, add "link": "talks/your-slug/" to the entry. -->
+      <div class="card-grid" id="category-cards" data-category="Talks">
+        <p>Loading entries&hellip;</p>
       </div>
+
     </div>
   </section>
 
