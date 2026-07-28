@@ -152,7 +152,8 @@ function renderCharts(entries) {
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    const entries = await fetchTimelineData();
+    const allEntries = await fetchTimelineData();
+    const entries = allEntries.filter((e) => e.sortYear);
 
     renderLedger(entries);
     wireFilters(entries);
