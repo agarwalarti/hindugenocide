@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "[Name of Survivor or Victim]",
+    "description": "[One or two sentences about their story — what happened, where, when. This is what appears on the main page card.]",
+    "image": "images/people/placeholder-1.jpg",
+    "year": "[Year]",
+    "location": "[City or region, Country]",
+    "link": "hindus-of-the-genocide/placeholder-1.html"
+  },
+  {
+    "id": 2,
+    "name": "[Name of Survivor or Victim]",
+    "description": "[One or two sentences about their story.]",
+    "image": "images/people/placeholder-2.jpg",
+    "year": "[Year]",
+    "location": "[City or region, Country]",
+    "link": "hindus-of-the-genocide/placeholder-2.html"
+  }
+]
