@@ -20,8 +20,8 @@ function wireCounters(entries) {
   if (totalIncidents) animateCounter(totalIncidents, entries.length);
   if (totalEras) animateCounter(totalEras, new Set(entries.map((e) => e.category)).size);
   if (earliest) {
-    const minYear = Math.min(...entries.map((e) => e.sortYear));
-    earliest.textContent = minYear;
+  const years = entries.map((e) => e.sortYear).filter(Boolean);
+  earliest.textContent = years.length ? Math.min(...years) : "—";
   }
   if (totalPeople) {
     const sum = entries.reduce((acc, e) => acc + (e.number || 0), 0);
