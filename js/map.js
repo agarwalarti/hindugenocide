@@ -91,6 +91,7 @@ const STATE_NAME_MAP = {
   // timeline-data.json value → GeoJSON ST_NM (or NAME_1) property value
   "Delhi":        "NCT of Delhi",
   "Maharashtra":  "Maharashtra",
+  "Odisha": "Orissa",
   "Rajasthan":    "Rajasthan",
   "Gujarat":      "Gujarat",
   "West Bengal":  "West Bengal",
