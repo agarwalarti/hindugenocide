@@ -21,16 +21,17 @@
       "state": null
     },
     "tags": [
-      "History",
-      "Islamic Invaders"
+      "Islamic Invaders",
+      "History"
     ],
+    "image": "",
     "link": "islamic-jihad/mahmud-of-ghazni-raided-17-times-enslaved-or-killed-2-million-hindus/",
     "peopleConverted": 500000,
     "templeType": [
       "Looted",
       "Desecrated"
     ],
-    "templeFigure": "Somnath, and others",
+    "templeFigure": "Somnath and others",
     "templeFigureLabel": "temples looted across 17 raids"
   },
   {
@@ -52,9 +53,10 @@
       "state": "Delhi (National Capital Territory of Delhi)"
     },
     "tags": [
-      "History",
-      "Islamic Invaders"
+      "Islamic Invaders",
+      "History"
     ],
+    "image": "",
     "link": "islamic-jihad/timur-slaughtered-enslaved-7-5-lakh-hindus-in-one-day/",
     "historicalDate": "17-12"
   },
@@ -79,6 +81,7 @@
     "tags": [
       "History"
     ],
+    "image": "",
     "link": "",
     "historicalDate": "16-05"
   },
@@ -102,11 +105,12 @@
     "tags": [
       "History"
     ],
+    "image": "",
     "link": ""
   },
   {
     "id": 3,
-    "year": "1568",
+    "year": "1568.0",
     "sortYear": 1568,
     "category": "Islamic Jihad",
     "title": "Akbar Killed 30,000 Hindus on Victory",
@@ -125,8 +129,443 @@
       "History",
       "Islamic Invaders"
     ],
+    "image": "",
     "link": "islamic-jihad/akbar-killed-30000-hindus-on-victory/",
     "historicalDate": "23-02"
+  },
+  {
+    "id": 26,
+    "year": "1608-1825",
+    "sortYear": 1608,
+    "category": "Political Crimes",
+    "title": "Slave Trade by Dutch East India Company (VOC)",
+    "summary": "The Vereenigde Nederlandsche Oost Indische Compagnie or VOC, also known as the Dutch East India Company, came to India to establish trade routes from the Indian subcontinent. VOC bought slaves in Bengal, Cochin and Ceylon, taking them to Cape Town. Many of them were under-age boys and women, who were bought for cheap labour, and treated in sub-human ways.",
+    "figure": "6,000",
+    "figureLabel": "Slavery, torture",
+    "number": 6000,
+    "type": [
+      "Slavery",
+      "Starvation"
+    ],
+    "geography": {
+      "country": "India, Bangladesh, Sri Lanka",
+      "state": "West Bengal"
+    },
+    "tags": [
+      "Colonial Crimes",
+      "Dehumanization",
+      "History",
+      "British Raj"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 27,
+    "year": "1769-72",
+    "sortYear": 1769,
+    "category": "Political Crimes",
+    "title": "The First Bengal Famine",
+    "summary": "Famine during the British Raj, affecting Bengal, Bihar, Orissa and Jharkhand. Death toll estimated to be 10 million.",
+    "figure": "10 Million",
+    "figureLabel": "Died of starvation",
+    "number": 10000000,
+    "type": [
+      "Starvation"
+    ],
+    "geography": {
+      "country": "India, Bangladesh",
+      "state": "West Bengal"
+    },
+    "tags": [
+      "Colonial Crimes",
+      "British Raj",
+      "Dehumanization",
+      "History"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 28,
+    "year": "1791-1792",
+    "sortYear": 1791,
+    "category": "Political Crimes",
+    "title": "Doji Bara or Skull Famine",
+    "summary": "Famine during the British Raj, affecting Tamil Nadu, Maharashtra, Andhra Pradesh, Gujarat, Rajasthan. The death toll is estimated at 11 million.",
+    "figure": "11 Million",
+    "figureLabel": "Died of starvation",
+    "number": 11000000,
+    "type": [
+      "Starvation"
+    ],
+    "geography": {
+      "country": "India",
+      "state": [
+        "Tamil Nadu",
+        "Andhra Pradesh",
+        "Maharashtra",
+        "Gujarat",
+        "Rajasthan"
+      ]
+    },
+    "tags": [
+      "Dehumanization",
+      "British Raj",
+      "Colonial Crimes",
+      "History"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 29,
+    "year": "1802-03",
+    "sortYear": 1802,
+    "category": "Political Crimes",
+    "title": "First Famine in Bombay Presidency",
+    "summary": "Famines during the British Raj affecting Maharashtra. The death toll is believed to be high but no official estimate exists.",
+    "figure": "10,000",
+    "figureLabel": "Died of starvation",
+    "number": 10000,
+    "type": [
+      "Starvation"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Maharashtra"
+    },
+    "tags": [
+      "Dehumanization",
+      "British Raj",
+      "Colonial Crimes",
+      "History"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 30,
+    "year": "1805-07",
+    "sortYear": 1805,
+    "category": "Political Crimes",
+    "title": "First Famine in Madras Presidency",
+    "summary": "Famines during the British Raj affecting Tamil Nadu. The death toll is believed to be high but no official estimate exists.",
+    "figure": "10,000",
+    "figureLabel": "Died of starvation",
+    "number": 10000,
+    "type": [
+      "Starvation"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Tamil Nadu"
+    },
+    "tags": [
+      "Dehumanization",
+      "British Raj",
+      "Colonial Crimes",
+      "History"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 31,
+    "year": "1813-14",
+    "sortYear": 1813,
+    "category": "Political Crimes",
+    "title": "Second Famine in Bombay Presidency",
+    "summary": "Famines during the British Raj affecting Maharashtra. The death toll is believed to be high but no official estimate exists.",
+    "figure": "10,000",
+    "figureLabel": "Died of starvation",
+    "number": 10000,
+    "type": [
+      "Starvation"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Maharashtra"
+    },
+    "tags": [
+      "Dehumanization",
+      "British Raj",
+      "Colonial Crimes",
+      "History"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 32,
+    "year": "1823.0",
+    "sortYear": 1823,
+    "category": "Political Crimes",
+    "title": "Second Famine in Madras Presidency",
+    "summary": "Famines during the British Raj affecting Tamil Nadu. The death toll is believed to be high but no official estimate exists.",
+    "figure": "10,000",
+    "figureLabel": "Died of starvation",
+    "number": 10000,
+    "type": [
+      "Starvation"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Tamil Nadu"
+    },
+    "tags": [
+      "History",
+      "Dehumanization",
+      "British Raj",
+      "Colonial Crimes"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 33,
+    "year": "1830.0",
+    "sortYear": 1830,
+    "category": "Political Crimes",
+    "title": "Slave Trade by British Empire/ East India Company",
+    "summary": "Between 1772 and 1833, debates in the British Parliament recorded the volume of slavery in India. A thriving slave trade existed all over India, and the Company permitted slave ownership to be registered, for a fee of ₹4.25. Britons could \"export\" slaves to other European colonies, even after abolishing of slavery within Britain. As of 1830, this was the breakup of number of slaves, mostly Hindus, in different provinces--a total of 1.21 million Hindus were held as slaves:\nMalabar: 147K;\nMalabar & Wayanad: 100K;\nCanara, Coorg, Wynad, Cochin, and Travancore: 254K;\nTinnevelly (Tirunelveli): 324K; Trichinopoly: 10,600; Arcot: 20,000;\nCanara: 80,000;\nAssam: 11,300;\nSurat: 3000;\nCeylon (Sri Lanka): 27,397;\nPenang: 3000;\nSylhet and Buckergunge (Bakerganj): 80K;\nBehar: 22,722;\nTizhoot: 11,061;\nSouthern Mahratta Country: 7,500.",
+    "figure": "1.21 Million",
+    "figureLabel": "Slavery, starvation",
+    "number": 1210000,
+    "type": [
+      "Slavery",
+      "Starvation"
+    ],
+    "geography": {
+      "country": "India, Bangladesh, Sri Lanka, Malaysia",
+      "state": [
+        "Maharashtra",
+        "Bihar",
+        "Assam",
+        "Kerala",
+        "Gujarat"
+      ]
+    },
+    "tags": [
+      "History",
+      "Dehumanization",
+      "British Raj",
+      "Colonial Crimes"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 34,
+    "year": "1834.0",
+    "sortYear": 1834,
+    "category": "Political Crimes",
+    "title": "Guntur Famine in Madras Presidency",
+    "summary": "Famines during the British Raj affecting Guntur and parts of Andhra Pradesh, included in the Madras Presidency. The death toll is believed to be high but no official estimate exists for the whole region. Estimates for Guntur region alone are 2 Lakhs.",
+    "figure": "2 Lakhs",
+    "figureLabel": "Starvation",
+    "number": 200000,
+    "type": [
+      "Starvation"
+    ],
+    "geography": {
+      "country": "India",
+      "state": [
+        "Andhra Pradesh",
+        "Tamil Nadu",
+        "Telangana"
+      ]
+    },
+    "tags": [
+      "Dehumanization",
+      "British Raj",
+      "Colonial Crimes",
+      "History"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 35,
+    "year": "1854.0",
+    "sortYear": 1854,
+    "category": "Political Crimes",
+    "title": "Third Famine in Madras Presidency",
+    "summary": "Famines during the British Raj affecting Tamil Nadu. The death toll is believed to be high but no official estimate exists.",
+    "figure": "10,000",
+    "figureLabel": null,
+    "number": null,
+    "type": [],
+    "geography": {
+      "country": null,
+      "state": null
+    },
+    "tags": [
+      "Dehumanization",
+      "British Raj",
+      "Colonial Crimes",
+      "History"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 36,
+    "year": "1857-1858",
+    "sortYear": 1857,
+    "category": "Political Crimes",
+    "title": "First War of Indian Independence, 1857",
+    "summary": "In the First War of Indian Independence, trivialized as \"The Revolt of 1857\", unspeakable atrocities were committed by British in India as a way to teach the natives a lesson for trying to send them back whence they came from. Although atrocities were committed against Hindus, Sikhs and Muslims, the nature of the atrocities included violation of religious beliefs and cultural genocide of Hindus, including murder and rape. Atrocities included force-feeding beef to Hindus, forcing the natives to lick walls stained with fresh blood from killings, public hangings, blowing up the natives from canons (tying them to the mouth of a canon so they would be blown to pieces when the canon was fired), torching them, dipping natives in wells till they half suffocate, putting red chillies in the eyes and private parts of men and women, sexual violence against women and a lot more. The torture was as an act of revenge as well as to teach them a lesson. The British adopted a policy of “no prisoners.” Men who were captured were lined up and shot. The most shocking aspect of the “sepoy mutiny” as the British call it, is that there are no official records of the death toll of natives during the conflicts of 1857-58. For an empire built on meticulous paperwork and extensive study of literature, it is impossible to believe that this is due to negligence. The lack of records itself is a red flag, and should alert anyone that the scale of British crimes was huge, and deliberately hidden. Estimates are that in the violent conflicts of 1857-58, at least one million natives, of which at least 85% were Hindus and Sikhs, were slaughtered by British imperialists.",
+    "figure": "85 Lakhs",
+    "figureLabel": "Murdered and tortured",
+    "number": 8500000,
+    "type": [
+      "Murder",
+      "Torture"
+    ],
+    "geography": {
+      "country": "India",
+      "state": null
+    },
+    "tags": [
+      "Dehumanization",
+      "British Raj",
+      "Colonial Crimes",
+      "History"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 37,
+    "year": "1857-67",
+    "sortYear": 1857,
+    "category": "Political Crimes",
+    "title": "Aftermath of 1857",
+    "summary": "Following the major armed conflict of 1857, the country witnessed scattered but consistent rebellions for the next decade, which were brutally quelled by the British empire. As per estimates, atleast 10 Million natives, atleast 90% of which were Hindus and Sikhs, were slaughtered in the decade that followed.",
+    "figure": "9 Million",
+    "figureLabel": "Murdered and tortured",
+    "number": 9000000,
+    "type": [
+      "Murder",
+      "Torture"
+    ],
+    "geography": {
+      "country": "India",
+      "state": null
+    },
+    "tags": [
+      "History",
+      "British Raj",
+      "Colonial Crimes"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 38,
+    "year": "1860-1861",
+    "sortYear": 1860,
+    "category": "Political Crimes",
+    "title": "Famine in North India",
+    "summary": "Famines during the British Raj affecting Uttar Pradesh, Punjab. The death toll is estimated to be 2 million.",
+    "figure": "2 Million",
+    "figureLabel": "Died of starvation",
+    "number": 2000000,
+    "type": [
+      "Starvation"
+    ],
+    "geography": {
+      "country": "India",
+      "state": [
+        "Uttar Pradesh",
+        "Punjab"
+      ]
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 39,
+    "year": "1868-70",
+    "sortYear": 1868,
+    "category": "Political Crimes",
+    "title": "Rajputana Famine",
+    "summary": "Famines during the British Raj affecting Rajasthan. The death toll is estimated to be 2.7 million.",
+    "figure": "2.7 Million",
+    "figureLabel": "Died of starvation",
+    "number": 2700000,
+    "type": [
+      "Starvation"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Rajasthan"
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 40,
+    "year": "1873-74",
+    "sortYear": 1873,
+    "category": "Political Crimes",
+    "title": "Bihar Famine",
+    "summary": "Famines during the British Raj affecting Bengal, Bihar and Uttar Pradesh. There is no official estimate of number of deaths.",
+    "figure": "10,000",
+    "figureLabel": "Died of starvation",
+    "number": 10000,
+    "type": [
+      "Starvation"
+    ],
+    "geography": {
+      "country": "India",
+      "state": [
+        "West Bengal",
+        "Bihar",
+        "Uttar Pradesh"
+      ]
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 41,
+    "year": "1876-79",
+    "sortYear": 1876,
+    "category": "Political Crimes",
+    "title": "Great Indian Famine",
+    "summary": "Famines during the British Raj affecting Tamil Nadu, Maharashtra, Andhra Pradesh, Rajasthan, Uttar Pradesh, Karnataka, Haryana, Madhya Pradesh. The death toll is estimated to be 10.3 million.",
+    "figure": "10.3 Million",
+    "figureLabel": "Died of starvation",
+    "number": 10300000,
+    "type": [
+      "Starvation"
+    ],
+    "geography": {
+      "country": "India",
+      "state": [
+        "Tamil Nadu",
+        "Maharashtra",
+        "Andhra Pradesh",
+        "Karnataka",
+        "Rajasthan",
+        "Uttar Pradesh",
+        "Haryana",
+        "Madhya Pradesh"
+      ]
+    },
+    "tags": [
+      "History",
+      "Dehumanization",
+      "British Raj",
+      "Colonial Crimes"
+    ],
+    "image": "",
+    "link": ""
   },
   {
     "id": 14,
@@ -149,11 +588,434 @@
     "tags": [
       "History"
     ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 42,
+    "year": "1880.0",
+    "sortYear": 1880,
+    "category": "Political Crimes",
+    "title": "Famine of 1880",
+    "summary": "Famines during the British Raj affecting Maharashtra, Andhra Pradesh, Uttar Pradesh, Chhattisgarh, Madhya Pradesh. The famine was severe but there is no official record of number of deaths.",
+    "figure": "10,000",
+    "figureLabel": "Died of starvation",
+    "number": 10000,
+    "type": [
+      "Starvation"
+    ],
+    "geography": {
+      "country": "India",
+      "state": [
+        "Maharashtra",
+        "Andhra Pradesh",
+        "Uttar Pradesh",
+        "Chhattisgarh",
+        "Madhya Pradesh"
+      ]
+    },
+    "tags": [
+      "History",
+      "Dehumanization",
+      "British Raj",
+      "Colonial Crimes"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 43,
+    "year": "1884-85",
+    "sortYear": 1884,
+    "category": "Political Crimes",
+    "title": "Famine of 1884-85",
+    "summary": "Famines during the British Raj affecting Bengal, Bihar, Jharkhand and parts of Karnataka. The death toll is estimated to be 7.5 Lakhs.",
+    "figure": "7.5 Lakhs",
+    "figureLabel": "Died of starvation",
+    "number": 750000,
+    "type": [
+      "Starvation"
+    ],
+    "geography": {
+      "country": "India",
+      "state": [
+        "West Bengal",
+        "Bihar",
+        "Jharkhand",
+        "Karnataka"
+      ]
+    },
+    "tags": [
+      "History",
+      "Dehumanization",
+      "British Raj",
+      "Colonial Crimes"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 44,
+    "year": "1888-89",
+    "sortYear": 1888,
+    "category": "Political Crimes",
+    "title": "Madras Famine of 1888-89",
+    "summary": "Famines during the British Raj affecting Orissa, parts of Bihar. The death toll is estimated to be 1.5 million.",
+    "figure": "1.5 Million",
+    "figureLabel": "Died of starvation",
+    "number": 1500000,
+    "type": [
+      "Starvation"
+    ],
+    "geography": {
+      "country": "India",
+      "state": [
+        "Odisha",
+        "Bihar"
+      ]
+    },
+    "tags": [
+      "History",
+      "Dehumanization",
+      "British Raj",
+      "Colonial Crimes"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 45,
+    "year": "1891-92",
+    "sortYear": 1891,
+    "category": "Political Crimes",
+    "title": "Famine of 1892",
+    "summary": "Famines during the British Raj affecting old Madras presidency, Maharashtra, Bengal, Rajasthan, Upper Burma. The death toll is estimated to be 1.62 million.",
+    "figure": "1.62 Million",
+    "figureLabel": "Died of starvation",
+    "number": 1620000,
+    "type": [
+      "Starvation"
+    ],
+    "geography": {
+      "country": "India, Myanmar",
+      "state": [
+        "West Bengal",
+        "Rajasthan",
+        "Maharashtra",
+        "Tamil Nadu"
+      ]
+    },
+    "tags": [
+      "History",
+      "Dehumanization",
+      "British Raj",
+      "Colonial Crimes"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 46,
+    "year": "1896-1902",
+    "sortYear": 1896,
+    "category": "Political Crimes",
+    "title": "Famines of 1896-97 and 1899-1902",
+    "summary": "Famines during the British Raj affecting Uttar Pradesh, Old Madras Presidency, Bengal, Madhya Pradesh, Chattisgarh, Maharashtra, Punjab, Gujarat, Rajasthan, parts of Orissa, Sindh, Karnataka. The death toll is estimated to be 19 million.",
+    "figure": "19 Million",
+    "figureLabel": "Died of starvation",
+    "number": 19000000,
+    "type": [
+      "Starvation"
+    ],
+    "geography": {
+      "country": "India, Bangladesh",
+      "state": [
+        "Uttar Pradesh",
+        "West Bengal",
+        "Maharashtra",
+        "Tamil Nadu",
+        "Odisha",
+        "Karnataka",
+        "Punjab",
+        "Gujarat",
+        "Rajasthan"
+      ]
+    },
+    "tags": [
+      "History",
+      "Dehumanization",
+      "British Raj",
+      "Colonial Crimes"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 47,
+    "year": "1907-08-01 00:00:00",
+    "sortYear": 1907,
+    "category": "Political Crimes",
+    "title": "Famine of 1907-08",
+    "summary": "Famines during the British Raj affecting Uttar Pradesh and Uttarakhand. The death toll is estimated to be 3.2 million.",
+    "figure": "3.2 Million",
+    "figureLabel": "Died of starvation",
+    "number": 3200000,
+    "type": [
+      "Starvation"
+    ],
+    "geography": {
+      "country": "India",
+      "state": [
+        "Uttar Pradesh",
+        "Uttarakhand"
+      ]
+    },
+    "tags": [
+      "History",
+      "Dehumanization",
+      "British Raj",
+      "Colonial Crimes"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 48,
+    "year": "1921-22",
+    "sortYear": 1921,
+    "category": "Islamic Jihad",
+    "title": "Moplah Hindu Genocide",
+    "summary": "The Moplah Rebellion of 1921-22 was a rebellion gone wrong, where the rebels targeted Hindus, apart from attacking the British Establishment. 2500 Hindus were slaughtered, atleast 26000 fled as refugees, atleast 2500 forcibly converted, sexually assaulted, and more than 100 Hindu temples destroyed.",
+    "figure": "31,000",
+    "figureLabel": "Massacred, raped and converted",
+    "number": 31000,
+    "type": [
+      "Arson",
+      "Rape",
+      "Murder",
+      "Forced Refugees"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Kerala"
+    },
+    "tags": [
+      "History"
+    ],
+    "image": "",
+    "link": "",
+    "peopleConverted": 2500,
+    "templeType": [
+      "Demolished"
+    ],
+    "templeFigure": "100.0",
+    "templeFigureLabel": "Temples destroyed"
+  },
+  {
+    "id": 49,
+    "year": "1924.0",
+    "sortYear": 1924,
+    "category": "Islamic Jihad",
+    "title": "Kohat Riots",
+    "summary": "After the Moplah rebellion, there was heightened tension between Hindus and Muslims. In the North-western province, now part of Pakistan, violence erupted in the Kohat district. Atleast 120 Hindus and Sikhs were murdered by militant Muslims, and there was mass exodus of Hindus from the region, numbering 3200. It was a successful attempt to exterminate Hindus and Sikhs from the region. Similar violence against Hindus and Sikhs was observed in neighbouring villages as well.",
+    "figure": "3,320",
+    "figureLabel": "Mass Exodus",
+    "number": 3320,
+    "type": [
+      "Murder",
+      "Forced Refugees"
+    ],
+    "geography": {
+      "country": "Pakistan",
+      "state": null
+    },
+    "tags": [
+      "History"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 50,
+    "year": "1926.0",
+    "sortYear": 1926,
+    "category": "Islamic Jihad",
+    "title": "Calcutta Riots 1926",
+    "summary": "A Muslim mob attacked a Hindu procession, killing 100, and injuring atleast 200 Hindus.",
+    "figure": "300",
+    "figureLabel": "Assaulted",
+    "number": 300,
+    "type": [
+      "Murder",
+      "Assault"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "West Bengal"
+    },
+    "tags": [
+      "History"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 51,
+    "year": "1942-44",
+    "sortYear": 1942,
+    "category": "Islamic Jihad",
+    "title": "Bengal Famine of 1943",
+    "summary": "Famines during the British Raj affecting Bengal. The death toll is estimated to be 7 million.",
+    "figure": "7 Million",
+    "figureLabel": "Died of starvation",
+    "number": 7000000,
+    "type": [
+      "Starvation"
+    ],
+    "geography": {
+      "country": "India, Bangladesh",
+      "state": "West Bengal"
+    },
+    "tags": [
+      "History",
+      "Dehumanization",
+      "British Raj",
+      "Colonial Crimes"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 52,
+    "year": "1946.0",
+    "sortYear": 1946,
+    "category": "Islamic Jihad",
+    "title": "Noakhali Riots",
+    "summary": "Massacre started on 10 October, day of Kojagari Lakshmi Puja and continued unabated for about a week. It is estimated that over 5000 Hindus were killed, hundreds of Hindu women were raped and around 3.5 Lakh Hindu men and women were forcibly converted to Islam.",
+    "figure": "3.55 Lakhs",
+    "figureLabel": "Massacred, raped and converted",
+    "number": 355000,
+    "type": [
+      "Murder",
+      "Rape",
+      "Conversion"
+    ],
+    "geography": {
+      "country": "Bangladesh",
+      "state": null
+    },
+    "tags": [
+      "History"
+    ],
+    "image": "",
+    "link": "",
+    "peopleConverted": 350000
+  },
+  {
+    "id": 53,
+    "year": "1946.0",
+    "sortYear": 1946,
+    "category": "Islamic Jihad",
+    "title": "Direct Action Day",
+    "summary": "Muslim league fought the election with a single point agenda – creation of Pakistan. On the outside, their campaign was against the British, but in reality, it was against Hindus. Jinnah announced that they will either have a divided India & Pakistan or war. On the refusal of their proposal, they waged pogroms in Calcutta. More than 4,000 people lost their lives and 100,000 residents were left homeless in Calcutta within 72 hours.",
+    "figure": "104,000",
+    "figureLabel": "Mass Exodus",
+    "number": 104000,
+    "type": [
+      "Murder",
+      "Arson",
+      "Forced Refugees"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "West Bengal"
+    },
+    "tags": [
+      "History"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 54,
+    "year": "1947.0",
+    "sortYear": 1947,
+    "category": "Islamic Jihad",
+    "title": "Partition of India",
+    "summary": "The demography of West Pakistan underwent a drastic change during partition of India: there was an influx of 4 million Muslims into Pakistan side, and more than 7 million Hindus and Sikhs were expunged from their homes, murdered, their properties looted. Hindus and Sikhs suffered unspeakable brutalities at the hands of the Pakistan Army and Islamist mobs. Trains and buses were burnt alive, women raped, Hindus sent on their death marches from out of Pakistan to India.",
+    "figure": "7 Million",
+    "figureLabel": "Mass Exodus",
+    "number": 7000000,
+    "type": [
+      "Murder",
+      "Rape",
+      "Arson",
+      "Forced Refugees",
+      "Conversion",
+      "Assault"
+    ],
+    "geography": {
+      "country": "India, Pakistan",
+      "state": null
+    },
+    "tags": [
+      "History"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 55,
+    "year": "1947.0",
+    "sortYear": 1947,
+    "category": "Islamic Jihad",
+    "title": "Mirpur Massacre",
+    "summary": "After the first Kashmir War, Hindu and Sikh refugees in today's \"Azad Kashmir\" were brutally massacred. Mirpur and Rajouri districts were worst affected. Before the massacre, the district was home to 114K Hindus and Sikhs. After the massacre only about 790 remained. Rest were either murdered, or internally displaced.",
+    "figure": "1.13 Lakh",
+    "figureLabel": "Massacred, raped and converted",
+    "number": 113000,
+    "type": [
+      "Murder",
+      "Forced Refugees"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Jammu and Kashmir"
+    },
+    "tags": [
+      "History"
+    ],
+    "image": "",
+    "link": "",
+    "historicalDate": "25-11"
+  },
+  {
+    "id": 56,
+    "year": "1947-1958",
+    "sortYear": 1947,
+    "category": "Islamic Jihad",
+    "title": "Hindu Exodus from Pakistan",
+    "summary": "Due to ongoing atrocities, forcible conversion and murders of Hindus in Pakistan after Partition, atleast 4.12 million Hindus escaped from Pakistan, into India in the decade.",
+    "figure": "4.12 Million",
+    "figureLabel": "Mass Exodus",
+    "number": 4120000,
+    "type": [
+      "Murder",
+      "Forced Refugees"
+    ],
+    "geography": {
+      "country": "Pakistan",
+      "state": null
+    },
+    "tags": [
+      "History"
+    ],
+    "image": "",
     "link": ""
   },
   {
     "id": 4,
-    "year": "1948",
+    "year": "1948.0",
     "sortYear": 1948,
     "category": "Political Crimes",
     "title": "Maharashtrian Brahmin Genocide — 8,000 Killed",
@@ -169,14 +1031,68 @@
       "state": "Maharashtra"
     },
     "tags": [
+      "History",
       "Congress"
     ],
+    "image": "",
     "link": "political-crimes/1948-maharashtrian-brahmin-genocide-8000-killed/",
     "historicalDate": "30-01"
   },
   {
+    "id": 57,
+    "year": "1950.0",
+    "sortYear": 1950,
+    "category": "Islamic Jihad",
+    "title": "Massacres of East Bengal",
+    "summary": "The Muslim riots of East Bengal in 1950 are one of the most blood curdling massacre of Hindus, which history books omit. Atleast 5.6 million Hindus were murdered or forcibly converted or forced to flee.",
+    "figure": "5.6 Million",
+    "figureLabel": "Murdered, raped or converted",
+    "number": 5600000,
+    "type": [
+      "Murder",
+      "Forced Refugees",
+      "Conversion",
+      "Arson"
+    ],
+    "geography": {
+      "country": "Bangladesh",
+      "state": null
+    },
+    "tags": [
+      "History"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 58,
+    "year": "1962.0",
+    "sortYear": 1962,
+    "category": "Islamic Jihad",
+    "title": "Rajshahi Massacre",
+    "summary": "Ethnic cleansing of Hindus of East Pakistan in Rajshahi district: houses were torched, Hindus were murdered and women raped. An estimated 3000 Hindus were killed.",
+    "figure": "3,000",
+    "figureLabel": "Ethnic Cleansing",
+    "number": 3000,
+    "type": [
+      "Murder",
+      "Rape",
+      "Arson",
+      "Forced Refugees"
+    ],
+    "geography": {
+      "country": "Bangladesh",
+      "state": null
+    },
+    "tags": [
+      "History"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
     "id": 6,
-    "year": "1964",
+    "year": "1964.0",
     "sortYear": 1964,
     "category": "Political Crimes",
     "title": "Hindus beaten and forced to leave their homes in Guyana",
@@ -193,14 +1109,130 @@
       "state": null
     },
     "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 68,
+    "year": "1964-71",
+    "sortYear": 1964,
+    "category": "Islamic Jihad",
+    "title": "Hindu Exodus from Bangladesh",
+    "summary": "Due to the horrifying atrocities on Hindus, between the years 1964-1971, records from government of India show that at least 1.1 million Hindus emigrated from Bangladesh and came to India as refugees.",
+    "figure": "1.1 Million",
+    "figureLabel": "Forced refugees",
+    "number": 1100000,
+    "type": [
+      "Forced Refugees"
+    ],
+    "geography": {
+      "country": "Bangladesh",
+      "state": null
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 59,
+    "year": "1966.0",
+    "sortYear": 1966,
+    "category": "Political Crimes",
+    "title": "Indira Gandhi Government Massacres Hindu Saints on Gopashtami",
+    "summary": "The then PM Indira Gandhi, who had won the election on the promise of ban on cow slaughter, refused to fulfill her promise and faced a protest by lakhs of Hindu saints and devotees outside the Parliament. She ordered the police to open fire on the group. First hand accounts state that atleast 2500 Hindu saints and devotees were massacred in one day, their bodies disposed outside the city.",
+    "figure": "2,500",
+    "figureLabel": "Murdered",
+    "number": 2500,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Delhi (National Capital Territory of Delhi)"
+    },
+    "tags": [
+      "History"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 60,
+    "year": "1966-76",
+    "sortYear": 1966,
+    "category": "Political Crimes",
+    "title": "Chinese Government",
+    "summary": null,
+    "figure": "12 Million",
+    "figureLabel": "Murdered or displaced",
+    "number": 12000000,
+    "type": [
+      "Forced Refugees",
+      "Seizure of assets"
+    ],
+    "geography": {
+      "country": "China",
+      "state": null
+    },
+    "tags": [
+      "History"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 61,
+    "year": "1970.0",
+    "sortYear": 1970,
+    "category": "Political Crimes",
+    "title": "Communists Kill Hindus in the Sainbari Incident in the Most Horrifying way possible",
+    "summary": null,
+    "figure": "3",
+    "figureLabel": "Brutally murdered",
+    "number": 3,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "West Bengal"
+    },
+    "tags": [
+      "CPI M"
+    ],
+    "image": "",
+    "link": "",
+    "historicalDate": "17-03"
+  },
+  {
+    "id": 69,
+    "year": "1971.0",
+    "sortYear": 1971,
+    "category": "Islamic Jihad",
+    "title": "Bangladesh War of Liberation & Hindu Genocide",
+    "summary": "One of the biggest genocide of Hindus in recent history. Out of the 3 million Hindus in East Pakistan (Bangladesh), atleast 2.5 million were brutally slaughtered, raped or forcibly evicted from their homes. Pakistan Army selectively targeted and arsoned Hindu homes.",
+    "figure": "2.5 Million",
+    "figureLabel": "Murder, rape, forcible eviction",
+    "number": 2500000,
+    "type": [
+      "Murder",
+      "Rape",
+      "Forced Refugees"
+    ],
+    "geography": {
+      "country": "Bangladesh",
+      "state": null
+    },
+    "tags": [],
+    "image": "",
     "link": ""
   },
   {
     "id": 13,
-    "year": "1972",
+    "year": "1972.0",
     "sortYear": 1972,
     "category": "Political Crimes",
-    "title": "Hindus forcibly asked to leave Uganada by dictator Idi Amin, with their homes seized",
+    "title": "Hindus forcibly asked to leave Uganda by dictator Idi Amin, with their homes seized",
     "summary": "Hindus formed a majority in the Indian descent people in Uganda, who were forcibly expulsed from Uganda, being targeted for socio-economic-political turmoil.",
     "figure": "65,000",
     "figureLabel": "Forced Refugees",
@@ -216,8 +1248,356 @@
     "tags": [
       "History"
     ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 63,
+    "year": "1978-79",
+    "sortYear": 1978,
+    "category": "Political Crimes",
+    "title": "Communists Massacre Bangladeshi Hindu Refugees in Marichjhapi",
+    "summary": "Indian Communists Kill 128 Oppressed-Caste Poor Bangladeshi Hindu Refugees in MarichJhapi Island, Sundarbans Region, West Bengal; 1978-1979",
+    "figure": null,
+    "figureLabel": null,
+    "number": 128,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "West Bengal"
+    },
+    "tags": [
+      "CPI M"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 62,
+    "year": "1979.0",
+    "sortYear": 1979,
+    "category": "Political Crimes",
+    "title": "Marxists gun down Hindus in Marichjhapi",
+    "summary": "1,700 Hindus were mercilessly gunned down in Marichjhapi by West Bengal Police on the orders of Communist CM Jyoti Basu. Many of these were children, women and elderly.",
+    "figure": null,
+    "figureLabel": "Murdered",
+    "number": 1700,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "West Bengal"
+    },
+    "tags": [
+      "CPI M"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 64,
+    "year": "1979.0",
+    "sortYear": 1979,
+    "category": "Political Crimes",
+    "title": "Marichjhapi Massacre of Hindus by CPIM",
+    "summary": "4,128 families perished in transit, died of starvation, exhaustion, and many were killed in Kashipur, Kumirmari, and Marichjhapi by police firings. The CPIM congratulated its participant members on their successful operation at Marichjhapi",
+    "figure": null,
+    "figureLabel": null,
+    "number": 4128,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "West Bengal"
+    },
+    "tags": [
+      "CPI M"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 65,
+    "year": "1979.0",
+    "sortYear": 1979,
+    "category": "Political Crimes",
+    "title": "CPIM track down, rape, shoot or behead Hindus",
+    "summary": "More than 100 women were raped again and again by Communist cadres and policemen. After raping them, they were shot, beheaded or brutally beaten to death.\n15 innocent children aged 5-10 who had taken shelter in a hut were BEHEADED with knives by Communist cadres and police who were given orders to kill all the Hindu refugees. These innocent children were preparing for the Saraswati Puja (which was on 1 February)",
+    "figure": null,
+    "figureLabel": null,
+    "number": 115,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "West Bengal"
+    },
+    "tags": [
+      "CPI M"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 66,
+    "year": "1980 onwards",
+    "sortYear": 1980,
+    "category": "Political Crimes",
+    "title": "Bhutan Expels Hindus",
+    "summary": "In the late 1980s and early 1990s, the Bhutanese Government forcibly expelled more than 100,000 Lhotshampas—ethnic Nepalese, mostly Hindu residents—to enforce a \"one nation, one people\" cultural policy.",
+    "figure": "100,000",
+    "figureLabel": "Forcibly expelled",
+    "number": 100000,
+    "type": [
+      "Forced Refugees"
+    ],
+    "geography": {
+      "country": "Bhutan",
+      "state": null
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 67,
+    "year": "1982.0",
+    "sortYear": 1982,
+    "category": "Political Crimes",
+    "title": "Bijon Setu Massacre of Hindu Saints by CPIM",
+    "summary": "In this horrifying incident, 16 sannyasis (monks) and one sannyasini of Anand Marg were dragged out of taxis, beaten to death in 3 different locations in broad daylight. The most horrifying part of this tragedy is that 1000s of spectators looked on, and nobody helped the sannyasis.\n\nThe attack was orchestrated by Communists in West Bengal.",
+    "figure": "16",
+    "figureLabel": "Massacred",
+    "number": 16,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "West Bengal"
+    },
+    "tags": [
+      "Cultural Genocide",
+      "CPI M"
+    ],
+    "image": "",
     "link": "",
-    "historicalDate": "04-08"
+    "historicalDate": "30-04"
+  },
+  {
+    "id": 70,
+    "year": "1983.0",
+    "sortYear": 1983,
+    "category": "Khalistani Terror",
+    "title": "Massacre of Hindus by Khalistani Terrorists",
+    "summary": "5 Oct, 83: Dhilwan bus massacre. 6 Hindu passengers were murdered by Khalistani militants.\n21 Oct, 83: Massacre of 58 Hindu passengers by Khalistani militants. Unofficial number is more than 100 Hindus.\nmid-Oct, 1983: Attacks by Khalistani militants:\nTwo people injured in a bomb blast on the outskirts of Chandigarh.\nFive people were killed and more than 30 injured when grenades exploded in two theaters in Delhi.\n19 people were injured when a grenade went off in the New Delhi railway station.\n18 Nov, 1983: A bus was hijacked and 4 Hindu passengers were killed by Sikh militants",
+    "figure": "140",
+    "figureLabel": "Murdered",
+    "number": 140,
+    "type": [
+      "Murder",
+      "Arson"
+    ],
+    "geography": {
+      "country": "India",
+      "state": [
+        "Delhi (National Capital Territory of Delhi)",
+        "Chandigarh"
+      ]
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 92,
+    "year": "1983-2009",
+    "sortYear": 1983,
+    "category": "Political Crimes",
+    "title": "Tamil Genocide in Sri Lanka",
+    "summary": "In the wake of the conflict between the Sri Lankan government and the Sri Lankan Tamil community, led by the LTTE (Liberation Tigers of Tamil Elam), the Civil War came to an end upon the killing of the leader of LTTE. Due to the systematic destruction of Tamil culture, disenfranchisement of Sri Lankan Tamils and massacres of civilians by the Sri Lankan govt, the original demand of a separate Elam state came to an end, paving the way for mass atrocities upon Tamils.\n300,000 Sri Lankan Tamils were held in Nazi-style concentration camps in Northeastern districts of Sri Lanka.\nSince 1983 Sri Lankan state has exterminated approximately 300,000 Sri Lankan Tamils, primarily Hindu.",
+    "figure": "300,000",
+    "figureLabel": "Forced refugees",
+    "number": 300000,
+    "type": [
+      "Forced Refugees"
+    ],
+    "geography": {
+      "country": "Sri Lanka",
+      "state": null
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 71,
+    "year": "1984.0",
+    "sortYear": 1984,
+    "category": "Khalistani Terror",
+    "title": "Mass Murders of Hindus by Khalistani Militants",
+    "summary": "23 Feb, 1984: 11 Hindus pulled off from trains and buses and killed by Khalistani militants; 27 more wounded.\n1 Jan to 3 June, 1984: 298 Hindus murdered in violence all over Punjab. Unofficial number of Hindus killed was well over 500.",
+    "figure": "500",
+    "figureLabel": "Murdered",
+    "number": 500,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Punjab"
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 72,
+    "year": "1984.0",
+    "sortYear": 1984,
+    "category": "Khalistani Terror",
+    "title": "Operation Blue Star",
+    "summary": "In the crossfire between the Army, on instruction of then PM Indira Gandhi, and the Khalistani militants, 1280 terrorists and 1720 civilians, mostly Sikhs and some Hindus, were killed in the Harminder Sahib Temple complex.",
+    "figure": "1,720",
+    "figureLabel": "Murdered",
+    "number": 1720,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Punjab"
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 73,
+    "year": "1984.0",
+    "sortYear": 1984,
+    "category": "Khalistani Terror",
+    "title": "Khalistani Militants Hijack Plane",
+    "summary": "To stage support for their cause, 9 Khalistani militants hijacked an Indian Airlines jetliner Airbus A300, on a domestic flight from Chandigarh to Srinagar with 264 passengers and crew on board, and demanded the plane be flown to the United States. The flight was forced to land in Lahore, where 6 passengers were released. The terrorists gave war cries of \"Long Live Khalistan\" and \"Long Live Bhindranwale\" and threatened to blow up the plane if their demands were not met. The plane finally landed in Dubai, where the UAE Defense Minister got the passengers released.",
+    "figure": "264",
+    "figureLabel": "In a Hijacked Plane",
+    "number": 264,
+    "type": [
+      "Hijacking Airplane"
+    ],
+    "geography": {
+      "country": "India",
+      "state": [
+        "Punjab",
+        "Jammu and Kashmir"
+      ]
+    },
+    "tags": [],
+    "image": "",
+    "link": "",
+    "historicalDate": "24-08"
+  },
+  {
+    "id": 74,
+    "year": "1984.0",
+    "sortYear": 1984,
+    "category": "Political Crimes",
+    "title": "Sikh Genocide",
+    "summary": "Following the assassination of Indira Gandhi by her 2 Sikh bodyguards, mass violence started out against the Sikhs, mostly led by Congress senior leaders and supporters. Atleast 10,000 Sikhs were murdered and another 50,000 displaced. Many women were raped.",
+    "figure": "60,000",
+    "figureLabel": "Murdered and raped",
+    "number": 60000,
+    "type": [
+      "Murder",
+      "Rape",
+      "Arson"
+    ],
+    "geography": {
+      "country": "India",
+      "state": [
+        "Punjab",
+        "Delhi (National Capital Territory of Delhi)"
+      ]
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 75,
+    "year": "1985.0",
+    "sortYear": 1985,
+    "category": "Khalistani Terror",
+    "title": "Serial Bomb Blasts in Delhi",
+    "summary": "85 Hindus massacred in serial bomb blasts across Delhi, UP and Haryana, staged by Khalistani terrorists. Bombs were planted in trains and buses and crowded places.",
+    "figure": "85",
+    "figureLabel": "Killed in bomb blast",
+    "number": 85,
+    "type": [
+      "Murder",
+      "Bomb Blast"
+    ],
+    "geography": {
+      "country": "India",
+      "state": [
+        "Uttar Pradesh",
+        "Delhi (National Capital Territory of Delhi)",
+        "Haryana"
+      ]
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 76,
+    "year": "1985.0",
+    "sortYear": 1985,
+    "category": "Khalistani Terror",
+    "title": "Air India Bombing by Khalistani Terrorists",
+    "summary": "Following the public proclamation by Khalistan terrorist Talwinder Singh Parmar to \"kill 50,000 Hindus,\" Air India Flight 182, from Toronto to New Delhi was bombed while in Irish airspace. All 329 passengers and crew were killed. Almost all were Hindus.",
+    "figure": "329",
+    "figureLabel": "Killed in plane bomb blast",
+    "number": 329,
+    "type": [
+      "Murder",
+      "Hijacking Airplane",
+      "Bomb Blast"
+    ],
+    "geography": {
+      "country": "India, Canada",
+      "state": "Delhi (National Capital Territory of Delhi)"
+    },
+    "tags": [],
+    "image": "",
+    "link": "",
+    "historicalDate": "23-06"
+  },
+  {
+    "id": 77,
+    "year": "1986.0",
+    "sortYear": 1986,
+    "category": "Khalistani Terror",
+    "title": "Khalistani Militant Attacks",
+    "summary": "6 March: Many Hindu civilians killed in indiscriminate firing by terrorists.\n28 March: 32 people killed in indiscriminate firing in Dresi ground, killing Kharti leaders including that of Jagirpur, Mayor Krishan Sood.\n29 March: 20 labourers killed by terrorists.\n8 June: 9 People killed by Khalistani extremists.\n25 July: 15 bus passengers gunned down.\n30 Oct: Sikh terrorists robbed a bank, killed 23 Hindus.\n31 Oct: 22 migrant and local Hindu industrial workers gunned down in indiscriminate firing on Daba road, Ludhiana.\n30 Nov: 50 Hindu bus passengers gunned down.",
+    "figure": "171",
+    "figureLabel": "Murdered",
+    "number": 171,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": null,
+      "state": null
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
   },
   {
     "id": 15,
@@ -238,28 +1618,143 @@
       "state": null
     },
     "tags": [],
+    "image": "",
     "link": ""
   },
   {
+    "id": 78,
+    "year": "1987.0",
+    "sortYear": 1987,
+    "category": "Khalistani Terror",
+    "title": "Khalistani Militant Attacks",
+    "summary": "14 June: Sikh militants killed 25 people in two attacks.\nJuly: 80 bus passengers killed in Fatehabad on three Haryana Roadways buses.\n6 Aug: 12 people gunned down. Before shooting them, victims were forced to chant \"long live the sikh nation\".\n19 Aug: 11 people killed by sikh militants including a hindu man and his baby son.\n28 Sep: 5 killed and 8 injured, firing near Geetha Bhawan, Alawalpur.\n20 Oct: 12 persons shot dead at various places in Delhi on Diwali day.",
+    "figure": "145",
+    "figureLabel": "Murdered",
+    "number": 145,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": [
+        "Delhi (National Capital Territory of Delhi)",
+        "Haryana"
+      ]
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 79,
+    "year": "1988.0",
+    "sortYear": 1988,
+    "category": "Khalistani Terror",
+    "title": "Khalistani Militant Attacks",
+    "summary": "Jan: 12 people and a hindu leader killed by sikh extremists.\nFeb: Bombs exploded by Babbar Khalsa in Gurdaspur, Hoshiarpur and Patiala. 12 to 13 persons killed and nearly 50 injured.\n2 March: 8 members of a family killed.\n3 March: 35 persons shot dead, 50 others injured, indiscriminate firing at a festival gathering by terrorists.\n31 March: 18 members of a Rajput family shot dead at village the Rajbah under police station.\n2 Apr: Sikh gunmen stormed into huts and houses across Punjab state and killed 37 people, including 7 children\n15 May: 26 persons killed, 100 others injured in different incidents\n16 May: 40 persons gunned down, 100 others injured in different incidents\n17 May: 35 labourers massacred.\n19 June: 2 bombs blasted during Ramayana (TV serial) telecast at a shop, killing 15 persons\n21 June: Bomb blast kills 3 in new delhi market.\n7 Sep: 15 rail passengers killed, 25 injured at Rure Aasal railway station.",
+    "figure": "332",
+    "figureLabel": "Murdered",
+    "number": 332,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Punjab"
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 80,
+    "year": "1989-1990",
+    "sortYear": 1989,
+    "category": "Islamic Jihad",
+    "title": "Exodus and Genocide of Kashmiri Hindus",
+    "summary": "On January 19, 1990, Bharat witnessed the mass exodus of Kashmiri Hindus. They were given 3 options: CONVERT (to Islam), LEAVE, DIE. An estimated 300,000-800,000 Kashmiri Hindus emptied out of the Kashmir Valley overnight. Many died, and do not live to tell the tales of horror.",
+    "figure": "600,000",
+    "figureLabel": "Murdered, Raped, Forced to Flee",
+    "number": 600000,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Jammu and Kashmir"
+    },
+    "tags": [],
+    "image": "",
+    "link": "",
+    "historicalDate": "19-01"
+  },
+  {
+    "id": 81,
+    "year": "1990.0",
+    "sortYear": 1990,
+    "category": "Khalistani Terror",
+    "title": "Khalistani Militant Attacks",
+    "summary": "Jan: 8 Hindu villagers shot down by militants\n7 March: 32 shot dead in indiscriminate firing at crowded market, Abohar\n28 May: Khalistan Commando Force attacked a farm, killed 13 migrant workers, including 11 Hindus.\n30 May: Khalistani extremists kill 10 in attack in a market, Ferozepur.",
+    "figure": "63",
+    "figureLabel": "Murdered",
+    "number": 63,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Punjab"
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 82,
+    "year": "1990.0",
+    "sortYear": 1990,
+    "category": "Political Crimes",
+    "title": "Massacre of Karsevaks in Ayodhya",
+    "summary": "30 Oct 1990: Atleast 40,00 Hindu devotees or karsevaks were headed for the Babari Masjid site, to reclaim it as a Hindu temple. Curfew was imposed by then UP government, and atleast 28,000 policemen and CRPF were deployed around Ayodhya. The Kothari brothers managed to put a Hindu flag on the Babari Masjid, for which they were shot at & killed. The police opened fire on the crowd, rained lathis, and treated the karsevaks with no humanity. They shot people in the head and chest, with an intention to kill them.\n\n2 Nov 1990: Karsevaks again marched to the Babari Masjid site, and some of them managed to damage the structure of the mosque. The police opened fire again on the crowd.\n\nThe \"official\" death toll by UP government and police was only 16, which is hard to believe. Unofficial numbers are in hundreds. As per then media reports, atleast 400 died from wounds or in the stampede. Dead bodies were disposed off in the Sarayu river, and some were cremated in unknown places, depriving the dead of even their last rites.",
+    "figure": "400",
+    "figureLabel": "Murdered",
+    "number": 400,
+    "type": [
+      "Murder",
+      "Assault"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Uttar Pradesh"
+    },
+    "tags": [],
+    "image": "",
+    "link": "",
+    "historicalDate": "30-10"
+  },
+  {
     "id": 18,
-    "year": "1997",
+    "year": "1997.0",
     "sortYear": 1997,
     "category": "Christian Proselytization",
     "title": "Hindu Bru community targeted and assaulted by Mizo Christians",
-    "summary": null,
+    "summary": "Bru tribals are an indigenous tribe in India, who follow Sanatani practices of worshiping gods, nature, elements and are considered a tribal sect of Buddhism. In 1995, Mizo Christians demanded the removal of Brus from Mizoram, contending that they are not native to Mizoram. In 1997,  1391 Bru houses in 41 villages were burnt down and several people were raped and killed. More than 30,000 Bru people were forced to leave Mizoram to Tripura.",
     "figure": "32,000",
     "figureLabel": "Forced to flee their homes",
     "number": 32000,
     "type": [
       "Forced Refugees",
       "Seizure of assets",
-      "Assault"
+      "Assault",
+      "Rape",
+      "Arson"
     ],
     "geography": {
       "country": "India",
       "state": "Mizoram"
     },
     "tags": [],
+    "image": "",
     "link": ""
   },
   {
@@ -283,12 +1778,13 @@
       ]
     },
     "tags": [],
+    "image": "",
     "link": "",
     "peopleConverted": 2400
   },
   {
     "id": 7,
-    "year": "1998",
+    "year": "1998.0",
     "sortYear": 1998,
     "category": "Political Crimes",
     "title": "Indian-Guyanese Hindus were beaten and assaulted without any legal recourse.",
@@ -305,8 +1801,287 @@
       "state": null
     },
     "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 83,
+    "year": "1998.0",
+    "sortYear": 1998,
+    "category": "Islamic Jihad",
+    "title": "Chamba Massacre",
+    "summary": "The 1998 Chamba massacre was the killing of thirty-five Hindus by Hizbul Mujahideen, in the Chamba district of Himachal Pradesh in India on 3 August 1998. Another 11 Hindus were left injured.",
+    "figure": "46",
+    "figureLabel": "Murdered or injured",
+    "number": 46,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Himachal Pradesh"
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 84,
+    "year": "2000.0",
+    "sortYear": 2000,
+    "category": "Islamic Jihad",
+    "title": "Massacre of Hindus in Amarnath",
+    "summary": "This included multiple massacres of Hindus in Amarnath yatra, Anantnag, Doda, Kupwara, Kayar and Mirbazar-Qazigund and Sandoo-Acchabal. Total up to 105 or more killed and at least 62 injured in coordinated attacks on Hindus.",
+    "figure": "167",
+    "figureLabel": "Murdered or Injured",
+    "number": 167,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Jammu and Kashmir"
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 85,
+    "year": "2001.0",
+    "sortYear": 2001,
+    "category": "Political Crimes",
+    "title": "Bhola Violence Against Hindu Women",
+    "summary": "Hindu minorities in Bangladesh were caught in the political crossfire between the parties, and persecuted on the assumption of favoring the Awami League party. More than 200 Hindu women were gang raped and sexually assaulted by Islamist mobs. The women were from 8 to 70 yrs old. Their houses were looted, properties destroyed.",
+    "figure": "200",
+    "figureLabel": "Murdered or raped",
+    "number": 200,
+    "type": [
+      "Murder",
+      "Rape"
+    ],
+    "geography": {
+      "country": "Bangladesh",
+      "state": null
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 86,
+    "year": "2001.0",
+    "sortYear": 2001,
+    "category": "Islamic Jihad",
+    "title": "Hindu Exodus from Bangladesh",
+    "summary": "Following the large-scale violence towards Hindus in Bangladesh, from 5000 to 20,000 Hindus migrated from Bangladesh to adjoining Indian states of Tripura, West Bengal, Meghalaya & Assam. No official estimates were available, but atleast 200,000 Hindus are suspected to be internally displaced.",
+    "figure": "200,000",
+    "figureLabel": "Forced refugees",
+    "number": 200000,
+    "type": [
+      "Forced Refugees"
+    ],
+    "geography": {
+      "country": "Bangladesh",
+      "state": null
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 87,
+    "year": "2002.0",
+    "sortYear": 2002,
+    "category": "Islamic Jihad",
+    "title": "Gujarat Riots, Godhara",
+    "summary": "A few coaches of the Sabarmati Express were set on fire by a Muslim mob in a planned violence against Hindu pilgrims who were returning from Ayodhya after a religious ritual. 59 Hindus burned alive in Sabarmati train attack and 254 killed in subsequent riots.",
+    "figure": "313",
+    "figureLabel": "Murdered or injured",
+    "number": 254,
+    "type": [
+      "Murder",
+      "Arson"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Gujarat"
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 88,
+    "year": "2002.0",
+    "sortYear": 2002,
+    "category": "Islamic Jihad",
+    "title": "Attack on Akshardham Temple, Gujarat",
+    "summary": "On 24 September, 2002, two armed Jihadi terrorists attacked the Akshardham Temple in Gandhinagar, Gujarat, killing 34 Hindus and injuring another 80. They used hand grenades and automatic weapons.",
+    "figure": "114",
+    "figureLabel": "Murdered or injured in bomb blast",
+    "number": 114,
+    "type": [
+      "Murder",
+      "Arson",
+      "Bomb Blast"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Gujarat"
+    },
+    "tags": [],
+    "image": "",
     "link": "",
-    "historicalDate": "12-01"
+    "historicalDate": "24-11",
+    "templeType": [
+      "Bomb blast"
+    ],
+    "templeFigure": "1.0",
+    "templeFigureLabel": "Attack and bomb blast in Akshardham Temple, Gandhinagar"
+  },
+  {
+    "id": 89,
+    "year": "2003.0",
+    "sortYear": 2003,
+    "category": "Islamic Jihad",
+    "title": "Nadimarg Massacre, Kashmir",
+    "summary": "Kashmiri Pandits were dragged out of homes, including children, and brutally murdered by Islamists. Atleast 24 Hindus were murdered.",
+    "figure": "24",
+    "figureLabel": "Murdered",
+    "number": 24,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Jammu and Kashmir"
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 90,
+    "year": "2005.0",
+    "sortYear": 2005,
+    "category": "Islamic Jihad",
+    "title": "Serial Bomb Blasts in Delhi",
+    "summary": "Serial bomb blasts in crowded markets during Diwali season in the heart of the capital of India clouded Diwali celebrations for Hindus. Atleast 64 were killed and 100 injured. The attack was by an Islamist \"revolutionary\" group.",
+    "figure": "164",
+    "figureLabel": "Murdered in bomb blast",
+    "number": 164,
+    "type": [
+      "Murder",
+      "Bomb Blast"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Delhi (National Capital Territory of Delhi)"
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 91,
+    "year": "2006.0",
+    "sortYear": 2006,
+    "category": "Islamic Jihad",
+    "title": "Bomb Blasts in Hanuman Temple & Railway Station Varanasi",
+    "summary": "Twin bomb blasts took place in the Sankat Mochan Hanuman Temple near BHU in Varanasi and the Railway Station on the evening of a day in March, 2006. The blasts were aimed at Hindu devotees and meant to cause maximum damage. As per official numbers, 28 were dead and 101 injured.  Lashkar-e-Taiba militant outfit was responsible for the blasts.",
+    "figure": "129",
+    "figureLabel": "Murdered in bomb blast",
+    "number": 129,
+    "type": [
+      "Murder",
+      "Bomb Blast"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Uttar Pradesh"
+    },
+    "tags": [],
+    "image": "",
+    "link": "",
+    "templeType": [
+      "Bomb blast"
+    ],
+    "templeFigure": "1.0",
+    "templeFigureLabel": "Blast in Sankat Mochan Hanuman Temple, Varanasi"
+  },
+  {
+    "id": 93,
+    "year": "2013-2014",
+    "sortYear": 2013,
+    "category": "Political Crimes",
+    "title": "Post-poll Violence against Hindus in Bangladesh",
+    "summary": "Elections have started to mean only one thing for Hindu minorities in Bangladesh: persecution. Hindus in Malopara village faced attacks after the elections in Nov 2013. Atleast 180 people were killed in the post-poll violence. Armed Islamist mobs attacked Hindu minorities in Jessore, Satkhira, Thakurgaon, Panchagarh, Chittagong, Nilphamari, Kurgram, Lalmonirhat, Satkhira, Gaibandha and Dinajpur. International aid agencies estimated as many as 5,000 families were affected.",
+    "figure": "20,000",
+    "figureLabel": "Murdered or became forced refugees",
+    "number": 20000,
+    "type": [
+      "Murder",
+      "Forced Refugees"
+    ],
+    "geography": {
+      "country": "Bangladesh",
+      "state": null
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 94,
+    "year": "2016.0",
+    "sortYear": 2016,
+    "category": "Islamic Jihad",
+    "title": "Hindu Women Sold as Slaves",
+    "summary": "Hindu women from India (Andhra Pradesh and Telangana) were found to be sold \"like products\" in the Gulf--Saudi Arabia and Bahrain--for £2000-£4000 only. They are told to travel in lure of better pay and work. But they were found to be physically abused, mistreated and not paid for any work. An estimated 20,000 women were detained in poor living conditions in the Gulf.",
+    "figure": "20,000",
+    "figureLabel": "Sold as slaves",
+    "number": 20000,
+    "type": [
+      "Slavery"
+    ],
+    "geography": {
+      "country": "India",
+      "state": [
+        "Andhra Pradesh",
+        "Telangana"
+      ]
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 95,
+    "year": "2016.0",
+    "sortYear": 2016,
+    "category": "Islamic Jihad",
+    "title": "50 Hindu Households Attacked in Bangladesh",
+    "summary": "Atleast 17 Hindu temples and more than 50 households in a Hindu village were attacked by a mob in Bangladesh's Nasirnagar, leaving more than 100 injured. Around 124 people were accused in the attack, but later all freed on bail.\n\nA similar attack in the same village was repeated in 2018, where 5 households were attacked, leaving 9 injured.",
+    "figure": "200",
+    "figureLabel": "Murdered or injured",
+    "number": 200,
+    "type": [
+      "Murder",
+      "Assault"
+    ],
+    "geography": {
+      "country": "Bangladesh",
+      "state": null
+    },
+    "tags": [],
+    "image": "",
+    "link": "",
+    "templeType": [
+      "Vandalized"
+    ],
+    "templeFigure": "17.0",
+    "templeFigureLabel": "Vandalized"
   },
   {
     "id": 5,
@@ -326,12 +2101,13 @@
       "state": null
     },
     "tags": [],
+    "image": "",
     "link": "",
     "peopleConverted": 9000
   },
   {
     "id": 21,
-    "year": "2017",
+    "year": "2017.0",
     "sortYear": 2017,
     "category": "Islamic Jihad",
     "title": "Massacre of Myanmar Hindus",
@@ -355,11 +2131,106 @@
     "tags": [
       "ARSA"
     ],
+    "image": "",
     "link": "islamic-jihad/massacre-of-myanmar-hindus/"
   },
   {
+    "id": 102,
+    "year": "2017.0",
+    "sortYear": 2017,
+    "category": "Christian Proselytization",
+    "title": "Shiva Temple in Manipur, near Myanmar border blown up in a bomb blast",
+    "summary": null,
+    "figure": null,
+    "figureLabel": null,
+    "number": null,
+    "type": [
+      "Bomb Blast"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Manipur"
+    },
+    "tags": [],
+    "image": "",
+    "link": "",
+    "templeType": [
+      "Bomb blast"
+    ],
+    "templeFigure": "1.0",
+    "templeFigureLabel": "Blown up in bomb blast"
+  },
+  {
+    "id": 25,
+    "year": "2018.0",
+    "sortYear": 2018,
+    "category": "Christian Proselytization",
+    "title": "Attempt to convert Hindus by giving financial aid",
+    "summary": null,
+    "figure": "17",
+    "figureLabel": "Converted",
+    "number": 17,
+    "type": [
+      "Conversion"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Uttar Pradesh"
+    },
+    "tags": [
+      "Christian Evangelism"
+    ],
+    "image": "",
+    "link": "",
+    "peopleConverted": 17
+  },
+  {
+    "id": 96,
+    "year": "2018.0",
+    "sortYear": 2018,
+    "category": "Islamic Jihad",
+    "title": "ISIS Bomb Sikhs in Afghanistan",
+    "summary": "In a suicide bomb attack, ISIS attacked a group of Sikhs on their way to visiting President Ashraf Ghani in the city of Jalalabad. The only Sikh candidate who planned to contest the forthcoming elections was killed in the attack. 19 people, mostly Sikhs, were killed.",
+    "figure": "19",
+    "figureLabel": "Killed in bomb blast",
+    "number": 19,
+    "type": [
+      "Murder",
+      "Bomb Blast"
+    ],
+    "geography": {
+      "country": "Afghanistan",
+      "state": null
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 97,
+    "year": "2019.0",
+    "sortYear": 2019,
+    "category": "Islamic Jihad",
+    "title": "Islamist Terrorist Attack on Indian Army in Pulwama",
+    "summary": "A suicide bomber by the name of Adil Dar, part of JeT Islamist terrorist group of Kashmir, drove a vehicle packed with ammunition and explosives into a convoy of buses with paramilitary police, killing 40 men, injuring many others. His video was released online later, where he claims to obtain 'jannat' by killing \"Gaumutra drinking Hindus.\"",
+    "figure": "40",
+    "figureLabel": "Killed in bomb blast",
+    "number": 40,
+    "type": [
+      "Murder",
+      "Bomb Blast"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Jammu and Kashmir"
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
     "id": 9,
-    "year": "2020",
+    "year": "2020.0",
     "sortYear": 2020,
     "category": "Christian Proselytization",
     "title": "300 Hindus deceptively converted into Christianity in one village in one day",
@@ -375,19 +2246,20 @@
       "state": "Odisha"
     },
     "tags": [],
+    "image": "",
     "link": "",
     "peopleConverted": 300
   },
   {
     "id": 11,
-    "year": "2020",
+    "year": "2020.0",
     "sortYear": 2020,
     "category": "Islamic Jihad",
     "title": "Muslim clerics admit to converting over 855 Hindus in a few years",
     "summary": "Hindus in Pakistan forced into sexual slavery, forced labour, and forced conversion for sustenance in Pakistan",
     "figure": "855",
     "figureLabel": "Conversion, sexual assault on women and children",
-    "number": 855,
+    "number": null,
     "type": [
       "Conversion",
       "Rape",
@@ -399,12 +2271,12 @@
       "state": null
     },
     "tags": [],
-    "link": "",
-    "peopleConverted": 855
+    "image": "",
+    "link": ""
   },
   {
     "id": 12,
-    "year": "2020",
+    "year": "2020.0",
     "sortYear": 2020,
     "category": "Christian Proselytization",
     "title": "Around 47 Hindus converted to Christianity in one day",
@@ -420,12 +2292,13 @@
       "state": "Chhattisgarh"
     },
     "tags": [],
+    "image": "",
     "link": "",
     "peopleConverted": 47
   },
   {
     "id": 20,
-    "year": "2020",
+    "year": "2020.0",
     "sortYear": 2020,
     "category": "Christian Proselytization",
     "title": "Over 400 tribal Hindus were forced to leave their homes in Meghalaya",
@@ -441,11 +2314,64 @@
       "state": "Meghalaya"
     },
     "tags": [],
+    "image": "",
     "link": ""
   },
   {
+    "id": 98,
+    "year": "2020.0",
+    "sortYear": 2020,
+    "category": "Islamic Jihad",
+    "title": "ISIS Attack on Sikh Temple in Kabul",
+    "summary": "ISIS gunmen attacked a Sikh temple in Kabul, leaving up to 200 people trapped, and killing 25 Sikh men, women and children.",
+    "figure": "225",
+    "figureLabel": "Murdered or injured",
+    "number": 225,
+    "type": [
+      "Murder",
+      "Assault"
+    ],
+    "geography": {
+      "country": "Afghanistan",
+      "state": null
+    },
+    "tags": [],
+    "image": "",
+    "link": "",
+    "templeType": [
+      "Attacked"
+    ],
+    "templeFigure": "1.0",
+    "templeFigureLabel": "Attacked by terrorists"
+  },
+  {
+    "id": 101,
+    "year": "2020.0",
+    "sortYear": 2020,
+    "category": "Christian Proselytization",
+    "title": "Hindu Saints Lynched by a Mob in Palghar",
+    "summary": "On 16 Apr, 2020, Hindu Mahants of Shri Panch Dashnam Juna Akhada were attacked by a violent mob of 200+ people who pelted stones on them and overturned their vehicle.",
+    "figure": "3",
+    "figureLabel": "Mob Lynched",
+    "number": 3,
+    "type": [
+      "Murder",
+      "Mob Lynching"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Maharashtra"
+    },
+    "tags": [
+      "Dehumanization"
+    ],
+    "image": "",
+    "link": "",
+    "historicalDate": "16-04"
+  },
+  {
     "id": 8,
-    "year": "2021",
+    "year": "2021.0",
     "sortYear": 2021,
     "category": "Islamic Jihad",
     "title": "Hindus and Sikhs murdered, forced to flee or converted in Afghanistan on the withdrawal of US troops from Afghanistan",
@@ -463,7 +2389,104 @@
       "state": null
     },
     "tags": [],
+    "image": "",
     "link": ""
+  },
+  {
+    "id": 99,
+    "year": "2021.0",
+    "sortYear": 2021,
+    "category": "Islamic Jihad",
+    "title": "Illegal Conversion of > 1000 Hindus to Islam",
+    "summary": "Two people have been detained by the EID when their establishment was raided, and evidence of illegal foreign funding and illegal religious conversion to Islam of more than 1000 Hindus in UP and Delhi was unearthed.",
+    "figure": "1,000",
+    "figureLabel": "Conversion",
+    "number": 1000,
+    "type": [
+      "Conversion"
+    ],
+    "geography": {
+      "country": "India",
+      "state": [
+        "Delhi (National Capital Territory of Delhi)",
+        "Uttar Pradesh"
+      ]
+    },
+    "tags": [],
+    "image": "",
+    "link": "",
+    "peopleConverted": 1000
+  },
+  {
+    "id": 100,
+    "year": "2021.0",
+    "sortYear": 2021,
+    "category": "Political Crimes",
+    "title": "Post-poll Violence against Hindus in West Bengal",
+    "summary": "There have been atleast 15,000 documented cases of post-poll violence against Hindus in West Bengal, who have been tortured by TMC on the assumption that they did not vote for them. Atleast 25 Hindus have been killed, 7000 women raped or sexually molested, and thousands forcibly expunged from their homes, with their homes looted and vandalized. Hindus were not allowed to lodge an FIR, since anyone who files an FIR is beaten and abused, with no corrective recourse from the FIR. This human rights abuse needs urgent action.",
+    "figure": "15,000",
+    "figureLabel": "Raped, Sexually Molested, Murdered",
+    "number": 15000,
+    "type": [
+      "Murder",
+      "Rape",
+      "Sexual Assault"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "West Bengal"
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
+    "id": 22,
+    "year": "2022.0",
+    "sortYear": 2022,
+    "category": "Christian Proselytization",
+    "title": "Christians attempt to convert 400 Hindus by force in a slum in Meerut, UP",
+    "summary": "Nine Christians booked for attempting to convert 400 Hindus to Christianity by force in a slum in Meerut",
+    "figure": "400",
+    "figureLabel": "Converted",
+    "number": 400,
+    "type": [
+      "Conversion"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Uttar Pradesh"
+    },
+    "tags": [
+      "Christian Evangelism"
+    ],
+    "image": "",
+    "link": "",
+    "peopleConverted": 400
+  },
+  {
+    "id": 23,
+    "year": "2024.0",
+    "sortYear": 2024,
+    "category": "Christian Proselytization",
+    "title": "Christians attempt to convert 70 Hindus in Rae Bareli, UP",
+    "summary": null,
+    "figure": "70",
+    "figureLabel": "Converted",
+    "number": 70,
+    "type": [
+      "Conversion"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Uttar Pradesh"
+    },
+    "tags": [
+      "Christian Evangelism"
+    ],
+    "image": "",
+    "link": "",
+    "peopleConverted": 70
   },
   {
     "id": 10,
@@ -485,15 +2508,29 @@
     "tags": [
       "Ongoing"
     ],
+    "image": "",
     "link": "",
     "peopleConverted": 3000
   },
-{
-  "id": 1000,
-  "category": "Analysis",
-  "title": "What is Cultural Genocide?",
-  "summary": "Cultural genocide does not always come with bloodshed or headlines. It is slower, and often masquerades as \"modernization,\" \"reform,\" or even \"national interest.\" But its consequences are no less severe.",
-  "tags": ["Ongoing"],
-  "link": "analysis/what-is-cultural-genocide.html"
-}
+  {
+    "id": 1000,
+    "year": null,
+    "sortYear": null,
+    "category": "Analysis",
+    "title": "What is Cultural Genocide?",
+    "summary": "Cultural genocide does not always come with bloodshed or headlines. It is slower, and often masquerades as modernization, reform, or even national interest. But its consequences are no less severe.",
+    "figure": null,
+    "figureLabel": null,
+    "number": null,
+    "type": [],
+    "geography": {
+      "country": null,
+      "state": null
+    },
+    "tags": [
+      "Cultural Genocide"
+    ],
+    "image": "",
+    "link": "analysis/what-is-cultural-genocide.html"
+  }
 ]
