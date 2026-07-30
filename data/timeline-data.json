@@ -31,8 +31,8 @@
       "Looted",
       "Desecrated"
     ],
-    "templeFigure": "Somnath and others",
-    "templeFigureLabel": "temples looted across 17 raids"
+    "templeFigure": 30,
+    "templeFigureLabel": "Icnonic temples looted across multiple raids"
   },
   {
     "id": 2,
