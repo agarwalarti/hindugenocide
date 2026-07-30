@@ -31,7 +31,8 @@
       "Looted",
       "Desecrated"
     ],
-    "templeFigure": 30,
+    "templeFigure": "Somnath, Mathura and others",
+    "templesAffected": 30,
     "templeFigureLabel": "Icnonic temples looted across multiple raids"
   },
   {
@@ -809,6 +810,7 @@
       "Demolished"
     ],
     "templeFigure": "100.0",
+    "templesAffected": 100,
     "templeFigureLabel": "Temples destroyed"
   },
   {
@@ -1938,6 +1940,7 @@
       "Bomb blast"
     ],
     "templeFigure": "1.0",
+    "templesAffected": 1,
     "templeFigureLabel": "Attack and bomb blast in Akshardham Temple, Gandhinagar"
   },
   {
@@ -2008,6 +2011,7 @@
       "Bomb blast"
     ],
     "templeFigure": "1.0",
+    "templesAffected": 1,
     "templeFigureLabel": "Blast in Sankat Mochan Hanuman Temple, Varanasi"
   },
   {
@@ -2081,6 +2085,7 @@
       "Vandalized"
     ],
     "templeFigure": "17.0",
+    "templesAffected": 17,
     "templeFigureLabel": "Vandalized"
   },
   {
@@ -2158,6 +2163,7 @@
       "Bomb blast"
     ],
     "templeFigure": "1.0",
+    "templesAffected": 1,
     "templeFigureLabel": "Blown up in bomb blast"
   },
   {
@@ -2342,6 +2348,7 @@
       "Attacked"
     ],
     "templeFigure": "1.0",
+    "templesAffected": 1,
     "templeFigureLabel": "Attacked by terrorists"
   },
   {
