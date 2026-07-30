@@ -2514,19 +2514,10 @@
   },
   {
     "id": 1000,
-    "year": null,
-    "sortYear": null,
     "category": "Analysis",
     "title": "What is Cultural Genocide?",
     "summary": "Cultural genocide does not always come with bloodshed or headlines. It is slower, and often masquerades as modernization, reform, or even national interest. But its consequences are no less severe.",
-    "figure": null,
-    "figureLabel": null,
-    "number": null,
     "type": [],
-    "geography": {
-      "country": null,
-      "state": null
-    },
     "tags": [
       "Cultural Genocide"
     ],
