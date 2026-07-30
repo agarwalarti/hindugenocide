@@ -130,6 +130,20 @@ Use `article-template.html`.
 9. References list
 10. Citation box "Originally published [Month Year]"
 
+**Images in articles**
+Class / pattern	Width	Text behaviour	When to use
+<figure> (no extra class)	Text column width	Text flows below	Standard inline image within the article body
+<figure class="figure--wide">	Up to 1100px, breaks out of text column	Text flows below	Panoramic photos, maps, wide press clippings, anything that needs extra width
+<figure class="article__featured-image figure--wide">	Full width	Text flows below	Hero/featured image at the top of the article, right after the hero section and before the body
+<figure class="figure--right">	280px, floated right	Text wraps around on the left	Portrait photos, small maps, objects — when you want text to run alongside the image
+<figure class="figure--left">	280px, floated left	Text wraps around on the right	Same as above, image on the other side
+
+For floated images (left/right), add <div class="clear"></div> after the last paragraph that should wrap around the image, to stop subsequent content from also floating.
+
+On mobile, all classes render as full-width stacked blocks — no floating, no overflow.
+
+All images should have a descriptive alt attribute and a <figcaption> with source credit where applicable.
+
 **After building:**
 - Add entry to `data/timeline-data.json` with `"link"` and optionally `"image"`
 - Category page updates automatically
