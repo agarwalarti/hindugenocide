@@ -11,19 +11,8 @@
 
   <!-- =====================================================
        SEO & SOCIAL META — fill in for each article.
-
-       og:title / twitter:title:
-         Same as the page <title> but without " — Hindu Genocide"
-       og:description / twitter:description:
-         Same as the meta description below.
-       og:image / twitter:image:
-         MUST be an absolute URL — always starts with
-         https://hindugenocide.com/
-         Use the featured image for this article.
-         Recommended size: 1200x630px (landscape works best for
-         link previews on WhatsApp, Twitter, Facebook).
-       og:url / canonical:
-         The full URL of this specific page.
+       og:image must be an absolute URL starting with
+       https://hindugenocide.com/
   ===================================================== -->
   <title>[Entry Title] — Hindu Genocide</title>
   <meta name="description" content="[One-sentence summary for search results and social sharing.]" />
@@ -128,7 +117,16 @@
 
     <div class="article__body">
 
+      <!-- TABLE OF CONTENTS — auto-populated from h2 headings by the
+           script at the bottom of this page. Hidden automatically if
+           the article has fewer than 2 sections. Remove this element
+           if you don't want a TOC on this particular article. -->
+      <nav class="toc" id="toc" aria-label="Table of contents"></nav>
+
       <p>[Opening paragraph.]</p>
+
+      <h2>[Section heading]</h2>
+      <p>[Body text for this section.]</p>
 
       <p>[Further detail. Standard inline image:]</p>
 
@@ -194,6 +192,33 @@
   </article>
 
   <div id="site-footer"></div>
+
+  <!-- TABLE OF CONTENTS SCRIPT
+       Reads all h2 tags inside .article__body, assigns each an id,
+       and builds the TOC links. Hides the TOC if fewer than 2 sections.
+       The TOC excludes h2s inside .article__tags, .refs, and .citation-box
+       so "Type", "Tagged under", "References", and "How to cite" don't appear. -->
+  <script>
+  (function () {
+    const toc = document.getElementById('toc');
+    if (!toc) return;
+
+    // Only select content h2s — exclude tags, refs, citation box
+    const headings = [...document.querySelectorAll(
+      '.article__body h2:not(.article__tags h2):not(.refs h2):not(.citation-box h2)'
+    )];
+
+    if (headings.length < 2) { toc.remove(); return; }
+
+    const links = headings.map((h, i) => {
+      const id = 'section-' + i;
+      h.id = id;
+      return `<li><a href="#${id}">${h.textContent.trim()}</a></li>`;
+    }).join('');
+
+    toc.innerHTML = `<p class="toc__label">In this article</p><ol>${links}</ol>`;
+  })();
+  </script>
 
 </body>
 </html>
