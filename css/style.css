@@ -1,9 +1,10 @@
 /* =========================================================
    HINDU GENOCIDE — shared design system
    Cream ground, optional background image, Outfit for big
-   headings, Cabin for secondary headings/nav, Lora for quotes,
+   headings, Bricolage Grotesqu for secondary headings/nav, Lora for quotes,
    IBM Plex Sans for body, IBM Plex Mono for dates/figures.
    ========================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&display=swap');
 
 :root{
   /* Palette — light beige ground, pure black text, dark-red highlights,
@@ -28,7 +29,7 @@
 
   /* Type */
   --f-display: "Outfit", "Helvetica Neue", Arial, sans-serif;   /* big bold headings */
-  --f-heading: "Cabin", "Helvetica Neue", Arial, sans-serif;    /* secondary headings, nav */
+  --f-heading: 'Bricolage Grotesque', sans-serif;   /* secondary headings, nav */
   --f-quote:   "Lora", "Georgia", serif;                         /* quotes, pull stats */
   --f-body:    "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
   --f-mono:    "IBM Plex Mono", "Courier New", monospace;        /* dates, figures, data */
