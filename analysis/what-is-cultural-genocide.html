@@ -58,14 +58,16 @@
       </div>
     </div>
 
-    <!-- ===== Featured image — add when available ===== -->
-    <!-- <figure class="article__featured-image figure--wide">
-      <img src="images/[featured-image.jpg]" alt="[Descriptive alt text]" />
-      <figcaption>[Caption and source credit.]</figcaption>
-    </figure> -->
+    <!-- FEATURED IMAGE — remove this block if no image. Use the same filename as in og:image above. -->
+    <figure class="article__featured-image figure--wide">
+      <img src="images/narasimhae.jpg" alt="Lakshmi Narasimha Temple" />
+      <figcaption>Lakshmi Narasimha Temple with Broken Limbs of Lord Narasimha, Hampi, Karnataka. Photograph by Arti Agarwal</figcaption>
+    </figure>
 
     <!-- ===== Post body ===== -->
     <div class="article__body">
+
+    <nav class="toc" id="toc" aria-label="Table of contents"></nav>
 
       <p>
         The culture of a group of people is something that holds groups
@@ -268,6 +270,19 @@
   </article>
 
   <div id="site-footer"></div>
-
+<script>
+(function(){
+  const toc = document.getElementById('toc');
+  if (!toc) return;
+  const headings = document.querySelectorAll('.article__body h2');
+  if (headings.length < 2) { toc.remove(); return; } // hide if only one section
+  const links = [...headings].map((h, i) => {
+    const id = 'section-' + i;
+    h.id = id;
+    return `<li><a href="#${id}">${h.textContent}</a></li>`;
+  }).join('');
+  toc.innerHTML = `<p class="toc__label">In this article</p><ol>${links}</ol>`;
+})();
+</script>
 </body>
 </html>
