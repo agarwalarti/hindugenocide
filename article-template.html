@@ -198,6 +198,7 @@
        and builds the TOC links. Hides the TOC if fewer than 2 sections.
        The TOC excludes h2s inside .article__tags, .refs, and .citation-box
        so "Type", "Tagged under", "References", and "How to cite" don't appear. -->
+  <!-- TABLE OF CONTENTS SCRIPT -->
   <script>
   (function () {
     const toc = document.getElementById('toc');
@@ -210,10 +211,12 @@
 
     if (headings.length < 2) { toc.remove(); return; }
 
+    const pagePath = window.location.pathname;
+
     const links = headings.map((h, i) => {
       const id = 'section-' + i;
       h.id = id;
-      return `<li><a href="#${id}">${h.textContent.trim()}</a></li>`;
+      return `<li><a href="${pagePath}#${id}">${h.textContent.trim()}</a></li>`;
     }).join('');
 
     toc.innerHTML = `<p class="toc__label">In this article</p><ol>${links}</ol>`;
