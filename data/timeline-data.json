@@ -862,6 +862,28 @@
     "link": ""
   },
   {
+    "id": 111,
+    "year": "1927.0",
+    "sortYear": 1927,
+    "category": "Islamic Jihad",
+    "title": "Nagpur Riots",
+    "summary": "On the day of Laxmi Puja, like every year, Hindus took out a procession of Lakshmi in front of the mosque in the palace area. Muslim mobs attacked the procession, killing 22 Hindus and more than 100 injured in riots that continued for two days.",
+    "figure": "122",
+    "figureLabel": "Murderd or injured",
+    "number": 122,
+    "type": [
+      "Murder",
+      "Mob Lynching"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Maharashtra"
+    },
+    "tags": [],
+    "image": "",
+    "link": ""
+  },
+  {
     "id": 51,
     "year": "1942-44",
     "sortYear": 1942,
@@ -1146,7 +1168,8 @@
     "figureLabel": "Murdered",
     "number": 2500,
     "type": [
-      "Murder"
+      "Murder",
+      "Mass shooting"
     ],
     "geography": {
       "country": "India",
@@ -1170,7 +1193,8 @@
     "number": 12000000,
     "type": [
       "Forced Refugees",
-      "Seizure of assets"
+      "Seizure of assets",
+      "Murder"
     ],
     "geography": {
       "country": "China",
@@ -1193,7 +1217,8 @@
     "figureLabel": "Brutally murdered",
     "number": 3,
     "type": [
-      "Murder"
+      "Murder",
+      "Beheading"
     ],
     "geography": {
       "country": "India",
@@ -1264,7 +1289,8 @@
     "figureLabel": null,
     "number": 128,
     "type": [
-      "Murder"
+      "Murder",
+      "Mass shooting"
     ],
     "geography": {
       "country": "India",
@@ -1287,7 +1313,8 @@
     "figureLabel": "Murdered",
     "number": 1700,
     "type": [
-      "Murder"
+      "Murder",
+      "Mass shooting"
     ],
     "geography": {
       "country": "India",
@@ -1310,7 +1337,8 @@
     "figureLabel": null,
     "number": 4128,
     "type": [
-      "Murder"
+      "Murder",
+      "Mass shooting"
     ],
     "geography": {
       "country": "India",
@@ -1333,7 +1361,9 @@
     "figureLabel": null,
     "number": 115,
     "type": [
-      "Murder"
+      "Murder",
+      "Mass shooting",
+      "Beheading"
     ],
     "geography": {
       "country": "India",
@@ -1634,7 +1664,8 @@
     "figureLabel": "Murdered",
     "number": 145,
     "type": [
-      "Murder"
+      "Murder",
+      "Mass shooting"
     ],
     "geography": {
       "country": "India",
@@ -1828,6 +1859,83 @@
     "link": ""
   },
   {
+    "id": 107,
+    "year": "1998.0",
+    "sortYear": 1998,
+    "category": "Islamic Jihad",
+    "title": "Wandhama Massacre",
+    "summary": "25 January, 1998: 23 Kashmiri Hindus were shot down by LeT terrorists in the town of Wandhama",
+    "figure": "23",
+    "figureLabel": "Murdered or injured in terror attack",
+    "number": 23,
+    "type": [
+      "Murder",
+      "Mass shooting"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Jammu and Kashmir"
+    },
+    "tags": [
+      "Terror Attack"
+    ],
+    "image": "",
+    "link": "",
+    "historicalDate": "25-01"
+  },
+  {
+    "id": 109,
+    "year": "1998.0",
+    "sortYear": 1998,
+    "category": "Islamic Jihad",
+    "title": "Prankote Massacre",
+    "summary": "The killing and beheading of 29 Hindus in the villages of Prankote and Dakikote by Islamist militants in the Udhampur district. The incident triggered an exodus of villagers from the area, with more than 1,000 fleeing.",
+    "figure": "1,029",
+    "figureLabel": "Murdered or forced to flee",
+    "number": 1029,
+    "type": [
+      "Murder",
+      "Forced Refugees",
+      "Beheading",
+      "Mass shooting"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Jammu and Kashmir"
+    },
+    "tags": [
+      "Terror Attack"
+    ],
+    "image": "",
+    "link": "",
+    "historicalDate": "17-04"
+  },
+  {
+    "id": 110,
+    "year": "1998.0",
+    "sortYear": 1998,
+    "category": "Islamic Jihad",
+    "title": "Chapnari Massacre",
+    "summary": "Massacre of 26 Hindus in the Chapnari village, Doda district",
+    "figure": "26",
+    "figureLabel": "Murdered",
+    "number": 26,
+    "type": [
+      "Murder",
+      "Mass shooting"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Jammu and Kashmir"
+    },
+    "tags": [
+      "Terror Attack"
+    ],
+    "image": "",
+    "link": "",
+    "historicalDate": "19-06"
+  },
+  {
     "id": 84,
     "year": "2000",
     "sortYear": 2000,
@@ -1847,6 +1955,57 @@
     "tags": [],
     "image": "",
     "link": ""
+  },
+  {
+    "id": 106,
+    "year": "2000.0",
+    "sortYear": 2000,
+    "category": "Christian Proselytization",
+    "title": "Bagber Massacre",
+    "summary": "20 May 2000:  60 NLFT militants raided the Bagber village. 19 Bengali Hindus were killed on the spot and several others were critically injured in the massacre. Six of them succumbed to their injuries later. 333 families were relocated from five Gram Panchayats of Kalyanpur after the massacre and settled in Amar Colony under North Kalyanpur Gram Panchayat.",
+    "figure": "1,357",
+    "figureLabel": "Murdered, injured or forced to flee",
+    "number": 1357,
+    "type": [
+      "Murder",
+      "Forced Refugees",
+      "Mass shooting"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Tripura"
+    },
+    "tags": [
+      "Terror Attack"
+    ],
+    "image": "",
+    "link": "",
+    "historicalDate": "20-05"
+  },
+  {
+    "id": 108,
+    "year": "2000.0",
+    "sortYear": 2000,
+    "category": "Islamic Jihad",
+    "title": "Chittisinghpura Massacre",
+    "summary": "20 March 2000: Mass murder of 35 Sikh villagers on 20 March 2000 in the village of Chittisinghpura in Anantnag district, by LeT or Hizbul Mujahideen terrorists",
+    "figure": "35",
+    "figureLabel": "Murdered or injured in terror attack",
+    "number": 35,
+    "type": [
+      "Murder",
+      "Mass shooting"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Jammu and Kashmir"
+    },
+    "tags": [
+      "Terror Attack"
+    ],
+    "image": "",
+    "link": "",
+    "historicalDate": "20-03"
   },
   {
     "id": 85,
@@ -1892,6 +2051,30 @@
     "link": ""
   },
   {
+    "id": 105,
+    "year": "2001.0",
+    "sortYear": 2001,
+    "category": "Islamic Jihad",
+    "title": "Kishtwar Massacres",
+    "summary": "Series of terrorist attacks by Islamists.\n10 May 2001 at Atholi village: 7 Hindus were killed\n21 July 2001 at Cheerji in Kishtwar: 15 Hindus were killed\n22 July 2001 at Tagood: 4 Hindus were killed\n2 August 2001 at Shrotidhar: 17 more Hindus were killed\nAll four massacres took place in Hindu-majority Paddar valley.",
+    "figure": "43",
+    "figureLabel": "Murdered or injured in terror attack",
+    "number": 43,
+    "type": [
+      "Murder",
+      "Mass shooting"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Jammu and Kashmir"
+    },
+    "tags": [
+      "Terror Attack"
+    ],
+    "image": "",
+    "link": ""
+  },
+  {
     "id": 87,
     "year": "2002",
     "sortYear": 2002,
@@ -1932,7 +2115,9 @@
       "country": "India",
       "state": "Gujarat"
     },
-    "tags": [],
+    "tags": [
+      "Terror Attack"
+    ],
     "image": "",
     "link": "",
     "historicalDate": "24-11",
@@ -1942,6 +2127,85 @@
     "templeFigure": "1.0",
     "templesAffected": 1,
     "templeFigureLabel": "Attack and bomb blast in Akshardham Temple, Gandhinagar"
+  },
+  {
+    "id": 104,
+    "year": "2002.0",
+    "sortYear": 2002,
+    "category": "Islamic Jihad",
+    "title": "Raghunath Temple Attacks",
+    "summary": "30 March 2002: Two suicide bombers attacked the temple. Eleven people were killed and 20 were injured.\n24 November 2002: Two suicide bombers stormed the temple and killed 14 devotees and injured 45 others",
+    "figure": "=11+20+14+45",
+    "figureLabel": "Murdered or injured in terror attack",
+    "number": 90,
+    "type": [
+      "Murder",
+      "Mass shooting"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Jammu and Kashmir"
+    },
+    "tags": [
+      "Terror Attack"
+    ],
+    "image": "",
+    "link": "",
+    "templeType": [
+      "Attacked"
+    ],
+    "templesAffected": 2,
+    "templeFigure": "2.0"
+  },
+  {
+    "id": 117,
+    "year": "2002.0",
+    "sortYear": 2002,
+    "category": "Islamic Jihad",
+    "title": "Kaluchak Massacre",
+    "summary": "Three Islamist terrorists attacked an HRTC bus and killed 7 people. After that they entered the family quarter of the Army and fired indiscriminately. Thirty-four people were injured in the attack, including children",
+    "figure": "34",
+    "figureLabel": "Murdered",
+    "number": 34,
+    "type": [
+      "Murder",
+      "Mass shooting"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Jammu and Kashmir"
+    },
+    "tags": [
+      "Terror Attack"
+    ],
+    "image": "",
+    "link": "",
+    "historicalDate": "14-05"
+  },
+  {
+    "id": 118,
+    "year": "2002.0",
+    "sortYear": 2002,
+    "category": "Islamic Jihad",
+    "title": "Qasim Nagar Massacre",
+    "summary": "Islamist terrorists, some disguised in the robes of Hindu holy men, walked into the Qasim Nagar slum and opened fire and threw grenades, killing 27 Hindus, leaving 30 injured.",
+    "figure": "57",
+    "figureLabel": "Murdered or injured in terror attack",
+    "number": 57,
+    "type": [
+      "Murder",
+      "Mass shooting"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Jammu and Kashmir"
+    },
+    "tags": [
+      "Terror Attack"
+    ],
+    "image": "",
+    "link": "",
+    "historicalDate": "13-07"
   },
   {
     "id": 89,
@@ -1982,7 +2246,9 @@
       "country": "India",
       "state": "Delhi (National Capital Territory of Delhi)"
     },
-    "tags": [],
+    "tags": [
+      "Terror Attack"
+    ],
     "image": "",
     "link": ""
   },
@@ -2004,7 +2270,9 @@
       "country": "India",
       "state": "Uttar Pradesh"
     },
-    "tags": [],
+    "tags": [
+      "Terror Attack"
+    ],
     "image": "",
     "link": "",
     "templeType": [
@@ -2013,6 +2281,57 @@
     "templeFigure": "1.0",
     "templesAffected": 1,
     "templeFigureLabel": "Blast in Sankat Mochan Hanuman Temple, Varanasi"
+  },
+  {
+    "id": 115,
+    "year": "2006.0",
+    "sortYear": 2006,
+    "category": "Islamic Jihad",
+    "title": "Doda Massacre",
+    "summary": "Mass murder of 57 Hindu civilians in two separate incidents, carried out by Lashkar-e-Taiba militants in the Doda district of Jammu and Kashmir. The victims included a 3-year-old girl.",
+    "figure": "57",
+    "figureLabel": "Murdered",
+    "number": 57,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Jammu and Kashmir"
+    },
+    "tags": [
+      "Terror Attack"
+    ],
+    "image": "",
+    "link": "",
+    "historicalDate": "30-04"
+  },
+  {
+    "id": 116,
+    "year": "2008.0",
+    "sortYear": 2008,
+    "category": "Islamic Jihad",
+    "title": "Mumbai Terror Attack",
+    "summary": "11 coordinated attacks by proven Pakistani Islamist terrorists in fake Hindu attire. A total of 175 people died, including nine of the attackers, and more than 300 were injured.  The Taj Mahal Palace Hotel, Oberoi Trident, Nariman House, and Chhatrapati Shivaji Maharaj Terminus were some of the key targets.",
+    "figure": "140",
+    "figureLabel": "Murdered",
+    "number": 140,
+    "type": [
+      "Murder",
+      "Arson",
+      "Mass shooting",
+      "Bomb Blast"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Maharashtra"
+    },
+    "tags": [
+      "Terror Attack"
+    ],
+    "image": "",
+    "link": "",
+    "historicalDate": "26-11"
   },
   {
     "id": 93,
@@ -2127,7 +2446,8 @@
       "Forced Refugees",
       "Sexual Assault",
       "Seizure of assets",
-      "Conversion"
+      "Conversion",
+      "Mass shooting"
     ],
     "geography": {
       "country": "Myanmar",
@@ -2165,6 +2485,30 @@
     "templeFigure": "1.0",
     "templesAffected": 1,
     "templeFigureLabel": "Blown up in bomb blast"
+  },
+  {
+    "id": 103,
+    "year": "2017.0",
+    "sortYear": 2017,
+    "category": "Islamic Jihad",
+    "title": "2017 Amarnath Yatra massacre",
+    "summary": "7 July 2017: Islamist terrorists attacked a civilian bus; Seven pilgrims were killed and 32 others, were injured.\n10 July 2017: 8 Hindu civilian pilgrims were killed in a terror attack, and at least 19 others were injured in the attack.",
+    "figure": "=39+8+19",
+    "figureLabel": "Murdered or injured in terror attack",
+    "number": 66,
+    "type": [
+      "Mass shooting",
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Jammu and Kashmir"
+    },
+    "tags": [
+      "Terror Attack"
+    ],
+    "image": "",
+    "link": ""
   },
   {
     "id": 25,
@@ -2377,6 +2721,28 @@
     "historicalDate": "16-04"
   },
   {
+    "id": 114,
+    "year": "2020.0",
+    "sortYear": 2020,
+    "category": "Islamic Jihad",
+    "title": "Delhi Riots",
+    "summary": "Muslims attack Hindu shops, property and houses, and kill 13 Hindus in protest to CAA laws, based on wrong understanding of the laws. Over 200 Hindus were injured.",
+    "figure": "213",
+    "figureLabel": "Murderd or injured",
+    "number": 213,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Delhi (National Capital Territory of Delhi)"
+    },
+    "tags": [],
+    "image": "",
+    "link": "",
+    "historicalDate": "23-02"
+  },
+  {
     "id": 8,
     "year": "2021",
     "sortYear": 2021,
@@ -2472,6 +2838,29 @@
     "peopleConverted": 400
   },
   {
+    "id": 112,
+    "year": "2023.0",
+    "sortYear": 2023,
+    "category": "Islamic Jihad",
+    "title": "Haryana Riots",
+    "summary": "A series of clashes in northern India that originated in the district of Nuh and spread to nearby regions within Haryana. It resulted in at least seven fatalities and over 200 reported injuries.",
+    "figure": "200",
+    "figureLabel": "Murderd or injured",
+    "number": 200,
+    "type": [
+      "Murder",
+      "Mob Lynching"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Haryana"
+    },
+    "tags": [],
+    "image": "",
+    "link": "",
+    "historicalDate": "31-07"
+  },
+  {
     "id": 23,
     "year": "2024",
     "sortYear": 2024,
@@ -2494,6 +2883,55 @@
     "image": "",
     "link": "",
     "peopleConverted": 70
+  },
+  {
+    "id": 24,
+    "year": "2024.0",
+    "sortYear": 2024,
+    "category": "Christian Proselytization",
+    "title": "Pastor Held For Converting 300 Hindu Families By Promising Money In Meerut",
+    "summary": null,
+    "figure": "300",
+    "figureLabel": "Converted",
+    "number": 300,
+    "type": [
+      "Conversion"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Uttar Pradesh"
+    },
+    "tags": [
+      "Christian Evangelism"
+    ],
+    "image": "",
+    "link": "",
+    "peopleConverted": 300
+  },
+  {
+    "id": 113,
+    "year": "2025.0",
+    "sortYear": 2025,
+    "category": "Islamic Jihad",
+    "title": "Pahalgam Massacre",
+    "summary": "The militants targeted Hindu tourists, though a Christian tourist and a local Muslim pony ride operator were also killed. There were total of 26 fatalities.",
+    "figure": "24",
+    "figureLabel": "Murdered",
+    "number": 24,
+    "type": [
+      "Murder",
+      "Mass shooting"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Jammu and Kashmir"
+    },
+    "tags": [
+      "Terror Attack"
+    ],
+    "image": "",
+    "link": "",
+    "historicalDate": "22-04"
   },
   {
     "id": 10,
