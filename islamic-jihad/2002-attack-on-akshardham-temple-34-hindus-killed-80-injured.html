@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- This page is meant to live at <category>/<slug>/index.html, two
-       folders below the site root — the base tag below makes every
-       relative path (css/js/images/links) resolve correctly from
-       that depth. Keep it as-is when you copy this file. -->
-  <base href="../../">
+  <!-- This page lives at islamic-jihad/2002-attack-on-akshardham-temple-34-hindus-killed-80-injured.html
+       one level below the site root — base href="../" is correct for this depth. -->
+  <base href="../">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -24,7 +22,7 @@
   <meta property="og:title"        content="2002 Attack on Akshardham Temple" />
   <meta property="og:description"  content="On 24 September, 2002, two armed Jihadi terrorists attacked the Akshardham Temple in Gandhinagar, Gujarat, killing 34 Hindus and injuring another 80." />
   <meta property="og:url"          content="https://hindugenocide.com/islamic-jihad/2002-attack-on-akshardham-temple-34-hindus-killed-80-injured" />
-  <meta property="og:image"        content="https://hindugenocide.com/images/akshardham.jpg]" />
+  <meta property="og:image"        content="https://hindugenocide.com/images/akshardham.jpg" />
   <meta property="og:image:width"  content="1200" />
   <meta property="og:image:height" content="630" />
 
@@ -33,7 +31,7 @@
   <meta name="twitter:site"        content="@hindugenocide__" />
   <meta name="twitter:title"       content="2002 Attack on Akshardham Temple" />
   <meta name="twitter:description" content="On 24 September, 2002, two armed Jihadi terrorists attacked the Akshardham Temple in Gandhinagar, Gujarat, killing 34 Hindus and injuring another 80." />
-  <meta name="twitter:image"       content="https://hindugenocide.com/images/akshardham.jpg]" />
+  <meta name="twitter:image"       content="https://hindugenocide.com/images/akshardham.jpg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -205,7 +203,8 @@
     const links = headings.map((h, i) => {
       const id = 'section-' + i;
       h.id = id;
-      return `<li><a href="#${id}">${h.textContent.trim()}</a></li>`;
+      const pageUrl = window.location.href.split('#')[0];
+      return `<li><a href="${pageUrl}#${id}">${h.textContent.trim()}</a></li>`;
     }).join('');
 
     toc.innerHTML = `<p class="toc__label">In this article</p><ol>${links}</ol>`;
