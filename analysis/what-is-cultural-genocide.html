@@ -270,19 +270,29 @@
   </article>
 
   <div id="site-footer"></div>
-<script>
-(function(){
-  const toc = document.getElementById('toc');
-  if (!toc) return;
-  const headings = document.querySelectorAll('.article__body h2');
-  if (headings.length < 2) { toc.remove(); return; } // hide if only one section
-  const links = [...headings].map((h, i) => {
-    const id = 'section-' + i;
-    h.id = id;
-    return `<li><a href="#${id}">${h.textContent}</a></li>`;
-  }).join('');
-  toc.innerHTML = `<p class="toc__label">In this article</p><ol>${links}</ol>`;
-})();
-</script>
+<!-- TABLE OF CONTENTS SCRIPT -->
+  <script>
+  (function () {
+    const toc = document.getElementById('toc');
+    if (!toc) return;
+
+    // Only select content h2s — exclude tags, refs, citation box
+    const headings = [...document.querySelectorAll(
+      '.article__body h2:not(.article__tags h2):not(.refs h2):not(.citation-box h2)'
+    )];
+
+    if (headings.length < 2) { toc.remove(); return; }
+
+    const pagePath = window.location.pathname;
+
+    const links = headings.map((h, i) => {
+      const id = 'section-' + i;
+      h.id = id;
+      return `<li><a href="${window.location.pathname}#${id}">${h.textContent.trim()}</a></li>`;
+    }).join('');
+
+    toc.innerHTML = `<p class="toc__label">In this article</p><ol>${links}</ol>`;
+  })();
+  </script>
 </body>
 </html>
