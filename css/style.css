@@ -20,6 +20,7 @@
   --brass-soft: #FCA99C;  /* salmon — used for label borders */
   --salmon:     #FCA99C;  /* button fill */
   --salmon-text:#520D1B;  /* text on salmon buttons */
+  --salmon-light:#fad7be;  /* lighter salmon for secondary use */
   --footer-bg:  #520D1B;  /* dark maroon footer */
 
   /* Optional background image — set on <body style="--bg-image:url('/images/your-image.jpg')">
@@ -29,7 +30,8 @@
 
   /* Type */
   --f-display: "Outfit", "Helvetica Neue", Arial, sans-serif;   /* big bold headings */
-  --f-heading: 'Bricolage Grotesque', sans-serif;   /* secondary headings, nav */
+  --f-heading: 'Bricolage Grotesque', sans-serif;   /* h2, h3 */
+  --f-ui:      'Cabin', sans-serif;                    /* nav, labels, tags, h4, UI elements */
   --f-quote:   "Lora", "Georgia", serif;                         /* quotes, pull stats */
   --f-body:    "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
   --f-mono:    "IBM Plex Mono", "Courier New", monospace;        /* dates, figures, data */
@@ -87,6 +89,7 @@ h1{
 }
 h2{ font-size: clamp(1.6rem, 3.4vw, var(--step-3)); font-weight: 700; }
 h3{ font-size: clamp(1.2rem, 2.2vw, var(--step-2)); font-weight: 600; }
+h4{ font-family: var(--f-ui); }
 
 p{ margin: 0 0 1.1em; }
 
@@ -162,7 +165,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 }
 
 .site-header__brand span{
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   font-size: 0.7rem;
   letter-spacing: 0.16em;
   color: var(--oxblood);
@@ -174,7 +177,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   font-size: 0.92rem;
   font-weight: 500;
 }
@@ -291,7 +294,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 }
 
 .hero__eyebrow{
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   font-size: 0.85rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -341,7 +344,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   border-right: 2px solid var(--oxblood);
 }
 .tdih__eyebrow{
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -356,7 +359,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 }
 .tdih__entry{ flex: 1; min-width: 260px; }
 .tdih__tag{
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -412,7 +415,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   font-size: 0.85rem;
   color: var(--ink-soft);
   max-width: 22ch;
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
 }
 
 @media (max-width: 860px){
@@ -440,7 +443,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 }
 
 .section__head .index{
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   font-size: 0.85rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -464,7 +467,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 }
 
 .filter-chip{
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   font-size: 0.85rem;
   font-weight: 500;
   padding: 0.5rem 0.9rem;
@@ -494,7 +497,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 }
 
 .tag-pill{
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -548,7 +551,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 
 .ledger-entry__geo{
   display: block;
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   font-size: 0.7rem;
   font-weight: 500;
   color: var(--oxblood-soft);
@@ -569,7 +572,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 
 .ledger-entry__tag{
   display: inline-block;
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -598,7 +601,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-top: 0.2rem;
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
 }
 
 .ledger-entry.is-hidden{ display: none; }
@@ -624,7 +627,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 }
 
 .viz-card__caption{
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   font-size: 0.85rem;
   color: var(--ink-soft);
   margin-top: 1rem;
@@ -657,7 +660,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 
 .card__body{ padding: 1.1rem 1.2rem 1.4rem; }
 .card__tag{
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -687,7 +690,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   gap: 1rem;
   align-items: center;
   flex-wrap: wrap;
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -716,7 +719,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   padding: 0.9rem 1.2rem;
 }
 .fact__label{
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -736,7 +739,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 }
 .article__featured-image img{ width: 100%; }
 .article__featured-image figcaption{
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   font-size: 0.85rem;
   color: var(--ink-soft);
   padding: 0.6em 0.2em;
@@ -757,7 +760,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   border: 1px solid var(--paper-line);
 }
 .article__body figcaption{
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   font-size: 0.85rem;
   color: var(--ink-soft);
   margin-top: 0.5em;
@@ -789,7 +792,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 .pull-stat__label{
   font-size: 0.9rem;
   color: var(--ink-soft);
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
 }
 
 .article__tags{
@@ -799,7 +802,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 }
 .article__tags h2{
   font-size: 0.85rem;
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--brass);
@@ -826,7 +829,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   margin: 1.8em 0;
 }
 .article__body th{
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -860,7 +863,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   border: 1px solid var(--paper-line);
 }
 .citation-box h2{
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   font-size: 0.75rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -897,7 +900,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 
 .footer__grid h4{
   color: var(--paper);
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   font-size: 0.85rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -916,7 +919,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   color: rgba(244,244,244,0.75);
 }
 
@@ -930,7 +933,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
    ========================================================= */
 .btn{
   display: inline-block;
-  font-family: var(--f-heading);
+  font-family: var(--f-ui);
   font-size: 0.9rem;
   font-weight: 600;
   padding: 0.75rem 1.4rem;
