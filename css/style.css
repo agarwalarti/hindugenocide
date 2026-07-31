@@ -133,6 +133,28 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   *{ animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
 }
 
+/* TOC CODE */
+
+.toc{
+  background: var(--paper-deep);
+  border-left: 3px solid var(--oxblood);
+  padding: 1rem 1.4rem;
+  margin: 0 0 2rem;
+  font-family: var(--f-ui);
+  font-size: 0.9rem;
+}
+.toc__label{
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--oxblood-soft);
+  margin: 0 0 0.6rem;
+}
+.toc ol{ margin: 0; padding-left: 1.2rem; }
+.toc li{ margin-bottom: 0.35rem; }
+.toc a{ color: var(--oxblood); }
+
 /* =========================================================
    HEADER / NAVIGATION
    ========================================================= */
