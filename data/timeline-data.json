@@ -2861,6 +2861,29 @@
     "historicalDate": "31-07"
   },
   {
+    "id": 119,
+    "year": "2023",
+    "sortYear": 2023,
+    "category": "Christian Proselytization",
+    "title": "Manipur Riots",
+    "summary": "Clashes between Hindu Meiti and Christian Kuki groups erupt, triggered by separatist Kuki militants. By 14 May, the government's tally of casualties and property damage from the violence stood at 73 dead, 243 injured, 1809 houses burned down, 46,145 people evacuated, 26,358 people taken to 178 relief camps, 3,124 people escorted evacuation flights, and 385 criminal cases registered with the authorities. Of these, majority were Meiti Hindus",
+    "figure": "37,971",
+    "figureLabel": "Murderd, displaced or injured",
+    "number": 37971,
+    "type": [
+      "Murder",
+      "Arson"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Manipur"
+    },
+    "tags": [],
+    "image": "",
+    "link": "",
+    "historicalDate": "03-05"
+  },
+  {
     "id": 23,
     "year": "2024",
     "sortYear": 2024,
