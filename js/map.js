@@ -418,15 +418,15 @@ async function initMap() {
 
   // Subtle OpenStreetMap tiles — light enough that choropleth colors dominate
   L.tileLayer(
-    "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png",
-    {
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors ' +
-        '&copy; <a href="https://carto.com/attributions">CARTO</a>',
-      subdomains: "abcd",
-      maxZoom: 20,
-    }
-  ).addTo(leafletMap);
+  "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png?key=cb1_2z75_1_075e1854e5ea4402ac4ee6f5",
+  {
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors ' +
+      '&copy; <a href="https://carto.com/attributions">CARTO</a>',
+    subdomains: "abcd",
+    maxZoom: 20,
+  }
+).addTo(leafletMap);
 
   // --- Load timeline data ---
   try {
