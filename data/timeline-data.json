@@ -863,7 +863,7 @@
   },
   {
     "id": 111,
-    "year": "1927.0",
+    "year": "1927",
     "sortYear": 1927,
     "category": "Islamic Jihad",
     "title": "Nagpur Riots",
@@ -1860,7 +1860,7 @@
   },
   {
     "id": 107,
-    "year": "1998.0",
+    "year": "1998",
     "sortYear": 1998,
     "category": "Islamic Jihad",
     "title": "Wandhama Massacre",
@@ -1885,7 +1885,7 @@
   },
   {
     "id": 109,
-    "year": "1998.0",
+    "year": "1998",
     "sortYear": 1998,
     "category": "Islamic Jihad",
     "title": "Prankote Massacre",
@@ -1912,7 +1912,7 @@
   },
   {
     "id": 110,
-    "year": "1998.0",
+    "year": "1998",
     "sortYear": 1998,
     "category": "Islamic Jihad",
     "title": "Chapnari Massacre",
@@ -1958,7 +1958,7 @@
   },
   {
     "id": 106,
-    "year": "2000.0",
+    "year": "2000",
     "sortYear": 2000,
     "category": "Christian Proselytization",
     "title": "Bagber Massacre",
@@ -1984,7 +1984,7 @@
   },
   {
     "id": 108,
-    "year": "2000.0",
+    "year": "2000",
     "sortYear": 2000,
     "category": "Islamic Jihad",
     "title": "Chittisinghpura Massacre",
@@ -2052,7 +2052,7 @@
   },
   {
     "id": 105,
-    "year": "2001.0",
+    "year": "2001",
     "sortYear": 2001,
     "category": "Islamic Jihad",
     "title": "Kishtwar Massacres",
@@ -2130,12 +2130,12 @@
   },
   {
     "id": 104,
-    "year": "2002.0",
+    "year": "2002",
     "sortYear": 2002,
     "category": "Islamic Jihad",
     "title": "Raghunath Temple Attacks",
     "summary": "30 March 2002: Two suicide bombers attacked the temple. Eleven people were killed and 20 were injured.\n24 November 2002: Two suicide bombers stormed the temple and killed 14 devotees and injured 45 others",
-    "figure": "=11+20+14+45",
+    "figure": "90",
     "figureLabel": "Murdered or injured in terror attack",
     "number": 90,
     "type": [
@@ -2159,7 +2159,7 @@
   },
   {
     "id": 117,
-    "year": "2002.0",
+    "year": "2002",
     "sortYear": 2002,
     "category": "Islamic Jihad",
     "title": "Kaluchak Massacre",
@@ -2184,7 +2184,7 @@
   },
   {
     "id": 118,
-    "year": "2002.0",
+    "year": "2002",
     "sortYear": 2002,
     "category": "Islamic Jihad",
     "title": "Qasim Nagar Massacre",
@@ -2284,7 +2284,7 @@
   },
   {
     "id": 115,
-    "year": "2006.0",
+    "year": "2006",
     "sortYear": 2006,
     "category": "Islamic Jihad",
     "title": "Doda Massacre",
@@ -2308,7 +2308,7 @@
   },
   {
     "id": 116,
-    "year": "2008.0",
+    "year": "2008",
     "sortYear": 2008,
     "category": "Islamic Jihad",
     "title": "Mumbai Terror Attack",
@@ -2488,12 +2488,12 @@
   },
   {
     "id": 103,
-    "year": "2017.0",
+    "year": "2017",
     "sortYear": 2017,
     "category": "Islamic Jihad",
     "title": "2017 Amarnath Yatra massacre",
     "summary": "7 July 2017: Islamist terrorists attacked a civilian bus; Seven pilgrims were killed and 32 others, were injured.\n10 July 2017: 8 Hindu civilian pilgrims were killed in a terror attack, and at least 19 others were injured in the attack.",
-    "figure": "=39+8+19",
+    "figure": "66",
     "figureLabel": "Murdered or injured in terror attack",
     "number": 66,
     "type": [
@@ -2722,7 +2722,7 @@
   },
   {
     "id": 114,
-    "year": "2020.0",
+    "year": "2020",
     "sortYear": 2020,
     "category": "Islamic Jihad",
     "title": "Delhi Riots",
