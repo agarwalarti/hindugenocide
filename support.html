@@ -1,100 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Support the Work</title>
-<meta property="og:title" content="Support the Work">
-<meta property="og:description" content="This project is maintained independently. Support to keep it going is appreciated.">
-<link rel="stylesheet" href="css/style.css">
-<style>
-  .support-page {
-    max-width: 640px;
-    margin: 0 auto;
-    padding: 3rem 1.5rem 4rem;
-  }
-  .support-page h1 {
-    color: var(--oxblood);
-    margin-bottom: 1rem;
-  }
-  .support-page p {
-    color: var(--ink);
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-  }
-  .support-methods {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-top: 2rem;
-  }
-  .support-method {
-    flex: 1 1 220px;
-    background: var(--paper-deep);
-    border: 1px solid var(--paper-line);
-    border-radius: 6px;
-    padding: 1.5rem;
-    text-align: center;
-  }
-  .support-method h2 {
-    color: var(--oxblood-soft);
-    font-size: 1.1rem;
-    margin-bottom: 0.75rem;
-  }
-  .support-method .qr-placeholder {
-    max-width: 240px;
-    margin: 0 auto 1rem;
-    background: var(--paper);
-    border: 1px solid var(--paper-line);
-    border-radius: 4px;
-    padding: 0.5rem;
-  }
-  .support-method .qr-placeholder img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .support-method .id-value {
-    font-size: 0.95rem;
-    color: var(--salmon-text);
-    word-break: break-word;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support the Work — Hindu Genocide</title>
+  <meta name="description" content="This project is maintained independently. Support to keep it going is appreciated." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Cabin:wght@500;600;700&family=Lora:ital,wght@0,500;1,500&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+  <script src="js/partials.js" defer></script>
+
+  <style>
+    /* Support-method boxes: not part of the shared stylesheet,
+       scoped narrowly to this page only. Uses existing CSS variables only. */
+    .support-methods{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .support-method{
+      flex: 1 1 220px;
+      background: var(--paper-deep);
+      border: 1px solid var(--paper-line);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .support-method h3{
+      color: var(--oxblood-soft);
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+    .support-method .qr-box{
+      max-width: 240px;
+      margin: 0 auto 1rem;
+      background: var(--paper);
+      border: 1px solid var(--paper-line);
+      border-radius: var(--radius);
+      padding: 0.5rem;
+    }
+    .support-method .qr-box img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .support-method .id-value{
+      font-family: var(--f-mono);
+      font-size: 0.95rem;
+      color: var(--salmon-text);
+      word-break: break-word;
+      margin: 0;
+    }
+  </style>
 </head>
-<body>
+<body data-page="support">
 
-<main class="support-page">
-  <h1>Support the Work</h1>
+  <div id="site-header"></div>
 
-  <p>
-    This project is an independent effort, researched, built, and maintained by one person (with some intellectual support of a few people who prefer to remain anonymous).
-    There is no institutional funding behind it.
-  </p>
-  <p>
-    If you find the work valuable and would like to help keep it going, any support is genuinely appreciated.
-  </p>
-
-  <div class="support-methods">
-    <div class="support-method">
-      <h2>UPI</h2>
-      <div class="qr-placeholder">
-        <img src="images/upi.jpeg" alt="UPI QR code">
-      </div>
-      <p class="id-value">
-        agarwalarti@paytm
+  <!-- ===== Page header ===== -->
+  <section class="hero" style="padding-bottom: 2rem;">
+    <div class="container">
+      <p class="hero__eyebrow">hindugenocide.com</p>
+      <h1>Support the Work</h1>
+      <p class="hero__lede">
+        If you find the work valuable and would like to help keep it going, any support is genuinely appreciated.
       </p>
     </div>
+  </section>
 
-    <div class="support-method">
-      <h2>PayPal</h2>
-      <div class="qr-placeholder">
-        <img src="images/paypal.png" alt="PayPal QR code">
+  <!-- ===== Page content ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="article__body" style="margin:0; padding:0; max-width:68ch;">
+
+        <p>
+          This project is an independent effort, researched, built, and maintained by one person
+          (with some intellectual support of a few people who prefer to remain anonymous).
+          There is no institutional funding behind it.
+        </p>
+
+        <div class="support-methods">
+          <div class="support-method">
+            <h3>UPI</h3>
+            <div class="qr-box">
+              <img src="images/upi.jpeg" alt="UPI QR code">
+            </div>
+            <p class="id-value">agarwalarti@paytm</p>
+          </div>
+
+          <div class="support-method">
+            <h3>PayPal</h3>
+            <div class="qr-box">
+              <img src="images/paypal.png" alt="PayPal QR code">
+            </div>
+            <p class="id-value">
+              <a href="https://paypal.me/ArtiAgarwal">paypal.me/ArtiAgarwal</a>
+            </p>
+          </div>
+        </div>
+
       </div>
-      <p class="id-value">
-        <a href="https://paypal.me/ArtiAgarwal">paypal.me/ArtiAgarwal</a>
-      </p>
     </div>
-  </div>
-</main>
+  </section>
+
+  <div id="site-footer"></div>
 
 </body>
 </html>
