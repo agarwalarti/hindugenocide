@@ -51,6 +51,12 @@
     justify-content: center;
     font-size: 0.8rem;
     color: var(--oxblood-soft);
+    overflow: hidden;
+  }
+  .support-method .qr-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
   .support-method .id-value {
     font-size: 0.95rem;
@@ -76,8 +82,7 @@
     <div class="support-method">
       <h2>UPI</h2>
       <div class="qr-placeholder">
-        <img src="images/upi.jpeg" alt="UPI QR code" width="160" height="160">
-        QR code here
+        <img src="images/upi.jpeg" alt="UPI QR code">
       </div>
       <p class="id-value">
         agarwalarti@paytm
@@ -87,8 +92,7 @@
     <div class="support-method">
       <h2>PayPal</h2>
       <div class="qr-placeholder">
-        <img src="images/paypal.png" alt="PayPal QR code" width="160" height="160">
-        QR code here
+        <img src="images/paypal.png" alt="PayPal QR code">
       </div>
       <p class="id-value">
         <a href="https://paypal.me/ArtiAgarwal">paypal.me/ArtiAgarwal</a>
