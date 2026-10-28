@@ -753,7 +753,7 @@
   },
   {
     "id": 47,
-    "year": "1907-08-01 00:00:00",
+    "year": "1907-08",
     "sortYear": 1907,
     "category": "Political Crimes",
     "title": "Famine of 1907-08",
@@ -1285,8 +1285,8 @@
     "category": "Political Crimes",
     "title": "Communists Massacre Bangladeshi Hindu Refugees in Marichjhapi",
     "summary": "Indian Communists Kill 128 Oppressed-Caste Poor Bangladeshi Hindu Refugees in MarichJhapi Island, Sundarbans Region, West Bengal; 1978-1979",
-    "figure": null,
-    "figureLabel": null,
+    "figure": 128,
+    "figureLabel": Murdered,
     "number": 128,
     "type": [
       "Murder",
@@ -1309,7 +1309,7 @@
     "category": "Political Crimes",
     "title": "Marxists gun down Hindus in Marichjhapi",
     "summary": "1,700 Hindus were mercilessly gunned down in Marichjhapi by West Bengal Police on the orders of Communist CM Jyoti Basu. Many of these were children, women and elderly.",
-    "figure": null,
+    "figure": 1700,
     "figureLabel": "Murdered",
     "number": 1700,
     "type": [
@@ -1333,9 +1333,9 @@
     "category": "Political Crimes",
     "title": "Marichjhapi Massacre of Hindus by CPIM",
     "summary": "4,128 families perished in transit, died of starvation, exhaustion, and many were killed in Kashipur, Kumirmari, and Marichjhapi by police firings. The CPIM congratulated its participant members on their successful operation at Marichjhapi",
-    "figure": null,
-    "figureLabel": null,
-    "number": 4128,
+    "figure": 10000,
+    "figureLabel": "Starved to Death",
+    "number": 10000,
     "type": [
       "Murder",
       "Mass shooting"
@@ -1357,13 +1357,14 @@
     "category": "Political Crimes",
     "title": "CPIM track down, rape, shoot or behead Hindus",
     "summary": "More than 100 women were raped again and again by Communist cadres and policemen. After raping them, they were shot, beheaded or brutally beaten to death.\n15 innocent children aged 5-10 who had taken shelter in a hut were BEHEADED with knives by Communist cadres and police who were given orders to kill all the Hindu refugees. These innocent children were preparing for the Saraswati Puja (which was on 1 February)",
-    "figure": null,
-    "figureLabel": null,
-    "number": 115,
+    "figure": 100,
+    "figureLabel": "Women Raped",
+    "number": 100,
     "type": [
       "Murder",
       "Mass shooting",
-      "Beheading"
+      "Beheading",
+      "Rape"
     ],
     "geography": {
       "country": "India",
