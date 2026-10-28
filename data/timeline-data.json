@@ -2992,5 +2992,29 @@
     ],
     "image": "images/narasimha.jpg",
     "link": "analysis/what-is-cultural-genocide.html"
+  },
+  {
+    "id": 120,
+    "year": "1948",
+    "sortYear": 1948,
+    "category": "Islamic Jihad",
+    "title": "Bhairanpally Massacre",
+    "summary": "A lone survivor narrates the trials of villagers of Bhairanpally, where Razakars killed livestock, molested Hindu women and murdered men for no reason. They murdered around 100 men in a day.",
+    "figure": "200",
+    "figureLabel": "Murdered or Injured",
+    "number": 200,
+    "type": [
+      "Murder"
+    ],
+    "geography": {
+      "country": "India",
+      "state": "Telangana"
+    },
+    "tags": [
+      "Islamic Invaders"
+    ],
+    "image": "",
+    "link": "",
+    "historicalDate": "27-08"
   }
 ]
