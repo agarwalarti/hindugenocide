@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             />
           </div>
           <div class="card__body">
-            <span class="card__tag">${entry.year}</span>
+            ${entry.year ? `<span class="card__tag">${entry.year}</span>` : ""}
             <h3>${entry.title}</h3>
             ${entry.summary ? `<p>${entry.summary}</p>` : ""}
             ${
