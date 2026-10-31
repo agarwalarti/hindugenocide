@@ -202,7 +202,7 @@
       container.innerHTML = results
         .map((entry, i) => {
           const geo = entry.geography || {};
-          const geoLabel = [geo.state, geo.country].filter(Boolean).join(", ");
+          const geoLabel = [].concat(geo.state || [], geo.country || []).join(", ");
           const typePills = (entry.type || [])
             .map((t) => `<a href="posts.html?tag=${encodeURIComponent(t)}" class="tag-pill">${highlight(t, terms)}</a>`)
             .join("");
