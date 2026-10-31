@@ -3016,5 +3016,29 @@
     "image": "",
     "link": "",
     "historicalDate": "27-08"
-  }
+  },
+  {
+  "id": 121,
+  "year": "1938-1944",
+  "sortYear": 1938,
+  "category": "Political Crimes",
+  "title": "Roma and Siniti Gencodie during WW II and Holocaust",
+  "summary": "More than half a million Roma and Siniti people (some sources estimate this number to be 1.5 million), who emigrated to Europe a few centuries ago, forced by Islamic invaders, were exterminated during the Holocaust by the Nazis. Further, their culture and practices, largely originating in Hinduism, were systematically erased and prohibited by law. The Roma call this the Porajmos (“The Devouring”).",
+  "figure": "0.5 Million",
+  "figureLabel": "Murdered, Assaulted, Forced into Concentration Camps",
+  "number": 500000,
+  "type": [
+    "Murder",
+    "Mass shooting",
+    "Seizure of assets",
+    "Gas chambers"
+  ],
+  "geography": {
+    "country": ["Germany", "Austria", "Poland", "Serbia", "Romania"],
+    "state": null
+  },
+  "tags": ["Concentration Camps", "World War 2"],
+  "image": "",
+  "link": ""
+}
 ]
