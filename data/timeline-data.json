@@ -3041,7 +3041,7 @@
   "image": "",
   "link": ""
 },
-  {
+{
   "id": 1001,
   "category": "Analysis",
   "title": "Types of Crimes included in a Genocide",
@@ -3049,5 +3049,14 @@
   "tags": [],
   "image": "",
   "link": "analysis/types-of-crimes-included-in-a-genocide.html"
+},
+{
+  "id": 1002,
+  "category": "Analysis",
+  "title": "What is a Genocide?",
+  "summary": "What constitutes a “genocide” as per international law",
+  "tags": [],
+  "image": "",
+  "link": "analysis/what-is-a-genocide.html"
 }
 ]
