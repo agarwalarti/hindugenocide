@@ -149,7 +149,7 @@
       "Starvation"
     ],
     "geography": {
-      "country": "India, Bangladesh, Sri Lanka",
+      "country": ["India", "Bangladesh", "Sri Lanka"],
       "state": "West Bengal"
     },
     "tags": [
@@ -175,7 +175,7 @@
       "Starvation"
     ],
     "geography": {
-      "country": "India, Bangladesh",
+      "country": ["India", "Bangladesh"],
       "state": "West Bengal"
     },
     "tags": [
@@ -338,7 +338,7 @@
       "Starvation"
     ],
     "geography": {
-      "country": "India, Bangladesh, Sri Lanka, Malaysia",
+      "country": ["India", "Bangladesh", "Sri Lanka", "Malaysia"],
       "state": [
         "Maharashtra",
         "Bihar",
@@ -698,7 +698,7 @@
       "Starvation"
     ],
     "geography": {
-      "country": "India, Myanmar",
+      "country": ["India", "Myanmar"],
       "state": [
         "West Bengal",
         "Rajasthan",
@@ -729,7 +729,7 @@
       "Starvation"
     ],
     "geography": {
-      "country": "India, Bangladesh",
+      "country": ["India", "Bangladesh"],
       "state": [
         "Uttar Pradesh",
         "West Bengal",
@@ -897,7 +897,7 @@
       "Starvation"
     ],
     "geography": {
-      "country": "India, Bangladesh",
+      "country": ["India", "Bangladesh"],
       "state": "West Bengal"
     },
     "tags": [
@@ -979,7 +979,7 @@
       "Assault"
     ],
     "geography": {
-      "country": "India, Pakistan",
+      "country": ["India", "Pakistan"],
       "state": null
     },
     "tags": [
@@ -1603,7 +1603,7 @@
       "Bomb Blast"
     ],
     "geography": {
-      "country": "India, Canada",
+      "country": ["India", "Canada"],
       "state": "Delhi (National Capital Territory of Delhi)"
     },
     "tags": [],
