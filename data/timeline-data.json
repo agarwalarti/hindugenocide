@@ -3064,7 +3064,31 @@
   "tags": ["History", "Cultural Genocide"],
   "image": "",
   "link": ""
-}, 
+},
+{
+    "id": 123,
+    "year": "2019",
+    "sortYear": 2019,
+    "category": "Islamic Jihad",
+    "title": "Bangladeshi Hindus' Homes Burnt to Ground",
+    "summary": "37 Hindu families in Bangladesh were rendered homeless and landless as their homes were burnt to ashes, and property, wealth usurped. The Hindus belong to the Pahan community.",
+    "figure": "148",
+    "figureLabel": "Property Burnt",
+    "number": 148,
+    "type": [
+      "Mob Lynching",
+      "Starvation",
+      "Arson"
+    ],
+    "geography": {
+      "country": "Bangladesh",
+      "state": null
+    },
+    "tags": [],
+    "image": "",
+    "link": "",
+    "historicalDate": ""
+  },
 {
   "id": 1001,
   "category": "Analysis",
