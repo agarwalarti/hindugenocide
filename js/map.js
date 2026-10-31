@@ -89,15 +89,13 @@ const COUNTRY_NAME_MAP = {
 };
 
 const STATE_NAME_MAP = {
-  "Delhi":                                          "NCT of Delhi",
-  "Delhi (National Capital Territory of Delhi)":    "NCT of Delhi",
-  "Kashmir":                                        "Jammu & Kashmir",
-  "Jammu and Kashmir":                              "Jammu & Kashmir",
+  "Delhi":                                          "Delhi",
+  "Delhi (National Capital Territory of Delhi)":    "Delhi",
+  "Kashmir":                                        "Jammu and Kashmir",
   "Uttarakhand":                                    "Uttaranchal",
-  "Puducherry":                                     "Puducherry",
+  "Odisha":                                         "Orissa",
   "Andaman and Nicobar Islands":                    "Andaman and Nicobar",
   "Dadra and Nagar Haveli and Daman and Diu":       "Dadra and Nagar Haveli",
-  "Odisha":                                         "Orissa",
 };
 
 // Returns the GeoJSON property name string for a country name from our data.
