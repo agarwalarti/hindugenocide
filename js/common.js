@@ -50,7 +50,7 @@ function templeLedgerRowHTML(entry, index) {
   const linkClose = entry.link ? `</a>` : "";
 
   const geo = entry.geography || {};
-  const geoLabel = [stateDisplay(geo.state), geo.country].filter(Boolean).join(", ");
+  const geoLabel = [stateDisplay(geo.state), countryDisplay(geo.country)].filter(Boolean).join(", ");
 
   const templeTypePills = (entry.templeType || [])
     .map((t) => `<a href="posts.html?tag=${encodeURIComponent(t)}" class="tag-pill">${t}</a>`)
@@ -91,7 +91,7 @@ function ledgerRowHTML(entry, index) {
   // Geography: "Country" or "State, Country" if state is set.
   // state can be a string or an array of strings.
   const geo = entry.geography || {};
-  const geoLabel = [stateDisplay(geo.state), geo.country].filter(Boolean).join(", ");
+  const geoLabel = [stateDisplay(geo.state), countryDisplay(geo.country)].filter(Boolean).join(", ");
 
   // Type pills (persecution types) and general tags share the same
   // pill style and both link to the posts archive.
