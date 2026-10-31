@@ -85,6 +85,7 @@ const COUNTRY_NAME_MAP = {
   "Myanmar":     "Myanmar",
   "Sri Lanka":   "Sri Lanka",
   "Afghanistan": "Afghanistan",
+  "Serbia": "Republic of Serbia",
 };
 
 const STATE_NAME_MAP = {
