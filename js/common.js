@@ -34,6 +34,11 @@ function stateDisplay(state) {
   if (Array.isArray(state)) return state.join(" & ");
   return state;
 }
+function countryDisplay(country) {
+  if (!country) return null;
+  if (Array.isArray(country)) return country.join(", ");
+  return country;
+}
 
 // Renders a single ledger row for the temples timeline (temples.html).
 // Mirrors ledgerRowHTML, but reads the temple-specific fields —
