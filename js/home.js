@@ -20,8 +20,8 @@ function wireCounters(entries) {
   if (totalIncidents) animateCounter(totalIncidents, entries.length);
   if (totalEras) animateCounter(totalEras, new Set(entries.map((e) => e.category)).size);
   if (earliest) {
-  const years = entries.map((e) => e.sortYear).filter(Boolean);
-  earliest.textContent = years.length ? Math.min(...years) : "—";
+    const years = entries.map((e) => e.sortYear).filter(Boolean);
+    earliest.textContent = years.length ? Math.min(...years) : "—";
   }
   if (totalPeople) {
     const sum = entries.reduce((acc, e) => acc + (e.number || 0), 0);
@@ -41,7 +41,10 @@ function wireCounters(entries) {
   }
   if (totalCountries) {
     const countries = new Set(
-      entries.map((e) => e.geography && e.geography.country).filter(Boolean)
+      entries.flatMap((e) => {
+        const c = e.geography && e.geography.country;
+        return Array.isArray(c) ? c : c ? [c] : [];
+      })
     );
     animateCounter(totalCountries, countries.size);
   }
@@ -52,7 +55,7 @@ function renderPreview(entries) {
   if (!ledger) return;
   ledger.innerHTML = "";
   entries
-    .slice()
+    .filter((e) => e.sortYear)
     .sort((a, b) => a.sortYear - b.sortYear)
     .slice(0, 3)
     .forEach((entry, i) => {

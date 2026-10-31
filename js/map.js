@@ -88,25 +88,25 @@ const COUNTRY_NAME_MAP = {
 };
 
 const STATE_NAME_MAP = {
-  // timeline-data.json value → GeoJSON ST_NM (or NAME_1) property value
-  "Delhi":        "NCT of Delhi",
-  "Maharashtra":  "Maharashtra",
-  "Odisha": "Orissa",
-  "Rajasthan":    "Rajasthan",
-  "Gujarat":      "Gujarat",
-  "West Bengal":  "West Bengal",
-  "Punjab":       "Punjab",
-  "Kashmir":      "Jammu & Kashmir",
-  "Uttarakhand":  "Uttarakhand",
-  "Haryana":      "Haryana",
-  "Kerala":       "Kerala",
-  "Meghalaya":    "Meghalaya",
-  "Mizoram":      "Mizoram",
+  "Delhi":                                          "NCT of Delhi",
+  "Delhi (National Capital Territory of Delhi)":    "NCT of Delhi",
+  "Kashmir":                                        "Jammu & Kashmir",
+  "Jammu and Kashmir":                              "Jammu & Kashmir",
+  "Uttarakhand":                                    "Uttaranchal",
+  "Puducherry":                                     "Puducherry",
+  "Andaman and Nicobar Islands":                    "Andaman and Nicobar",
+  "Dadra and Nagar Haveli and Daman and Diu":       "Dadra and Nagar Haveli",
+  "Odisha":                                         "Orissa",
 };
 
 // Returns the GeoJSON property name string for a country name from our data.
 function resolveCountry(name) {
   return COUNTRY_NAME_MAP[name] || name;
+}
+
+// country and state can each be a string or an array of strings
+function toArray(v) {
+  return Array.isArray(v) ? v : v ? [v] : [];
 }
 
 // Returns the GeoJSON property name string for a state name from our data.
@@ -144,38 +144,35 @@ function aggregateEntries(view) {
   const result = {};
 
   filtered.forEach((e) => {
-    const country = e.geography && e.geography.country;
+    const countries = toArray(e.geography && e.geography.country);
     const state = e.geography && e.geography.state;
     const num = e.number || 0;
 
-    if (view === "world" && country) {
-      const key = resolveCountry(country);
-      if (!result[key]) result[key] = { total: 0, count: 0 };
-      result[key].total += num;
-      result[key].count += 1;
-    }
-
-    if (view === "india" && country === "India") {
-      // state can be a string or an array (when an incident spans multiple states)
-      const states = Array.isArray(state)
-        ? state
-        : state ? [state] : [];
-      states.forEach((s) => {
-        const key = resolveState(s);
+    if (view === "world") {
+      countries.forEach((c) => {
+        const key = resolveCountry(c);
         if (!result[key]) result[key] = { total: 0, count: 0 };
         result[key].total += num;
         result[key].count += 1;
       });
     }
 
-    // For the india view, also count entries that only have country=India
-    // (no state), and attribute them to a special "India (nationwide)" bucket
-    // which we won't render on the map but will count in the stats.
-    if (view === "india" && country === "India" && !state) {
-      const key = "_nationwide";
-      if (!result[key]) result[key] = { total: 0, count: 0 };
-      result[key].total += num;
-      result[key].count += 1;
+    if (view === "india" && countries.includes("India")) {
+      const states = toArray(state);
+      states.forEach((s) => {
+        const key = resolveState(s);
+        if (!result[key]) result[key] = { total: 0, count: 0 };
+        result[key].total += num;
+        result[key].count += 1;
+      });
+      // Entries with country=India but no state go to a bucket that is
+      // not drawn on the map but is counted in the stats.
+      if (!states.length) {
+        const key = "_nationwide";
+        if (!result[key]) result[key] = { total: 0, count: 0 };
+        result[key].total += num;
+        result[key].count += 1;
+      }
     }
   });
 
@@ -207,11 +204,9 @@ function getEntriesForRegion(name, view) {
   }
   return filtered.filter((e) => {
     if (!e.geography) return false;
-    if (view === "world") return resolveCountry(e.geography.country) === name;
-    const states = Array.isArray(e.geography.state)
-      ? e.geography.state
-      : e.geography.state ? [e.geography.state] : [];
-    return e.geography.country === "India" && states.some((s) => resolveState(s) === name);
+    if (view === "world") return toArray(e.geography.country).some((c) => resolveCountry(c) === name);
+    const states = toArray(e.geography.state);
+    return toArray(e.geography.country).includes("India") && states.some((s) => resolveState(s) === name);
   });
 }
 
@@ -296,9 +291,10 @@ function updateStats(aggregated, view) {
   filtered.forEach((e) => {
     totalPeople += e.number || 0;
     totalEntries += 1;
-    if (e.geography && e.geography.country) countries.add(e.geography.country);
-    if (e.geography && e.geography.state && e.geography.country === "India") {
-      states.add(e.geography.state);
+    const g = e.geography || {};
+    toArray(g.country).forEach((c) => countries.add(c));
+    if (toArray(g.country).includes("India")) {
+      toArray(g.state).forEach((s) => states.add(s));
     }
   });
 
@@ -418,15 +414,15 @@ async function initMap() {
 
   // Subtle OpenStreetMap tiles — light enough that choropleth colors dominate
   L.tileLayer(
-  "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png?key=cb1_2z75_1_075e1854e5ea4402ac4ee6f5",
-  {
-    attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors ' +
-      '&copy; <a href="https://carto.com/attributions">CARTO</a>',
-    subdomains: "abcd",
-    maxZoom: 20,
-  }
-).addTo(leafletMap);
+    "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png",
+    {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors ' +
+        '&copy; <a href="https://carto.com/attributions">CARTO</a>',
+      subdomains: "abcd",
+      maxZoom: 20,
+    }
+  ).addTo(leafletMap);
 
   // --- Load timeline data ---
   try {
